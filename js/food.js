@@ -1,311 +1,640 @@
-/* ==========================================
-   FOOD.JS
-   Ama Asmita
-========================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    const categoryFilter =
-        document.getElementById("foodCategory");
+const categoryFilter =
+document.getElementById("foodCategory");
 
-    const areaFilter =
-        document.getElementById("foodArea");
+const areaFilter =
+document.getElementById("foodArea");
 
-    const searchInput =
-        document.getElementById("foodSearch");
+const searchInput =
+document.getElementById("foodSearch");
 
-    const foodCards =
-        document.querySelectorAll(".food-card-item");
+const foodContainer =
+document.getElementById("foodContainer");
 
-    const foodContainer =
-        document.getElementById("foodContainer");
+const noResultsContainer =
+document.getElementById("noResultsContainer");
 
-    let noResultMessage = null;
+const FOOD_JSON_PATH = "data/foods.json";
 
-    /* ==========================
-       FILTER FUNCTION
-    ========================== */
+let foodData = [];
+let noResultMessage = null;
 
-    function filterFoods() {
+/* ==========================
+CATEGORY ICONS
+========================== */
 
-        const selectedCategory =
-            categoryFilter.value.toLowerCase();
+function getCategoryIcon(category) {
 
-        const selectedArea =
-            areaFilter.value.toLowerCase();
+ 
+const icons = {
 
-        const searchText =
-            searchInput.value.toLowerCase();
+    "main course": "fa-bowl-rice",
+    "breakfast": "fa-bread-slice",
+    "sweet": "fa-cake-candles",
+    "dessert": "fa-ice-cream",
+    "street food": "fa-burger",
+    "snack": "fa-cookie-bite",
+    "beverage": "fa-mug-hot",
+    "traditional beverage": "fa-glass-water",
+    "seafood": "fa-fish",
+    "festival special": "fa-star",
+    "pitha": "fa-cheese",
+    "temple food": "fa-gopuram",
+    "side dish": "fa-utensils"
 
-        let visibleCards = 0;
+};
 
-        foodCards.forEach(card => {
+return icons[
+    category.toLowerCase()
+] || "fa-utensils";
+ 
 
-            const category =
-                card.dataset.category.toLowerCase();
+}
 
-            const area =
-                card.dataset.area.toLowerCase();
+function getCategoryClass(category) {
 
-            const title =
-                card.querySelector("h2")
-                    .innerText
-                    .toLowerCase();
+ 
+return category
+    .toLowerCase()
+    .replace(/\s+/g, "-");
+ 
 
-            const categoryMatch =
-                selectedCategory === "all" ||
-                category === selectedCategory;
+}
 
-            const areaMatch =
-                selectedArea === "" ||
-                area === selectedArea;
+/* ==========================
+LOAD JSON
+========================== */
 
-            const searchMatch =
-                title.includes(searchText);
 
-            if (
-                categoryMatch &&
-                areaMatch &&
-                searchMatch
-            ) {
+function populateCategories(categories) {
 
-                card.style.display = "block";
-                visibleCards++;
+    categoryFilter.innerHTML = `
+        <option value="all">
+            All Categories
+        </option>
+    `;
 
-            } else {
+    categories.forEach(category => {
 
-                card.style.display = "none";
-            }
+        categoryFilter.insertAdjacentHTML(
+            "beforeend",
+            `
+            <option value="${category.toLowerCase()}">
+                ${category}
+            </option>
+            `
+        );
+    });
+}
 
-        });
+function populateAreas(districts) {
 
-        showNoResults(visibleCards);
+    areaFilter.innerHTML = `
+        <option value="">
+            All Areas
+        </option>
+    `;
 
+    districts.forEach(area => {
+
+        areaFilter.insertAdjacentHTML(
+            "beforeend",
+            `
+            <option value="${area.toLowerCase()}">
+                ${area}
+            </option>
+            `
+        );
+    });
+}
+
+async function loadFoods() {
+
+ 
+try {
+
+    const response =
+        await fetch(FOOD_JSON_PATH);
+
+    if (!response.ok) {
+
+        throw new Error(
+            `HTTP Error: ${response.status}`
+        );
     }
 
-    /* ==========================
-       NO RESULTS
-    ========================== */
+    const data =
+        await response.json();
 
-    function showNoResults(count) {
+    foodData = data.foods;
+    populateCategories(data.categories);
+    populateAreas(data.districts);
+    renderFoods(foodData);
 
-        if (count === 0) {
+} catch (error) {
 
-            if (!noResultMessage) {
+    console.error(
+        "Error loading foods:",
+        error
+    );
 
-                noResultMessage =
-                    document.createElement("div");
+    foodContainer.innerHTML = `
 
-                noResultMessage.classList.add(
-                    "no-results"
-                );
+        <div class="col-12 text-center">
 
-                noResultMessage.innerHTML = `
-                    <i class="fas fa-utensils fa-3x mb-3"></i>
-                    <h3>No Food Found</h3>
-                    <p>
-                        Try changing category,
-                        area or search keyword.
-                    </p>
-                `;
+            <h4>
+                Unable to load food data.
+            </h4>
 
-                foodContainer.appendChild(
-                    noResultMessage
-                );
-            }
+        </div>
 
-        } else {
+    `;
+}
+ 
 
-            if (noResultMessage) {
+}
 
-                noResultMessage.remove();
+/* ==========================
+RENDER CARDS
+========================== */
 
-                noResultMessage = null;
-            }
+function renderFoods(foods) {
+
+ 
+foodContainer.innerHTML = "";
+
+foods.forEach(food => {
+
+    const contributor =
+        food.contributor || {};
+
+    const card = `
+ 
+
+<div
+    class="col-lg-6 food-card-item"
+    data-category="${food.category.toLowerCase()}"
+    data-area="${food.district.toLowerCase()}">
+
+ 
+<div class="food-card">
+
+    <div class="food-image">
+
+        <img
+            src="${food.image}"
+            alt="${food.name}">
+
+    </div>
+
+    <div class="food-content">
+
+        <h2>
+            ${food.name}
+        </h2>
+
+        <div class="food-meta">
+
+            <span class="food-location">
+
+                <i class="fas fa-location-dot"></i>
+
+                ${food.district}
+
+            </span>
+
+            <span class="food-category ${getCategoryClass(food.category)}">
+
+                <i class="fas ${getCategoryIcon(food.category)}"></i>
+
+                ${food.category}
+
+            </span>
+
+        </div>
+
+        <div class="food-description">
+
+            <p>
+                ${food.description}
+            </p>
+
+        </div>
+
+        <div class="food-facts">
+
+            <i class="fas fa-lightbulb"></i>
+
+            <span>
+                ${food.didYouKnow}
+            </span>
+
+        </div>
+
+        <div class="food-extra">
+
+            <span>
+                <i class="fas fa-award"></i>
+                ${food.speciality}
+            </span>
+
+            <span>
+                <i class="fas fa-calendar-days"></i>
+                ${food.bestSeason}
+            </span>
+        </div>
+
+        <div class="food-actions">
+
+            <button
+                class="know-more-btn"
+                onclick="window.open('${food.wikiLink}','_blank')">
+
+                <span class="bulb-container">
+
+                    <i class="fas fa-lightbulb bulb"></i>
+
+                </span>
+
+                Know More
+
+            </button>
+
+        </div>
+
+        <div class="contributor">
+
+            <div class="contributor-info">
+
+                <img
+                    src="${contributor.image || 'assets/images/user.jpg'}"
+                    alt="${contributor.name || 'Contributor'}">
+
+                <div>
+
+                    <h6>
+
+                        ${contributor.name || 'Ama Asmita Contributor'}
+
+                    </h6>
+
+                    <small>
+
+                        ${contributor.designation || 'Contributor'}
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="contributor-social">
+
+                <a
+                    href="${contributor.facebook}"
+                    target="_blank">
+
+                    <i class="fab fa-facebook"></i>
+
+                </a>
+
+                <a
+                    href="${contributor.instagram}"
+                    target="_blank">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+                <a
+                    href="${contributor.linkedin}"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+ 
+
+</div>
+
+ 
+    `;
+
+    foodContainer.insertAdjacentHTML(
+        "beforeend",
+        card
+    );
+
+});
+
+animateCards();
+initializeCards();
+ 
+
+}
+
+/* ==========================
+FILTER
+========================== */
+
+function filterFoods() {
+
+ 
+const selectedCategory =
+    categoryFilter.value.toLowerCase();
+
+const selectedArea =
+    areaFilter.value.toLowerCase();
+
+const searchText =
+    searchInput.value.toLowerCase();
+
+const cards =
+    document.querySelectorAll(
+        ".food-card-item"
+    );
+
+let visibleCards = 0;
+
+cards.forEach(card => {
+
+    const category =
+        card.dataset.category;
+
+    const area =
+        card.dataset.area;
+
+    const title =
+        card.querySelector("h2")
+            .innerText
+            .toLowerCase();
+
+    const categoryMatch =
+        selectedCategory === "all" ||
+        category === selectedCategory;
+
+    const areaMatch =
+        selectedArea === "" ||
+        area === selectedArea;
+
+    const searchMatch =
+        title.includes(searchText);
+
+    if 
+    (
+        categoryMatch &&
+        areaMatch &&
+        searchMatch
+    ) 
+    {
+        card.classList.remove("d-none");
+        visibleCards++;
+    } 
+    else 
+    {
+        card.classList.add("d-none");
+    }
+
+});
+
+showNoResults(
+    visibleCards
+);
+ 
+
+}
+
+/* ==========================
+NO RESULT
+========================== */
+
+function showNoResults(count) {
+
+ 
+if (!noResultsContainer) return;
+
+if (count === 0) {
+
+    noResultsContainer.innerHTML = `
+
+        <div class="no-results text-center py-5">
+
+            <i class="fas fa-utensils fa-3x mb-3"></i>
+
+            <h3>
+                No Food Found
+            </h3>
+
+            <p>
+                Try changing category,
+                area or search keyword.
+            </p>
+
+        </div>
+
+    `;
+
+} else {
+
+    noResultsContainer.innerHTML =
+        "";
+}
+ 
+
+}
+
+/* ==========================
+EVENTS
+========================== */
+
+categoryFilter?.addEventListener(
+"change",
+filterFoods
+);
+
+areaFilter?.addEventListener(
+"change",
+filterFoods
+);
+
+searchInput?.addEventListener(
+"keyup",
+filterFoods
+);
+
+/* ==========================
+GSAP
+========================== */
+
+function animateCards() {
+
+ 
+if (
+    typeof gsap !==
+    "undefined"
+) {
+
+    gsap.from(
+        ".food-card",
+        {
+            y: 50,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power3.out"
         }
-    }
-
-    /* ==========================
-       EVENT LISTENERS
-    ========================== */
-
-    categoryFilter.addEventListener(
-        "change",
-        filterFoods
     );
+}
+ 
 
-    areaFilter.addEventListener(
-        "change",
-        filterFoods
-    );
+}
 
-    searchInput.addEventListener(
-        "keyup",
-        filterFoods
-    );
+/* ==========================
+AOS
+========================== */
 
-    /* ==========================
-       LOAD MORE
-    ========================== */
+if (
+typeof AOS !==
+"undefined"
+) {
 
-    const loadMoreBtn =
-        document.querySelector(
-            ".pagination-section .btn"
+
+AOS.init({
+
+    duration: 1000,
+    once: true
+
+});
+ 
+
+}
+
+/* ==========================
+INIT
+========================== */
+
+loadFoods();
+
+});
+
+/* ==========================
+   LOAD MORE FOODS
+========================== */
+
+const loadMoreBtn =
+    document.getElementById("loadMoreBtn");
+
+const cardsPerPage = 10;
+
+let currentVisible = 
+    cardsPerPage;
+
+function initializeCards() {
+
+    const cards =
+        document.querySelectorAll(
+            ".food-card-item"
         );
 
-    const cardsPerPage = 6;
+    cards.forEach(
+        (card, index) => 
+        {
+            card.style.display =
+                index < currentVisible
+                    ? "block"
+                    : "none";
+        }
+    );
 
-    let currentVisible =
-        cardsPerPage;
-
-    function initializeCards() {
-
-        foodCards.forEach((card, index) => {
-
-            if (index < currentVisible) {
-
-                card.style.display = "block";
-
-            } else {
-
-                card.style.display = "none";
-            }
-
-        });
+    if (loadMoreBtn) 
+    {
 
         if (
-            foodCards.length <= cardsPerPage
+            cards.length <=
+            currentVisible
         ) {
 
             loadMoreBtn.style.display =
                 "none";
+
+        } else {
+
+            loadMoreBtn.style.display =
+                "inline-flex";
         }
+
     }
+}
 
-    initializeCards();
+/* ==========================
+   LOAD MORE CLICK
+========================== */
 
-    loadMoreBtn.addEventListener(
-        "click",
-        () => {
+loadMoreBtn?.addEventListener(
+    "click",
+    () => {
 
-            currentVisible += cardsPerPage;
+        currentVisible +=
+            cardsPerPage;
 
-            foodCards.forEach(
-                (card, index) => {
-
-                    if (
-                        index < currentVisible
-                    ) {
-
-                        card.style.display =
-                            "block";
-                    }
-
-                }
+        const cards =
+            document.querySelectorAll(
+                ".food-card-item"
             );
 
-            if (
-                currentVisible >=
-                foodCards.length
-            ) {
+        cards.forEach(
+            (card, index) => {
 
-                loadMoreBtn.innerText =
-                    "All Foods Loaded";
+                if (
+                    index <
+                    currentVisible
+                ) {
 
-                loadMoreBtn.disabled =
-                    true;
+                    card.style.display =
+                        "block";
+
+                }
+
             }
+        );
+
+        if (
+            currentVisible >=
+            cards.length
+        ) {
+
+            loadMoreBtn.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                All Foods Loaded
+            `;
+
+            loadMoreBtn.disabled =
+                true;
 
         }
-    );
-
-    /* ==========================
-       GSAP ANIMATIONS
-    ========================== */
-
-    if (typeof gsap !== "undefined") {
-
-        gsap.from(".food-card", {
-
-            opacity: 0,
-
-            y: 50,
-
-            duration: 1,
-
-            stagger: 0.15,
-
-            ease: "power3.out"
-
-        });
 
     }
+);
 
-    /* ==========================
-       HERO ANIMATION
-    ========================== */
+/* ==========================================
+PAGE LOADER
+========================================== */
 
-    if (typeof gsap !== "undefined") {
+window.addEventListener('load', () =>
+{
+    const loader =
+    document.getElementById('page-loader');
 
-        gsap.from(".hero-title", {
-
-            y: 50,
-
-            opacity: 0,
-
-            duration: 1
-
-        });
-
-        gsap.from(".hero-description", {
-
-            y: 30,
-
-            opacity: 0,
-
-            duration: 1,
-
-            delay: 0.3
-
-        });
-
-        gsap.from(".hero-buttons", {
-
-            y: 30,
-
-            opacity: 0,
-
-            duration: 1,
-
-            delay: 0.6
-
-        });
-
-        gsap.from(".food-card", 
-            {
-                opacity: 0,
-                y: 50,
-                duration: 1,
-                stagger: 0.15,
-                ease: "power3.out",
-                clearProps: "all"
-            });
-
-    }
-
-    /* ==========================
-       AOS INIT
-    ========================== */
-
-    if (typeof AOS !== "undefined") {
-
-        AOS.init({
-
-            duration: 1000,
-
-            once: true
-        });
-
-    }
-
+    setTimeout(() =>
+    {
+        loader.classList.add('hide');
+    }, 600);
 });

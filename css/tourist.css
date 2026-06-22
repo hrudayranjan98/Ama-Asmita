@@ -30,70 +30,509 @@ pointer-events: none;
 HERO SECTION
 ========================================== */
 
-.tourist-hero{
-min-height: 60vh;
+/* =====================================
+   HERO CONTENT ENTRANCE ANIMATION
+===================================== */
 
- 
-display: flex;
-align-items: center;
-justify-content: center;
+.hero-badge,
+.tourist-hero h1,
+.tourist-hero p {
 
-text-align: center;
+    opacity: 0;
 
-position: relative;
+    transform: translateY(60px);
 
-padding-top: 120px;
-padding-bottom: 80px;
- 
+    animation: fadeUpHero 1s ease forwards;
+}
+
+.hero-badge {
+    animation-delay: 0.2s;
+}
+
+.tourist-hero h1 {
+    animation-delay: 0.5s;
+}
+
+.tourist-hero p {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeUpHero {
+
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.tourist-hero {
+
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.557), rgba(0, 0, 0, 0.616)),
+        url("../assets/images/tourism-banner.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tourist-hero-overlay 
+{
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255 255 255 / 0%), #00000017 70%);
+        
+}
+
+.tourist-hero-content 
+{
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+/* .hero-badge {
+
+    display: inline-block;
+
+    padding: .6rem 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.12);
+
+    border: 1px solid rgba(255,255,255,.2);
+
+    backdrop-filter: blur(10px);
+
+    color: #fff;
+
+    font-size: .95rem;
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+} */
+
+.tourist-hero h1 {
+
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(0,0,0,.35);
+}
+
+.hero-title span {
+    color: #f7b733;
+}
+
+.tourist-hero p {
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,.92);
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .9rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    background: linear-gradient(135deg,#0683bd,#12a949);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all .35s ease;
+    animation: pulseGlow 2s infinite;
+    transition: all .4s ease;
+    animation: floatBtn 3s ease-in-out infinite;
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 10px 25px rgba(34,197,94,.35),
+        0 0 20px rgba(14,165,233,.25);
+
+    color: white;
 
 }
 
-.tourist-hero::before{
-content: "";
+@keyframes pulseGlow{
 
- 
-position: absolute;
-inset: 0;
+    0%{
+        box-shadow:0 0 0 rgba(252,74,26,.4);
+    }
 
-background:
-linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.65)
-),
-url("../assets/images/tourism-bg.png");
+    50%{
+        box-shadow:0 0 25px rgba(252,74,26,.7);
+    }
 
-background-size: cover;
-background-position: center;
-
-z-index: -1;
- 
-
+    100%{
+        box-shadow:0 0 0 rgba(252,74,26,.4);
+    }
 }
 
-.tourist-hero h1{
-font-size: 4rem;
-font-weight: 800;
+@keyframes floatBtn{
 
- 
-margin-bottom: 20px;
+    0%,100%{
+        transform:translateY(0);
+    }
 
-text-shadow:
-0 10px 30px rgba(0,0,0,0.4);
- 
-
+    50%{
+        transform:translateY(-8px);
+    }
 }
 
-.tourist-hero p{
-max-width: 750px;
 
- 
-margin: auto;
+/* Shine Effect */
 
-font-size: 1.2rem;
+.hero-btn::before {
 
-opacity: .9;
- 
+    content: "";
 
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 40%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+    animation: shine 3s infinite;
+    transform: skewX(-25deg);
+}
+
+@keyframes shine{
+
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:120%;
+    }
+}
+
+.hero-btn:hover::before {
+
+    animation: heroShine .8s ease;
+}
+
+@keyframes heroShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
+.hero-btn:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 10px 25px rgba(34,197,94,.35),
+        0 0 20px rgba(14,165,233,.25);
+
+    color: white;
+}
+
+.hero-btn:active {
+
+    transform:
+        translateY(-1px)
+        scale(.97);
+}
+
+.hero-btn i {
+    display: inline-block;
+}
+
+.hero-btn:hover i {
+    animation: compassSpin 1s ease;
+}
+
+@keyframes compassSpin {
+
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    30% {
+        transform: rotate(30deg) scale(1.2);
+    }
+
+    60% {
+        transform: rotate(-20deg) scale(1.15);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes compassBounce {
+
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    40% {
+        transform: rotate(25deg) scale(1.25);
+    }
+
+    70% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(20deg) scale(1.2);
+    }
+}
+
+/* =====================================
+            MOBILE VERSION
+======================================== */
+
+@media (max-width: 768px) {
+
+    .tourist-hero {
+
+        min-height: 70vh;
+
+        background:
+            linear-gradient(
+                rgba(0,0,0,.45),
+                rgba(0,0,0,.60)
+            ),
+            url("../assets/images/tourist-banner-portrait.png");
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .tourist-hero h1 {
+
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .tourist-hero p {
+
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .hero-btn {
+
+        width: 60%;
+        justify-content: center;
+    }
+}
+
+/* =====================================
+   Did You Know - Tourist Spot Edition
+   ===================================== */
+
+.did-you-know {
+    margin: 3rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.dyk-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 152, 0, 0.12),
+        rgba(255, 87, 34, 0.08)
+    );
+
+    border: 1px solid rgba(255, 152, 0, 0.25);
+
+    backdrop-filter: blur(10px);
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+}
+
+.dyk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(255, 152, 0, 0.15);
+}
+
+.dyk-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 40%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.15),
+        transparent
+    );
+
+    animation: dykShine 4s infinite linear;
+}
+
+@keyframes dykShine {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
+.dyk-icon {
+    width: 72px;
+    height: 72px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ffb300,
+        #ff6f00
+    );
+
+    color: #fff;
+
+    animation: foodPulse 2s infinite;
+}
+
+@keyframes foodPulse {
+
+    0%,100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 152, 0, .3);
+    }
+
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 30px rgba(255, 152, 0, .6);
+    }
+}
+
+.dyk-content h3 {
+    margin-bottom: .5rem;
+
+    font-size: 1.4rem;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #ffb300,
+        #ff7043,
+        #ffb300
+    );
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: titleFlow 4s linear infinite;
+}
+
+@keyframes titleFlow {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: 200% center;
+    }
+}
+
+.dyk-content p {
+    margin: 0;
+
+    color: #d6d6d6;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    transition: opacity .3s ease;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .dyk-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .dyk-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 1.8rem;
+    }
+
+    .dyk-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .dyk-content p {
+        font-size: .95rem;
+    }
 }
 
 /* ==========================================
@@ -105,23 +544,13 @@ padding-top: 40px;
 padding-bottom: 40px;
 }
 
-.filter-box{
-
- 
-background:
-rgba(255,255,255,0.08);
-
-backdrop-filter:
-blur(20px);
-
-border:
-1px solid rgba(255,255,255,0.1);
-
+.filter-box
+{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.1);
 border-radius: 25px;
-
 padding: 30px;
- 
-
 }
 
 .filter-box label{
@@ -130,21 +559,15 @@ margin-bottom: 8px;
 }
 
 .filter-box .form-control,
-.filter-box .form-select{
-
- 
+.filter-box .form-select
+{
 height: 55px;
-
 border-radius: 15px;
-
 border: none;
-
-background:
-rgba(255,255,255,0.12);
-
-color: white;
- 
-
+background:white;
+color: black;
+padding: 8px;
+transition: .3s;
 }
 
 .filter-box .form-control:focus,
@@ -155,7 +578,7 @@ box-shadow:
 0 0 0 3px rgba(255,107,53,.25);
 
 background:
-rgba(255,255,255,0.15);
+rgba(255, 255, 255, 0.952);
  
 
 }
@@ -214,14 +637,6 @@ transition: .6s;
 
 }
 
-.tourist-card:hover .tourist-image img{
-
- 
-transform:
-scale(1.08);
- 
-
-}
 
 /* ==========================================
 CONTENT
@@ -248,62 +663,257 @@ color: #fff;
 SUBTITLE
 ========================================== */
 
+/* ==========================================
+   LOCATION SECTION
+========================================== */
+
 .spot-subtitle{
-
- 
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-
-flex-wrap: wrap;
-
-gap: 10px;
-
-margin-bottom: 20px;
- 
-
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:15px 0;
 }
 
-.spot-subtitle span{
+/* Location Badge */
 
- 
-font-size: .95rem;
+.spot-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 16px 0px 0px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    color: #f5f5f5;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
-color: #ddd;
- 
-
+    transition: all 0.35s ease;
 }
+
+/* Heritage */
+.heritage-icon{
+    background:linear-gradient(
+        135deg,
+        #D4A017,
+        #F7C948
+    );
+}
+
+/* Religious */
+.religious-icon{
+    background:linear-gradient(
+        135deg,
+        #FF6B35,
+        #FFB347
+    );
+}
+
+/* Hill */
+.hill-icon{
+    background:linear-gradient(
+        135deg,
+        #2E8B57,
+        #6BCB77
+    );
+}
+
+/* Waterfall */
+.waterfall-icon{
+    background:linear-gradient(
+        135deg,
+        #00B4DB,
+        #0083B0
+    );
+}
+
+/* Wildlife */
+.wildlife-icon{
+    background:linear-gradient(
+        135deg,
+        #4CAF50,
+        #8BC34A
+    );
+}
+
+/* Coastal */
+.coastal-icon{
+    background:linear-gradient(
+        135deg,
+        #0093E9,
+        #80D0FF
+    );
+}
+
+/* Entertainment */
+.entertainment-icon{
+    background:linear-gradient(
+        135deg,
+        #8E44AD,
+        #C56CF0
+    );
+}
+
+/* Museum */
+.museum-icon{
+    background:linear-gradient(
+        135deg,
+        #6D4C41,
+        #A1887F
+    );
+}
+
+/* Ecotourism */
+.ecotourism-icon{
+    background:linear-gradient(
+        135deg,
+        #11998E,
+        #38EF7D
+    );
+}
+
+/* Adventure */
+.adventure-icon{
+    background:linear-gradient(
+        135deg,
+        #FF512F,
+        #F09819
+    );
+}
+
+/* Default */
+.default-icon{
+    background:linear-gradient(
+        135deg,
+        #6C757D,
+        #ADB5BD
+    );
+}
+
+.spot-location:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(247, 183, 51, 0.4);
+
+    box-shadow:
+        0 10px 25px rgba(247, 183, 51, 0.15);
+}
+
+/* Icon Circle */
+
+.spot-location i{
+    width:38px;
+    height:38px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #3c4148,
+        #1f2328
+    );
+    color:#ffffff;
+    font-size:0.95rem;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.25),
+        inset 0 1px 1px rgba(255,255,255,0.18);
+        margin-left: -1%;
+}
+
+/* Google Map Button */
 
 .map-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 18px;
+    border-radius:50px;
+    background:linear-gradient(
+        135deg,
+        rgba(173, 173, 173, 0.25),
+        rgba(129, 135, 143, 0.15)
+    );
 
- 
-text-decoration: none;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
 
-padding: 10px 18px;
+    border:1px solid rgba(255,255,255,0.18);
 
-border-radius: 50px;
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
 
-background: var(--primary);
+    box-shadow:
+        0 4px 15px rgba(131, 141, 158, 0.18),
+        inset 0 1px 1px rgba(255,255,255,0.15);
 
-color: white;
-
-font-size: .9rem;
-
-transition: .3s;
- 
-
+    transition:all .35s ease;
 }
 
 .map-btn:hover{
 
- 
-background: var(--secondary);
+    background:linear-gradient(
+        135deg,
+        rgba(96, 98, 101, 0.35),
+        rgba(14, 32, 55, 0.25)
+    );
 
-color: black;
- 
+    color:#fff;
 
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(66,133,244,0.28),
+        inset 0 1px 1px rgba(255,255,255,0.2);
+}
+
+.map-btn i{
+    font-size:1.2rem;
+
+    background: conic-gradient(
+        from 45deg,
+    #4285F4 0%,
+    #4F8EF4 15%,
+    #34A853 35%,
+    #6DCB7B 50%,
+    #FBBC05 70%,
+    #FCD34D 80%,
+    #EA4335 92%,
+    #4285F4 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+
+    font-weight:900;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .spot-subtitle{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .spot-location{
+        width:100%;
+    }
+
+    .map-btn{
+        width:100%;
+        justify-content:center;
+    }
 }
 
 /* ==========================================
@@ -364,9 +974,7 @@ gap: 12px;
  
 width: 55px;
 height: 55px;
-
 border-radius: 50%;
-
 object-fit: cover;
 
 border:
@@ -427,16 +1035,62 @@ transition: .3s;
 }
 
 .contributor-social a:hover{
-
- 
-background:
-var(--primary);
-
 transform:
 translateY(-5px);
- 
-
 }
+
+/* Facebook */
+.contributor-social a:nth-child(1):hover {
+
+    background: #1877F2;
+
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(24, 118, 242, 0.973);
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+}
+
+/* Instagram */
+.contributor-social a:nth-child(2):hover {
+
+    background:
+        linear-gradient(
+            45deg,
+            #f58529,
+            #dd2a7b,
+            #8134af,
+            #515bd4
+        );
+
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(221,42,123,.45);
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+}
+
+/* LinkedIn */
+.contributor-social a:nth-child(3):hover {
+
+    background: #03509d;
+
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(0, 23, 155, 0.749);
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+}
+
 
 /* ==========================================
 PAGINATION
@@ -447,26 +1101,48 @@ padding-top: 10px;
 padding-bottom: 80px;
 }
 
-.pagination-section .btn{
+.pagination-section .btn
+{
+display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .9rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    background: linear-gradient(135deg,#0683bd,#12a949);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all .35s ease;
+    animation: pulseGlow 2s infinite;
+    transition: all .4s ease;
+    animation: floatBtn 3s ease-in-out infinite;
 
- 
-padding: 12px 35px;
+    transform:
+        translateY(-4px)
+        scale(1.03);
 
-border-radius: 50px;
+    box-shadow:
+        0 10px 25px rgba(34,197,94,.35),
+        0 0 20px rgba(14,165,233,.25);
 
-font-weight: 600;
+    color: white;
 
-transition: .3s;
- 
+    margin-top: -20%;
 
 }
-
-.pagination-section .btn:hover{
-
  
-transform:
-translateY(-5px);
- 
+
+.pagination:hover{
+
+    background: linear-gradient(135deg,#139242,#056b9b);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(14,165,233,.25);
+
+    color: white;
 
 }
 

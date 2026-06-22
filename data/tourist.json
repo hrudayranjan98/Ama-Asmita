@@ -1,0 +1,339 @@
+{
+  "categories": [
+    "heritage",
+    "religious",
+    "hill",
+    "waterfall",
+    "wildlife",
+    "coastal",
+    "entertainment",
+    "museum",
+    "ecotourism",
+    "adventure"
+  ],
+
+  "districts": [
+    "Angul",
+    "Balangir",
+    "Balasore",
+    "Bargarh",
+    "Bhadrak",
+    "Boudh",
+    "Cuttack",
+    "Deogarh",
+    "Dhenkanal",
+    "Gajapati",
+    "Ganjam",
+    "Jagatsinghpur",
+    "Jajpur",
+    "Jharsuguda",
+    "Kalahandi",
+    "Kandhamal",
+    "Kendrapara",
+    "Keonjhar",
+    "Khordha",
+    "Koraput",
+    "Malkangiri",
+    "Mayurbhanj",
+    "Nabarangpur",
+    "Nayagarh",
+    "Nuapada",
+    "Puri",
+    "Rayagada",
+    "Sambalpur",
+    "Subarnapur",
+    "Sundargarh"
+  ],
+
+  "spots": [
+    {
+      "id": 1,
+      "name": "Konark Sun Temple",
+      "district": "Puri",
+      "category": "heritage",
+      "image": "assets/tourist/konark.png",
+      "location": "Konark, Puri",
+      "mapLink": "https://maps.google.com/?q=Konark+Sun+Temple",
+      "description": "The Konark Sun Temple, a UNESCO World Heritage Site, is renowned for its magnificent chariot-shaped architecture dedicated to the Sun God. The temple made by Langula Narasimha Dev, named as 'Black Pagoda'.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+
+    {
+      "id": 2,
+      "name": "Jagannath Temple",
+      "district": "Puri",
+      "category": "religious",
+      "image": "assets/tourist/jagannath-temple.jpg",
+      "location": "Sri Kshetra Puri",
+      "mapLink": "https://maps.google.com/?q=Shree+Jagannath+Temple+Puri",
+      "description": "One of the Char Dham pilgrimage sites, famous for Lord Jagannath and the annual Rath Yatra festival. The presence of lord Jagannath makes Odisha graceful, so the land is called as 'Shree Kshetra.'",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Nandankanan Zoo. Park",
+      "district": "Khordha",
+      "category": "entertainment",
+      "image": "assets/tourist/nandankanan.png",
+      "location": "Bhubaneswar, Khordha",
+      "mapLink": "https://maps.google.com/?q=Nandankanan+Zoological+Park",
+      "description": "India's famous zoological park known for its white tigers, lion safari and wildlife conservation programs. Home to the world's first captive-bred White Tiger and spread across a scenic forest and lake ecosystem, offering a unique wildlife experience in Odisha.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Chilika Lake",
+      "district": "Puri",
+      "category": "coastal",
+      "image": "assets/tourist/chilika.png",
+      "location": "Satapada, Puri",
+      "mapLink": "https://maps.google.com/?q=Chilika+Lake+Satapada",
+      "description": "Asia's largest brackish water lagoon famous for migratory birds, dolphins and scenic beauty. Also home to the revered Kalijai Temple, a sacred island shrine dedicated to Goddess Kalijai, attracting thousands of devotees and visitors throughout the year.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Daringbadi",
+      "district": "Kandhamal",
+      "category": "hill",
+      "image": "assets/tourist/daringbadi.jpeg",
+      "location": "Daringbadi, Kandhamal",
+      "mapLink": "https://maps.google.com/?q=Daringbadi+Kandhamal",
+      "description": "Known as the 'Kashmir of Odisha', Daringbadi is famous for pine forests, waterfalls and cool climate. Nestled in the Eastern Ghats, it is one of the few places in Odisha that occasionally experiences frost during winter, making it a popular hill station and nature getaway.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Lingaraj Temple",
+      "district": "Khordha",
+      "category": "religious",
+      "image": "assets/tourist/lingaraj.jpg",
+      "location": "Bhubaneswar, Khordha",
+      "mapLink": "https://maps.google.com/?q=Lingaraj+Temple+Bhubaneswar",
+      "description": "A masterpiece of Kalinga architecture dedicated to Lord Shiva and one of Odisha's most sacred temples. The Lingaraj Temple was built in the 11th century by King Jajati Keshari of the Somavamsi dynasty which is is renowned for it's towering spire & intricate stone carvings.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Similipal National Park",
+      "district": "Mayurbhanj",
+      "category": "wildlife",
+      "image": "assets/tourist/similipal.jpg",
+      "location": "Mayurbhanj",
+      "mapLink": "https://maps.google.com/?q=Similipal+National+Park",
+      "description": "A UNESCO Biosphere Reserve famous for dense forests, waterfalls, tigers & elephants. Spread across the Eastern Ghats, Similipal is one of India's largest protected forest ecosystems, renowned for its rich biodiversity, scenic landscapes, and indigenous tribal heritage.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Deomali Hills",
+      "district": "Koraput",
+      "category": "adventure",
+      "image": "assets/tourist/deomali.png",
+      "location": "Koraput",
+      "mapLink": "https://maps.google.com/?q=Deomali+Hills+Koraput",
+      "description": "The highest mountain peak in Odisha offering breathtaking sunrise views, trekking and adventure opportunities. Nestled in the Eastern Ghats of Koraput district, Deomali is surrounded by lush green valleys, rolling meadows, and mist-covered landscapes, making it a paradise for nature lovers and photographers.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Gopalpur Beach",
+      "district": "Ganjam",
+      "category": "coastal",
+      "image": "assets/tourist/gopalpur.png",
+      "location": "Gopalpur, Ganjam",
+      "mapLink": "https://maps.google.com/?q=Gopalpur+Beach+Ganjam",
+      "description": "A serene beach destination known for golden sands, sea breeze and spectacular sunsets. Once a bustling colonial-era port town, Gopalpur Beach offers a perfect blend of natural beauty, peaceful ambiance, and water-based activities, making it one of Odisha's most popular coastal getaways.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ratnagiri Buddhist Complex",
+      "district": "Jajpur",
+      "category": "heritage",
+      "image": "assets/tourist/ratnagiri.jpg",
+      "location": "Ratnagiri, Jajpur",
+      "mapLink": "https://maps.google.com/?q=Ratnagiri+Buddhist+Complex+Jajpur",
+      "description": "An important Buddhist archaeological site featuring ancient monasteries, stupas and stone sculptures. Part of Odisha's renowned Diamond Triangle of Buddhist heritage, Ratnagiri flourished as a major center of Mahayana and Vajrayana Buddhism between the 5th and 13th centuries.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Tara Tarini Temple",
+      "district": "Ganjam",
+      "category": "religious",
+      "image": "assets/tourist/tara-tarini.webp",
+      "location": "Purushottampur, Ganjam",
+      "mapLink": "https://maps.google.com/?q=Tara+Tarini+Temple+Ganjam",
+      "description": "One of the oldest Shakti Peethas of India, Which is perched atop Kumari Hills overlooking the Rushikulya River. Dedicated to the twin goddesses Tara & Tarini, the temple is a revered pilgrimage destination known for it's spiritual significance, scenic surroundings & grand Chaitra Yatra festival.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Barabati Fort",
+      "district": "Cuttack",
+      "category": "heritage",
+      "image": "assets/tourist/barabati-fort.jpg",
+      "location": "Cuttack",
+      "mapLink": "https://maps.google.com/?q=Barabati+Fort+Cuttack",
+      "description": "A historic fort built by the Eastern Ganga dynasty, Barabati Fort stands as a symbol of Odisha's medieval military architecture. Located in Cuttack, the fort is famous for its impressive nine-storeyed gateway ruins, moat system, and rich historical legacy dating back to the 14th century.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Biraja Temple",
+      "district": "Jajpur",
+      "category": "religious",
+      "image": "assets/tourist/biraja-temple.png",
+      "location": "Jajpur Town, Jajpur",
+      "mapLink": "https://maps.google.com/?q=Biraja+Temple+Jajpur",
+      "description": "Dedicated to Goddess Biraja, this ancient temple is one of Odisha's most sacred pilgrimage sites and an important Shakti Peetha. Located in Jajpur, the temple is revered as the abode of Goddess Biraja, attracting thousands of devotees and preserving centuries of spiritual and cultural heritage.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Chandipur Beach",
+      "district": "Balasore",
+      "category": "coastal",
+      "image": "assets/tourist/chandipur.png",
+      "location": "Chandipur, Balasore",
+      "mapLink": "https://maps.google.com/?q=Chandipur+Beach+Balasore",
+      "description": "The beach is renowned for its rare receding shoreline (Vanishing Sea Phenomena), where the sea retreats up to 5 kilometers during low tide, and for hosting the Missile Launch Centre at the Integrated Test Range, a key hub for India's missile development and testing programs.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Wonderla Amusement Park",
+      "district": "Khordha",
+      "category": "entertainment",
+      "image": "assets/tourist/wonderla.jpg",
+      "location": "Bhubaneswar, Khordha",
+      "mapLink": "https://maps.google.com/?q=Wonderla+Amusement+Park+Bhubaneswar",
+      "description": "A modern amusement and water park offering thrilling rides, family attractions and exciting entertainment experiences. One of Odisha's newest leisure destinations, Wonderla features world-class rides, water slides, and interactive attractions, making it a popular getaway for families and adventure seekers alike.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Dhauli Shanti Stupa",
+      "district": "Khordha",
+      "category": "heritage",
+      "image": "assets/tourist/dhauli-shanti-stupa.png",
+      "location": "Dhauli, Bhubaneswar",
+      "mapLink": "https://maps.google.com/?q=Dhauli+Shanti+Stupa",
+      "description": "Built on the historic Kalinga War site, Dhauli Shanti Stupa symbolizes peace and marks Emperor Ashoka's transformation towards Buddhism. The Dhauli Shanti Stupa, also known as the Peace Pagoda, was constructed by the Japan Buddha Sangha and the Kalinga Nippon Buddha Sangha in 1972.",
+      "contributor": {
+        "name": "Hrudayranjan Parida",
+        "designation": "Tourism Contributor",
+        "image": "assets/images/contributors/hrudayranjan.jpeg",
+        "facebook": "https://www.facebook.com/kumar.hrp123",
+        "instagram": "https://www.instagram.com/kumar_hrp_143",
+        "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+      }
+    }
+  ]
+}

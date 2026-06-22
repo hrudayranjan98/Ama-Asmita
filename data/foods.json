@@ -1,0 +1,550 @@
+{
+  "categories": [
+    "Main Course",
+    "Sweet",
+    "Temple Food",
+    "Seafood",
+    "Street Food",
+    "Snack",
+    "Beverage",
+    "Festival Special",
+    "Vegetarian",
+    "Non-Vegetarian",
+    "Pitha",
+    "Side Dish"
+  ],
+
+  "districts": [
+    "All Over Odisha",
+    "Angul",
+    "Balangir",
+    "Balasore",
+    "Bargarh",
+    "Bhadrak",
+    "Boudh",
+    "Cuttack",
+    "Deogarh",
+    "Dhenkanal",
+    "Gajapati",
+    "Ganjam",
+    "Jagatsinghpur",
+    "Jajpur",
+    "Jharsuguda",
+    "Kalahandi",
+    "Kandhamal",
+    "Kendrapara",
+    "Kendujhar",
+    "Khordha",
+    "Koraput",
+    "Malkangiri",
+    "Mayurbhanj",
+    "Nabarangpur",
+    "Nayagarh",
+    "Nuapada",
+    "Puri",
+    "Rayagada",
+    "Sambalpur",
+    "Subarnapur",
+    "Sundargarh"
+  ],
+
+
+"foods": [
+  
+  {
+  "id": 1,
+  "name": "Pakhala Bhata",
+  "district": "All Over Odisha",
+  "category": "Main Course",
+  "image": "assets/foods/pakhala.png",
+  "description": "A traditional fermented rice dish served with water, curd, vegetables and various side dishes across Odisha.",
+  "speciality": "Summer Cooling Food",
+  "bestSeason": "Summer",
+  "didYouKnow": "Pakhala Dibasa is celebrated every year on March 20 by Odias across the world.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Pakhala",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+  },
+
+  {
+  "id": 2,
+  "name": "Dalma",
+  "district": "All Over Odisha",
+  "category": "Main Course",
+  "image": "assets/foods/dalma.png",
+  "description": "A nutritious preparation of lentils and seasonal vegetables cooked together with authentic Odia spices.",
+  "speciality": "Temple Cuisine",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Dalma is one of the most popular dishes offered in traditional Jagannath Temple cuisine.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Dalma_(dish)",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+  {
+  "id": 3,
+  "name": "Chhena Poda",
+  "district": "Nayagarh",
+  "category": "Sweet",
+  "image": "assets/foods/chhena-poda.png",
+  "description": "A caramelized baked cheese dessert prepared from fresh chhena, sugar and aromatic spices.",
+  "speciality": "Signature Odia Dessert",
+  "bestSeason": "Festivals",
+  "didYouKnow": "Chhena Poda was accidentally discovered in Nayagarh and later became Odisha's signature dessert.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Chhena_poda",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+  {
+  "id": 4,
+  "name": "Rasabali",
+  "district": "Kendrapara",
+  "category": "Sweet",
+  "image": "assets/foods/rasabali.png",
+  "description": "Deep-fried flattened chhena patties soaked in thickened sweetened milk and flavored with cardamom.",
+  "speciality": "Temple Sweet",
+  "bestSeason": "Festivals",
+  "didYouKnow": "Rasabali originated near the famous Baladevjew Temple and remains a cherished Odia sweet.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Rasabali",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+  {
+  "id": 5,
+  "name": "Kanika",
+  "district": "Puri",
+  "category": "Temple Food",
+  "image": "assets/foods/kanika.png",
+  "description": "A sweet aromatic rice preparation cooked with ghee, sugar and dry fruits as Mahaprasad.",
+  "speciality": "Mahaprasad",
+  "bestSeason": "Festivals",
+  "didYouKnow": "Kanika is among the most loved Mahaprasad dishes served at the Jagannath Temple.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Mahaprasad_(Jagannath_Temple)",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+  {
+  "id": 6,
+  "name": "Macha Besara",
+  "district": "All Over Odisha",
+  "category": "Seafood",
+  "image": "assets/foods/macha-besara.png",
+  "description": "A traditional fish curry cooked in rich mustard paste and aromatic Odia spices.",
+  "speciality": "Coastal Cuisine",
+  "bestSeason": "Monsoon",
+  "didYouKnow": "Mustard-based fish curries are among the most iconic delicacies of coastal Odisha.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Odia_cuisine",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 7,
+  "name": "Chakuli Pitha",
+  "district": "Jajpur",
+  "category": "Snack",
+  "image": "assets/foods/chakuli-pitha.png",
+  "description": "A soft rice and black gram pancake traditionally served with dalma or ghuguni.",
+  "speciality": "Traditional Breakfast",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Chakuli Pitha is a staple breakfast item in many Odia households.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Chakuli_Pitha",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 8,
+  "name": "Dahibara Aloodum",
+  "district": "Cuttack",
+  "category": "Street Food",
+  "image": "assets/foods/dahibara.jpg",
+  "description": "A famous street delicacy combining soft dahibara, spicy aloodum and ghuguni.",
+  "speciality": "Cuttack Street Food",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Dahibara Aloodum from Cuttack has become one of Odisha's most famous street foods.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Dahi_vada",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 9,
+  "name": "Manda Pitha",
+  "district": "All Over Odisha",
+  "category": "Festival Special",
+  "image": "assets/foods/manda-pitha.png",
+  "description": "A steamed rice dumpling stuffed with coconut and jaggery filling.",
+  "speciality": "Festival Delicacy",
+  "bestSeason": "Raja Festival",
+  "didYouKnow": "Manda Pitha is a traditional offering during many Odia festivals.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Manda_pitha",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 10,
+  "name": "Arisa Pitha",
+  "district": "All Over Odisha",
+  "category": "Festival Special",
+  "image": "assets/foods/arisa-pitha.png",
+  "description": "A crispy traditional sweet made from rice flour and jaggery. It is one of the most common Festival Spl. Food.",
+  "speciality": "Wedding Sweet",
+  "bestSeason": "Festivals",
+  "didYouKnow": "Arisa Pitha is commonly prepared during weddings and festive occasions.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Arisa_Pitha",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 11,
+  "name": "Chhena Jhili",
+  "district": "Puri",
+  "category": "Sweet",
+  "image": "assets/foods/chhena-jhili.png",
+  "description": "A juicy fried chhena sweet soaked in sugar syrup, known for its soft, spongy texture and rich traditional flavor.",
+  "speciality": "Nimapada Special",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Nimapada Chhena Jhili is renowned throughout Odisha. It has been prepared by local confectioners for generations.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Chhena_jhili",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 12,
+  "name": "Bela Pana",
+  "district": "All Over Odisha",
+  "category": "Beverage",
+  "image": "assets/foods/bela-pana.png",
+  "description": "A refreshing summer drink prepared from bael fruit, milk and jaggery.",
+  "speciality": "Pana Sankranti Drink",
+  "bestSeason": "Summer",
+  "didYouKnow": "Bela Pana is traditionally consumed during Pana Sankranti. It is the best summer drink for every odia, which is good for health",
+  "wikiLink": "https://en.wikipedia.org/wiki/Bael",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 13,
+  "name": "Rasagola",
+  "district": "Cuttack",
+  "category": "Sweet",
+  "image": "assets/foods/rasagola.png",
+  "description": "Soft cottage cheese balls cooked in light sugar syrup, celebrated as one of Odisha's most iconic traditional sweets.",
+  "speciality": "GI Tagged Sweet",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Odisha's Rasagola received the Geographical Indication (GI) tag in 2019 as Odisha Rasagola.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Rasagola",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 14,
+  "name": "Veg Besara",
+  "district": "All Over Odisha",
+  "category": "Main Course",
+  "image": "assets/foods/veg-besara.jpg",
+  "description": "A traditional Odia vegetable curry prepared with mustard paste and seasonal vegetables.",
+  "speciality": "Mustard-Based Delicacy",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Besara is one of the oldest vegetarian preparations found in traditional Odia households.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Odia_cuisine",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 15,
+  "name": "Puri Upama",
+  "district": "Ganjam",
+  "category": "Breakfast",
+  "image": "assets/foods/puri-upama.png",
+  "description": "A flavorful semolina breakfast dish prepared with vegetables, spices and a distinctive Odia touch.",
+  "speciality": "Popular Breakfast Item",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Upama is commonly served in hotels and breakfast centers across the temple city of Puri.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Upma",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 16,
+  "name": "Poda Pitha",
+  "district": "All Over Odisha",
+  "category": "Dessert",
+  "image": "assets/foods/poda-pitha.png",
+  "description": "A slow-baked traditional rice cake made with jaggery, coconut and black gram.",
+  "speciality": "Raja Festival Delicacy",
+  "bestSeason": "Raja Festival",
+  "didYouKnow": "Poda Pitha is one of the most loved dishes prepared during Raja Parba in Odisha.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Poda_pitha",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 17,
+  "name": "Badi Chura",
+  "district": "All Over Odisha",
+  "category": "Side Dish",
+  "image": "assets/foods/badi-chura.png",
+  "description": "A rustic Odia side dish made by crushing fried lentil dumplings with garlic, onion and mustard oil.",
+  "speciality": "Pakhala Companion",
+  "bestSeason": "Summer",
+  "didYouKnow": "Badi Chura is one of the most popular accompaniments served with Pakhala Bhata.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Odia_cuisine",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 18,
+  "name": "Malpua",
+  "district": "Puri",
+  "category": "Sweet",
+  "image": "assets/foods/malpua.png",
+  "description": "A traditional deep-fried pancake soaked in sugar syrup and widely offered during festivals and temple rituals.",
+  "speciality": "Festival Sweet",
+  "bestSeason": "Festivals",
+  "didYouKnow": "Malpua is a popular offering during Jagannath Temple rituals and festive celebrations.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Malpua",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 19,
+  "name": "Tadia",
+  "district": "Ganjam",
+  "category": "Sweet",
+  "image": "assets/foods/tadia.png",
+  "description": "A naturally fermented palm sap beverage traditionally consumed in several tribal and rural regions of Odisha.",
+  "speciality": "Traditional Palm Drink",
+  "bestSeason": "Summer",
+  "didYouKnow": "Fresh Tadia is collected early in the morning from palm trees before natural fermentation intensifies.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Palm_wine",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 20,
+  "name": "Sara Papudi",
+  "district": "Puri",
+  "category": "Sweet",
+  "image": "assets/foods/sara-papudi.png",
+  "description": "A traditional Odia sweet made from layers of thickened milk, known for its rich texture and authentic flavor.",
+  "speciality": "Milk-Based Delicacy",
+  "bestSeason": "Festivals",
+  "didYouKnow": "Sara Papudi is especially famous in Cuttack and is considered one of Odisha's finest milk sweets.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Odia_cuisine",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 21,
+  "name": "Kakara Pitha",
+  "district": "Jajpur",
+  "category": "Pitha",
+  "image": "assets/foods/kakara-pitha.png",
+  "description": "A traditional deep-fried sweet pitha stuffed with coconut and jaggery, enjoyed across Odisha during festivals.",
+  "speciality": "Festival Pitha",
+  "bestSeason": "Festivals",
+  "didYouKnow": "Kakara Pitha is a popular offering during Manabasa Gurubara and various Odia celebrations.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Pitha",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+{
+  "id": 22,
+  "name": "Khaja",
+  "district": "Puri",
+  "category": "Temple Food",
+  "image": "assets/foods/khaja.png",
+  "description": "A crispy layered sweet prepared from refined flour and sugar syrup, widely associated with Jagannath Culture.",
+  "speciality": "Mahaprasad Sweet",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Khaja is one of the most popular dry Mahaprasad items sold around the Jagannath Temple in Puri.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Khaja",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 23,
+  "name": "Mudi Mansa Tarkari",
+  "district": "Mayurbhanj",
+  "category": "Non-Vegetarian",
+  "image": "assets/foods/mudi_mansa_tarkari.png",
+  "description": "A beloved Odia delicacy combining spicy mutton curry with crispy puffed rice (Mudi), creating a unique blend of flavors and textures.",
+  "speciality": "Baripada Street Food",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Baripada in Mayurbhanj is famous across Odisha for its iconic Mudi-Mansa combination, especially enjoyed during festivals and local gatherings.",
+  "wikiLink": "https://commons.wikimedia.org/wiki/File:Mudhi_Mansa.jpg",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+},
+
+{
+  "id": 24,
+  "name": "Chhena Gaja",
+  "district": "Khordha",
+  "category": "Sweet",
+  "image": "assets/foods/chhena_gaja.png",
+  "description": "A traditional Odia sweet made from fresh chhena, deep-fried until golden brown and coated with a layer of sugar syrup.",
+  "speciality": "Temple Sweet",
+  "bestSeason": "All Seasons",
+  "didYouKnow": "Chhena Gaja is a popular sweet offered and sold around the Jagannath Temple in Puri, known for its crispy exterior and soft interior.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Chhena_gaja",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "Food Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "linkedin": "https://linkedin.com/"
+  }
+}
+]
+}

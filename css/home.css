@@ -1,0 +1,569 @@
+/* ==========================================
+HERO SECTION
+========================================== */
+
+.hero-section {
+
+ 
+min-height: 100vh;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+
+background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.75)
+        ),
+        url("../assets/images/main-banner-desktop.png");
+color: white;
+}
+
+.hero-features
+{
+    margin-top: -11%;
+}
+
+.min-vh-100 
+{
+    margin-top: -5%;
+}
+
+.hero-tag {
+
+ 
+display: inline-block;
+
+padding: .6rem 1.2rem;
+
+border-radius: 50px;
+
+background:
+    rgba(255,255,255,.1);
+
+border:
+    1px solid rgba(255,255,255,.15);
+
+margin-bottom: 1rem;
+
+font-weight: 600;
+ 
+
+}
+
+.hero-title {
+
+ 
+font-size: 4rem;
+
+font-weight: 900;
+
+line-height: 1.1;
+
+margin-bottom: 1.5rem;
+ 
+
+}
+
+.hero-title span {
+
+ 
+background:
+    linear-gradient(
+        135deg,
+        #ff6b35,
+        #f4b400
+    );
+
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+ 
+
+}
+
+.hero-description {
+
+ 
+font-size: 1.2rem;
+
+line-height: 1.8;
+
+opacity: .9;
+
+margin-bottom: 2rem;
+ 
+
+}
+
+.hero-buttons {
+
+ 
+display: flex;
+
+gap: 1rem;
+
+flex-wrap: wrap;
+ 
+
+}
+
+.btn-custom {
+
+ 
+padding: .9rem 2rem;
+
+border-radius: 50px;
+
+font-weight: 700;
+
+transition: .4s;
+ 
+
+}
+
+.btn-custom:hover {
+
+ 
+transform:
+    translateY(-4px);
+
+box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
+ 
+
+}
+
+/* ==========================================
+MOTTO
+========================================== */
+
+.motto-section 
+{
+    padding: 6rem 0;
+}
+
+.motto-section h2 
+{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.motto-section p 
+{
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+/* ==========================================
+DISCLAIMER
+========================================== */
+
+.disclaimer-title
+{
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.disclaimer-title i
+{
+    color: #f4b400;
+    margin-right: 10px;
+}
+
+.disclaimer-list
+{
+    max-width: 850px;
+    margin: 0 auto;
+
+    list-style: none;
+    padding: 0;
+
+    text-align: left;
+}
+
+.disclaimer-list li
+{
+    position: relative;
+
+    margin-bottom: 1rem;
+    padding-left: 35px;
+
+    line-height: 1.8;
+    color: rgba(255,255,255,.85);
+}
+
+.disclaimer-list li::before
+{
+    content: "⚠";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: #f4b400;
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   MAP SECTION
+========================================== */
+
+.map-container {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.map-image {
+
+    max-width: 100%;
+    height: auto;
+    filter:
+        drop-shadow(
+            0 15px 40px rgba(46, 32, 2, 0.004)
+        );
+
+    transition: all .5s ease;
+    position: relative;
+    z-index: 2;
+    margin-top: -5%;
+}
+
+.map-image:hover {
+
+    transform:
+        scale(1.04)
+        rotate(-1deg);
+}
+
+.map-glow {
+
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(247,183,51,.25),
+            transparent 70%
+        );
+
+    animation: pulseMap 4s infinite;
+    z-index: 1;
+}
+
+@keyframes pulseMap {
+
+    0% {
+
+        transform: scale(.9);
+        opacity: .5;
+    }
+
+    50% {
+
+        transform: scale(1.1);
+        opacity: .9;
+    }
+
+    100% {
+
+        transform: scale(.9);
+        opacity: .5;
+    }
+}
+
+.section-title
+{
+    margin-top: -10%;
+    margin-bottom: 3%;
+}
+
+@media (max-width: 991px) 
+{
+    .motto-section h2 
+    {
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .motto-section p 
+    {
+        max-width: 800px;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .section-title
+    {
+        margin-top: -28%;
+        margin-bottom: 3%;
+    }
+
+    .ama-odisha
+    {
+        font-size: 3rem;
+    }
+
+}
+
+.ama-odisha
+{
+    font-family: 'Noto Sans Oriya', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffd700,
+        #ff8c00,
+        #ffd700
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 20px rgba(255, 217, 0, 0);
+
+    animation: heritageGlow 3s ease-in-out infinite;
+}
+
+@keyframes heritageGlow
+{
+    0%,100%
+    {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+
+    50%
+    {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+    }
+}
+
+.odia-divider
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.ornament-line
+{
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #f4b400,
+        transparent
+    );
+}
+
+.center-wheel
+{
+    font-size: 2rem;
+    color: #f4b400;
+
+    text-shadow:
+        0 0 10px rgba(244, 179, 0, 0);
+
+    animation: rotateWheel 8s linear infinite;
+}
+
+.ornament-side
+{
+    font-size: 1.5rem;
+    color: #f4b400;
+    text-shadow: 0 0 10px rgba(244, 179, 0, 0);
+    animation: glowSide 2s ease-in-out infinite;
+}
+
+@keyframes rotateWheel
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glowSide
+{
+    0%,100%
+    {
+        transform: scale(1);
+        opacity: .8;
+    }
+
+    50%
+    {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+/* ==========================================
+FEATURED DESTINATIONS
+========================================== */
+
+.featured-section {
+
+ 
+padding: 6rem 0;
+ 
+
+}
+
+.destination-card
+{
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: all .4s ease;
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,.25);
+}
+
+.destination-card:hover
+{
+    transform: translateY(-10px);
+
+    border-color: rgba(244,180,0,.4);
+
+    box-shadow:
+        0 15px 40px rgba(244,180,0,.15);
+}
+
+.destination-card img
+{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.destination-card h5
+{
+    text-align: center;
+    padding: 18px;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.featured-section .btn-custom
+{
+    background: linear-gradient(
+        135deg,
+        #f4b400,
+        #ff8f00
+    );
+
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 50px;
+    box-shadow:
+        0 8px 25px rgba(244,180,0,.25);
+    transition: all .3s ease;
+    margin-top: -4%;
+}
+
+.btn-custom i
+{
+    margin-right: 10px;
+    font-size: 1rem;
+    transition: transform .3s ease;
+}
+
+.btn-custom:hover i
+{
+    transform: translateX(5px) translateY(-3px);
+}
+
+.featured-section .btn-custom:hover
+{
+    transform: translateY(-4px);
+    box-shadow:
+        0 15px 35px rgba(244,180,0,.4);
+    color: #fff;
+}
+
+/* ==========================================
+MOBILE
+========================================== */
+
+@media (max-width:768px) {
+
+ 
+.hero-section {
+
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.75)
+        ),
+        url("../assets/images/main-banner-mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+
+    font-size: 2.8rem;
+}
+
+.hero-buttons {
+
+    justify-content: center;
+}
+
+.hero-buttons .btn {
+
+    width: 100%;
+}
+
+.feature-card {
+
+    text-align: center;
+}
+
+.stat-card {
+
+    margin-bottom: 1rem;
+}
+}

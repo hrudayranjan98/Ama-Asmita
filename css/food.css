@@ -1,93 +1,256 @@
-.food-hero
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero-title
 {
+    margin-top: 100px;
+}
+
+.food-hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     position: relative;
-    background: url("../assets/images/food-banner.png");
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.75)
+        ),
+        url("../assets/images/food-banner-desktop.png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 40px;
 }
 
-.hero-content
-{
+@media screen and (max-width: 768px),
+       screen and (orientation: portrait){
+
+    .food-hero{
+
+        background:
+            linear-gradient(
+                rgba(0,0,0,.45),
+                rgba(0,0,0,.70)
+            ),
+            url("../assets/images/food-banner-mobile.png");
+
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
+.hero-content {
     max-width: 850px;
     margin: auto;
 }
 
-.hero-tag
-{
-    display: inline-block;
-    padding: 10px 20px;
-    background: rgba(255,255,255,.15);
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    margin-bottom: 25px;
-    font-weight: 600;
+@media (max-width: 768px){
+
+    .food-hero
+    {
+        min-height: 100vh;
+        padding: 120px 20px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content
+    {
+        max-width: 100%;
+    }
+
+    h1.hero-title
+    {
+        font-size: 2.8rem;
+        line-height: 1.15;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .hero-title span
+    {
+        display: block;
+    }
+
+    .hero-description
+    {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        max-width: 100%;
+    }
+
+    .btn-food
+    {
+        display: flex;
+        width: 220px;
+        height: 55px;
+        margin: 30px auto 0;
+    }
+
 }
 
-.hero-title
+/* .hero-tag 
 {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 50px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-weight: 600;
+} */
+
+.hero-title {
     font-size: 4.5rem;
     font-weight: 800;
     margin-bottom: 20px;
+    color: #fff;
 }
 
-.hero-title span
-{
-    color: #ffb347;
+.hero-title span {
+    color: #f7b733;
 }
 
-.hero-description
-{
+.hero-description {
+    color: rgba(255,255,255,0.9);
     font-size: 1.2rem;
     line-height: 1.8;
-    margin-bottom: 35px;
-    color: rgba(255,255,255,.9);
+    margin: 0 auto;
+    text-align: center;
 }
 
-.hero-buttons
-{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+.btn-food{
+    background: linear-gradient(135deg, #C2410C, #EA580C);
+    color:#fff;
+    gap:10px;
+    padding:14px 30px;
+    border-radius:50px;
+    margin-top:30px;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+    animation: pulseGlow 2s infinite;
+    transition: all .4s ease;
+    animation: floatBtn 3s ease-in-out infinite;
 }
 
-.btn-food
+@keyframes floatBtn{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+.btn-food::before
 {
-    background: #f9bb10;
-    color: black;
-    padding: 14px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: .3s;
-    margin-top: 450px;
-    margin-left: -815px;
-    width: 280px;
+    content:'';
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.5),
+            transparent
+        );
+
+    animation: shine 3s infinite;
+}
+
+@keyframes shine{
+
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:120%;
+    }
 }
 
 .btn-food:hover
 {
-    background: #f9bb10ef;
-    color: white;
+    background: linear-gradient(135deg,#EA580C, #C2410C);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(252,74,26,.4);
 }
 
-@media(max-width:768px){
+@keyframes pulseGlow{
 
-    .hero-title{
-
-        font-size: 2.8rem;
+    0%{
+        box-shadow:0 0 0 rgba(252,74,26,.4);
     }
 
-    .hero-description{
+    50%{
+        box-shadow:0 0 25px rgba(252,74,26,.7);
+    }
 
-        font-size: 1rem;
+    100%{
+        box-shadow:0 0 0 rgba(252,74,26,.4);
     }
 }
+
+.btn-food i{
+    transition:.4s;
+}
+
+.btn-food:hover i{
+    transform:rotate(15deg) scale(1.2);
+}
+
+
+/* ==========================
+   HERO ANIMATIONS
+========================== */
+
+.hero-title{
+    animation: slideUp 1s ease-out forwards;
+}
+
+.hero-description{
+    opacity: 0;
+    animation: slideUp 1s ease-out 0.4s forwards;
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity: 0;
+
+        transform:
+            translateY(60px);
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+/* ========================
+      NO RESULT SECTION
+   ======================== */
 
 .no-results
 {
@@ -107,15 +270,253 @@
     margin-bottom: 10px;
 }
 
+
+/* =========================
+   Did You Know - Food Edition
+   ========================= */
+
+.did-you-know {
+    margin: 3rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.dyk-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+
+    padding: 1.5rem 2rem;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255, 152, 0, 0.12),
+        rgba(255, 87, 34, 0.08)
+    );
+
+    border: 1px solid rgba(255, 152, 0, 0.25);
+
+    backdrop-filter: blur(10px);
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+}
+
+.dyk-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(255, 152, 0, 0.15);
+}
+
+.dyk-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 40%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.15),
+        transparent
+    );
+
+    animation: dykShine 4s infinite linear;
+}
+
+@keyframes dykShine {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
+.dyk-icon {
+    width: 72px;
+    height: 72px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ffb300,
+        #ff6f00
+    );
+
+    color: #fff;
+
+    animation: foodPulse 2s infinite;
+}
+
+@keyframes foodPulse {
+
+    0%,100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 152, 0, .3);
+    }
+
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 30px rgba(255, 152, 0, .6);
+    }
+}
+
+.dyk-content h3 {
+    margin-bottom: .5rem;
+
+    font-size: 1.4rem;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        #ffb300,
+        #ff7043,
+        #ffb300
+    );
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: titleFlow 4s linear infinite;
+}
+
+@keyframes titleFlow {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: 200% center;
+    }
+}
+
+.dyk-content p {
+    margin: 0;
+
+    color: #d6d6d6;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    transition: opacity .3s ease;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .dyk-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .dyk-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 1.8rem;
+    }
+
+    .dyk-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .dyk-content p {
+        font-size: .95rem;
+    }
+}
+
+
+/* ==========================
+   FILTER SECTION
+========================== */
+
+.filter-section {
+    padding: 80px 0 30px;
+}
+
+.filter-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: -65px;
+    padding: 3%;
+}
+
+.filter-box label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.filter-box .form-control,
+.filter-box .form-select 
+{
+    background: white;
+    border: 1px solid rgba(255,255,255,0.12);
+    color:black;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.filter-box .form-control::placeholder 
+{
+    color: black;
+}
+
+.filter-box .form-control:focus,
+.filter-box .form-select:focus 
+{
+    box-shadow: none;
+    border-color: #f7b733;
+}
+
+
+
+/* ===============================
+    FOOD CARD SECTION
+=================================== */
+
+.food-section {
+    padding: 50px 0 80px;
+}
+
 .food-card
 {
     background: rgba(255,255,255,.08);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,.1);
     border-radius: 25px;
+    position: relative;
+    z-index: 1;
     overflow: hidden;
-    transition: .4s ease;
-}
+    transition: transform 0.4s ease;
+
+}    
+
 
 .food-card:hover
 {
@@ -123,34 +524,345 @@
     box-shadow: 0 20px 50px rgba(0,0,0,.3);
 }
 
-.food-image img{
+.food-image
+{
     width: 100%;
-    height: 320px;
+}
+
+.food-image img {
+    width: 100%;
+    height: 280px;
     object-fit: cover;
-    transition: .6s;
+    display: block;
 }
 
-.food-content{
-    padding: 25px;
+.food-card:hover .food-image img {
+    transform: scale(1.05);
 }
 
-.food-content h2{
+.food-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    color: rgba(255,255,255,0.85);
+}
+
+.food-content h2 {
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 3%;
 }
 
-.recipe-section{
-    margin-top: 25px;
-    margin-bottom: 25px;
+.food-card-item
+{
+    margin-bottom: 60px;
+    display: flex;
 }
 
-.recipe-section h5{
-    margin-bottom: 15px;
-    color: #ffb347;
+#foodContainer
+{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.recipe-section ul{
-    padding-left: 20px;
+.food-category
+{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:.85rem;
+    font-weight:600;
+    color:#fff;
+    margin-left: 3%;
+}
+
+
+.food-category i{
+    font-size:.9rem;
+}
+
+.main-course{
+    background:linear-gradient(135deg,#ff7b00,#ffb347);
+}
+
+.breakfast{
+    background:linear-gradient(135deg,#ff9800,#ffc107);
+}
+
+.sweet{
+    background:linear-gradient(135deg,#e91e63,#ff6fa5);
+}
+
+.dessert{
+    background:linear-gradient(135deg,#9c27b0,#ce93d8);
+}
+
+.street-food{
+    background:linear-gradient(135deg,#f44336,#ff7961);
+}
+
+.snack{
+    background:linear-gradient(135deg,#795548,#bcaaa4);
+}
+
+.beverage{
+    background:linear-gradient(135deg,#2196f3,#64b5f6);
+}
+
+.traditional-beverage{
+    background:linear-gradient(135deg,#00897b,#4db6ac);
+}
+
+.seafood{
+    background:linear-gradient(135deg,#0288d1,#4fc3f7);
+}
+
+.festival-special{
+    background:linear-gradient(135deg,#ffb300,#ffd54f);
+}
+
+.pitha{
+    background:linear-gradient(135deg,#8d6e63,#bcaaa4);
+}
+
+.temple-food{
+    background:linear-gradient(135deg,#ff5722,#ff8a65);
+}
+
+.side-dish{
+    background:linear-gradient(135deg,#607d8b,#90a4ae);
+}
+
+
+.food-location{
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 16px 0px 0px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    color: #f5f5f5;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.35s ease;
+    margin-bottom: 5%;
+}
+
+.food-location i{
+
+    width:34px;
+    height:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #0ea5e9,
+        #2563eb
+    );
+
+    color:#fff;
+}
+
+
+/* ==========================
+   FOOD FACTS
+========================== */
+
+.food-facts {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+}
+
+.food-facts i {
+    color: #f7b733;
+    font-size: 1.1rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.food-facts span {
+    color: rgba(255,255,255,0.88);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* ==========================
+   SPECIALITY + SEASON
+========================== */
+
+.food-extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 22px 0;
+}
+
+.food-extra span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.14),
+            rgba(255,255,255,0.05)
+        );
+
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,.15),
+        inset 0 1px 0 rgba(255,255,255,.15);
+
+    transition: all .3s ease;
+}
+
+.food-extra span:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(247,183,51,.25),
+        inset 0 1px 0 rgba(255,255,255,.2);
+}
+
+.food-extra i {
+    color: #f7b733;
+    font-size: 1rem;
+}
+
+.food-extra span:first-child i {
+    color: #f7b733; /* Award */
+}
+
+.food-extra span:last-child i {
+    color: #4ade80; /* Season */
+}
+
+
+/* ================================ 
+          KNOW MORE BUTTON
+   ================================ */
+
+
+.know-more-btn {
+
+    display:inline-flex !important;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    justify-content: center;
+    padding:8px 24px;
+    background: linear-gradient(
+            135deg,
+            rgba(228, 64, 5, 0.919),
+            rgba(240, 146, 4, 0.949)            
+        ) !important;
+    color:#fff !important;
+    border:none;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    z-index:999;
+    position:relative;
+}
+
+.know-more-btn i{
+    color:#fff;
+}
+
+.know-more-btn:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(
+            255,
+            183,
+            3,
+            .4
+        );
+}
+
+/* ==========================
+   BULB
+========================== */
+
+.bulb-container {
+
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulb {
+
+    font-size: 1.3rem;
+    color: #fff;
+    transition: .4s ease;
+}
+
+.know-more-btn:hover .bulb {
+    color: #fffffc;
+}
+
+
+.know-more-btn.active {
+
+    animation: pulseGlow .8s ease;
+}
+
+@keyframes pulseGlow {
+
+    0% {
+
+        transform: scale(1);
+    }
+
+    50% {
+
+        transform: scale(1.08);
+    }
+
+    100% {
+
+        transform: scale(1);
+    }
 }
 
 /* ==========================================
@@ -159,14 +871,14 @@ CONTRIBUTOR
 
 .contributor
 { 
-margin-top: 25px;
-padding-top: 20px;
-border-top:1px solid rgba(255,255,255,.1);
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .contributor-info
@@ -222,8 +934,140 @@ transition: .3s;
 }
 
 .contributor-social a:hover{
-background:
-var(--primary);
 transform:
 translateY(-5px);
+}
+
+/* Facebook */
+.contributor-social a:nth-child(1):hover {
+
+    background: #1877F2;
+
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(24, 118, 242, 0.973);
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+}
+
+/* Instagram */
+.contributor-social a:nth-child(2):hover {
+
+    background:
+        linear-gradient(
+            45deg,
+            #f58529,
+            #dd2a7b,
+            #8134af,
+            #515bd4
+        );
+
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(221,42,123,.45);
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+}
+
+/* LinkedIn */
+.contributor-social a:nth-child(3):hover {
+
+    background: #03509d;
+
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(0, 23, 155, 0.749);
+
+    transform:
+        translateY(-6px)
+        scale(1.1);
+}
+
+/* ==========================================
+PAGINATION
+========================================== */
+
+.pagination-section{
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+
+.pagination-section .btn-food{
+
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .9rem 1.8rem;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    bacground: linear-gradient(135deg, #C2410C, #EA580C);
+
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.1%;
+
+    box-shadow:
+        0 8px 20px rgba(34,197,94,.25),
+        0 0 15px rgba(14,165,233,.15);
+
+    transition: all .35s ease;
+
+    animation:
+        pulseGlow 2s infinite,
+        floatBtn 3s ease-in-out infinite;
+}
+
+/* Hover */
+
+.pagination-section .btn:hover{
+
+    background: linear-gradient(135deg, #EA580C, #C2410C);
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.25),
+        0 0 25px rgba(14,165,233,.35);
+
+    color: #fff;
+}
+
+/* Disabled State */
+
+.pagination-section .btn:disabled{
+
+    opacity: .7;
+    cursor: not-allowed;
+    animation: none;
+    transform: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5f6368,
+            #80868b
+        );
+}
+
+@keyframes floatBtn{
+
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-6px);
+    }
 }

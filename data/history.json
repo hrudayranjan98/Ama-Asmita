@@ -1,0 +1,322 @@
+{
+"categories": [
+"Freedom Fighter",
+"King",
+"Poet",
+"Social Reformer",
+"Saint",
+"Scholar",
+"Politician",
+"Revolutionary",
+"Writer",
+"Cultural Icon"
+],
+
+"personalities": [
+
+{
+  "id": 1,
+  "name": "Madhusudan Das",
+  "tenure": "1848 - 1934",
+  "category": "Social Reformer",
+  "birthPlace": "Cuttack",
+  "image": "assets/history/madhusudan-das.png",
+  "description": "Popularly known as Utkal Gourab, he was a lawyer, social reformer and one of the key architects of modern Odisha.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Madhusudan_Das",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 2,
+  "name": "Biju Patnaik",
+  "tenure": "1916 - 1997",
+  "category": "Politician",
+  "birthPlace": "Cuttack",
+  "image": "assets/history/biju-patnaik.jpeg",
+  "description": "A legendary freedom fighter, aviator and former Chief Minister who played a major role in India's freedom movement.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Biju_Patnaik",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 3,
+  "name": "Fakir Mohan Senapati",
+  "tenure": "1843 - 1918",
+  "category": "Writer",
+  "birthPlace": "Balasore",
+  "image": "assets/history/fakir-mohan-senapati.jpg",
+  "description": "Known as the father of modern Odia literature and famous for pioneering realistic storytelling in Odia language.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Fakir_Mohan_Senapati",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 4,
+  "name": "Gangadhar Meher",
+  "tenure": "1862 - 1924",
+  "category": "Poet",
+  "birthPlace": "Sambalpur",
+  "image": "assets/history/gangadhar-meher.png",
+  "description": "A renowned Odia poet celebrated for his literary contributions and devotion to Odia culture. He is well known for his Kavya 'Tapaswini'.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Gangadhar_Meher",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 5,
+  "name": "Veer Surendra Sai",
+  "tenure": "1809 - 1884",
+  "category": "Freedom Fighter",
+  "birthPlace": "Sambalpur",
+  "image": "assets/history/surendra-sai.jpg",
+  "description": "One of Odisha's greatest freedom fighters who resisted British rule for decades.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Veer_Surendra_Sai",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 6,
+  "name": "Gajapati Kapilendra Deva",
+  "tenure": "1400 - 1467",
+  "category": "King",
+  "birthPlace": "Puri",
+  "image": "assets/history/kapilendra-deva.jpg",
+  "description": "Founder of the Suryavamsa dynasty and one of the most powerful rulers in Odisha's history.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Kapilendra_Deva",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "#",
+    "instagram": "#",
+    "linkedin": "#"
+  }
+},
+
+{
+  "id": 7,
+  "name": "Jayadeva",
+  "tenure": "1170 - 1245",
+  "category": "Scholar",
+  "birthPlace": "Kenduli",
+  "image": "assets/history/jayadeva.jpg",
+  "description": "The celebrated Sanskrit poet who authored the immortal work Gita Govinda.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Jayadeva",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 8,
+  "name": "Acharya Harihar",
+  "tenure": "1879 - 1971",
+  "category": "Freedom Fighter",
+  "birthPlace": "Puri",
+  "image": "assets/history/acharya-harihar.png",
+  "description": "A prominent freedom fighter and social worker who dedicated his life to public service.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Acharya_Harihar",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 9,
+  "name": "Bhima Bhoi",
+  "tenure": "1850 - 1895",
+  "category": "Saint",
+  "birthPlace": "Subarnapur",
+  "image": "assets/history/bhima-bhoi.png",
+  "description": "A saint-poet and philosopher known for spreading the Mahima Dharma movement.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Bhima_Bhoi",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 10,
+  "name": "Gopabandhu Das",
+  "tenure": "1877 - 1928",
+  "category": "Cultural Icon",
+  "birthPlace": "Puri",
+  "image": "assets/history/gopabandhu-das.jpg",
+  "description": "Known as Utkalamani, he was a freedom fighter, journalist, poet and social reformer.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Gopabandhu_Das",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 11,
+  "name": "Kharavela",
+  "tenure": "209 BCE - 170 BCE",
+  "category": "King",
+  "birthPlace": "Kalinga",
+  "image": "assets/history/kharavela.png",
+  "description": "One of the greatest rulers of ancient Kalinga, renowned for his military conquests, administrative excellence and the famous Hathigumpha Inscription at Udayagiri.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Kharavela",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 12,
+  "name": "Jayee Rajguru",
+  "tenure": "1739 - 1806",
+  "category": "Freedom Fighter",
+  "birthPlace": "Puri",
+  "image": "assets/history/jayee-rajguru.jpg",
+  "description": "The first martyr of Odisha's freedom movement who led resistance against British rule and sacrificed his life for the sovereignty of Khurda.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Jayee_Rajguru",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 13,
+  "name": "Buxi Jagabandhu",
+  "tenure": "1773 - 1829",
+  "category": "Revolutionary",
+  "birthPlace": "Khordha",
+  "image": "assets/history/buxi-jagabandhu.png",
+  "description": "Leader of the historic Paika Rebellion of 1817, widely regarded as one of the earliest freedom fighters against British colonial rule.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Bakshi_Jagabandhu",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 14,
+  "name": "Janaki Ballabh Patnaik",
+  "tenure": "1927 - 2015",
+  "category": "Politician",
+  "birthPlace": "Ganjam",
+  "image": "assets/history/janaki-ballabh-patnaik.jpg",
+  "description": "A prominent statesman, writer and former Chief Minister of Odisha who played a significant role in the state's political and developmental journey.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Janaki_Ballabh_Patnaik",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 15,
+  "name": "Naveen Patnaik",
+  "tenure": "1946 - Present",
+  "category": "Politician",
+  "birthPlace": "Cuttack",
+  "image": "assets/history/naveen-patnaik.webp",
+  "description": "One of Odisha's longest-serving Chief Ministers, known for governance reforms, disaster management initiatives and welfare programs.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Naveen_Patnaik",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+},
+
+{
+  "id": 16,
+  "name": "Nandini Satpathy",
+  "tenure": "1931 - 2006",
+  "category": "Politician",
+  "birthPlace": "Cuttack",
+  "image": "assets/history/nandini-satpathy.png",
+  "description": "The first woman Chief Minister of Odisha, noted for her contributions to politics, literature and women's empowerment.",
+  "wikiLink": "https://en.wikipedia.org/wiki/Nandini_Satpathy",
+  "contributor": {
+    "name": "Hrudayranjan Parida",
+    "designation": "History Contributor",
+    "image": "assets/images/contributors/hrudayranjan.jpeg",
+    "facebook": "https://www.facebook.com/kumar.hrp123",
+    "instagram": "https://www.instagram.com/kumar_hrp_143",
+    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  }
+}
+
+]
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Ama Asmita</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap -->
+
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link
+    rel="stylesheet"
+    href="css/style.css">
+ 
+
+    <style>
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #18243a
+                );
+
+            font-family: sans-serif;
+        }
+
+        .thank-card {
+
+            max-width: 700px;
+
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 3rem;
+
+            text-align: center;
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,.25);
+
+            animation:
+                fadeUp 1s ease;
+        }
+
+        .thank-icon {
+
+            font-size: 5rem;
+
+            color: #22c55e;
+
+            animation:
+                pulse 2s infinite;
+        }
+
+        .thank-card h1 {
+
+            margin-top: 1rem;
+
+            font-weight: 800;
+
+            color: #0f172a;
+        }
+
+        .thank-card p {
+
+            margin-top: 1rem;
+
+            color: #475569;
+
+            line-height: 1.8;
+        }
+
+        .back-btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: .75rem;
+
+            margin-top: 2rem;
+
+            padding: .9rem 2rem;
+
+            border-radius: 50px;
+
+            text-decoration: none;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0ea5e9,
+                    #22c55e
+                );
+
+            color: white;
+
+            font-weight: 700;
+
+            transition: .35s ease;
+        }
+
+        .back-btn:hover {
+
+            transform:
+                translateY(-4px);
+
+            color: white;
+
+            box-shadow:
+                0 10px 25px rgba(34,197,94,.35);
+        }
+
+        .back-btn i {
+
+            transition: .4s ease;
+        }
+
+        .back-btn:hover i {
+
+            transform:
+                translateX(-5px);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+
+                transform: scale(1);
+            }
+
+            50% {
+
+                transform: scale(1.12);
+            }
+        }
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(40px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="thank-card">
+
+        <div class="thank-icon">
+
+            <i class="bi bi-check-circle-fill"></i>
+
+        </div>
+
+        <h1>
+            Thank You!
+        </h1>
+
+        <p>
+
+            Your contribution has been submitted successfully.
+
+            Thank you for helping preserve Odisha's rich
+            history, culture, tourism, food, and heritage
+            through Ama Asmita.
+
+        </p>
+
+        <a href="index.html"
+            class="back-btn">
+
+            <i class="bi bi-arrow-left"></i>
+            Back To Home
+        </a>
+
+    </div>
+
+</body>
+
+
+</html>
