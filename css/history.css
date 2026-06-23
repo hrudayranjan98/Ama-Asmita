@@ -556,6 +556,12 @@ footer {
 
 @media (max-width: 991px) {
 
+    .loader-content
+    {
+        margin-left: 0%;
+        margin-top: -15%;
+    }
+    
     .history-image,
     .history-content {
         flex: 0 0 100%;

@@ -4,6 +4,21 @@ GOOGLE FONT
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+
+/* ==========================================
+LOCAL FONT
+========================================== */
+@font-face
+{
+    font-family: "Anek Odia";
+
+    src: url("../assets/fonts/AnekOdia-SemiBold.ttf")
+         format("truetype");
+
+    font-weight: bold;
+    font-style: normal;
+}
+
 /* ==========================================
 ROOT VARIABLES
 ========================================== */
@@ -30,16 +45,19 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
-body{
-font-family:'Poppins',sans-serif;
-background:#0d1117;
-color:white;
-overflow-x:hidden;
-position:relative;
+body
+{
+    font-family:'Poppins',sans-serif;
+    background:#0d1117;
+    color:white;
+    overflow-x:hidden;
+    position:relative;
 }
 
+
+
 /* ==========================================
-PAGE LOADER
+LOADER BACKGROUND
 ========================================== */
 
 #page-loader
@@ -49,20 +67,113 @@ PAGE LOADER
 
     background:
     linear-gradient(
-        135deg,
+        -45deg,
         #050505,
         #0d0d0d,
-        #121212,
-        #1a1208
+        #1a1208,
+        #111827,
+        #0f172a
     );
-
+    animation:
+        loaderGradient 12s ease infinite;
     z-index: 99999;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow: hidden;
     transition: all .8s ease;
+    animation: particleMove 30s linear infinite;
+}
+
+@keyframes particleMove
+{
+    from
+    {
+        transform: translateY(0);
+    }
+
+    to
+    {
+        transform: translateY(-100px);
+    }
+}
+
+/* Golden Glow */
+#page-loader::before
+{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    animation:
+        glowMove 10s ease-in-out infinite alternate;
+}
+
+/* Floating Particles */
+#page-loader::after
+{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            rgba(244,180,0,.25) 1px,
+            transparent 1px
+        );
+
+    opacity: .15;
+
+    animation:
+        particleMove 20s linear infinite;
+}
+
+/* Gradient Animation */
+@keyframes loaderGradient
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+
+    50%
+    {
+        background-position: 100% 50%;
+    }
+
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+
+/* Glow Movement */
+@keyframes glowMove
+{
+    from
+    {
+        transform: translate(-50px,-30px);
+    }
+
+    to
+    {
+        transform: translate(50px,30px);
+    }
+}
+
+/* Particle Drift */
+@keyframes particleMove
+{
+    from
+    {
+        transform: translateY(0);
+    }
+
+    to
+    {
+        transform: translateY(-120px);
+    }
 }
 
 #page-loader.hide
@@ -76,38 +187,31 @@ PAGE LOADER
     text-align: center;
 }
 
-.loader-wheel
+.loader-logo
 {
-    font-size: 90px;
-
-    color: #f4b400;
-
+    width: 270px;
+    height: auto;
     animation:
-    wheelSpin 3s linear infinite,
+    wheelSpin 8s linear infinite,
     wheelGlow 2s ease-in-out infinite;
+    filter:
+    drop-shadow(0 0 10px rgba(18, 14, 1, 0.937));
 }
 
 .loader-title
 {
     margin-top: 15px;
-
-    font-family:
-    "Noto Sans Oriya",
-    sans-serif;
-
+    font-weight: bold;
+    font-family: "Anek Odia", sans-serif;
     font-size: 5rem;
-
     color: #fff;
-
     letter-spacing: 2px;
 }
 
 .loader-subtitle
 {
     color: rgba(255,255,255,.7);
-
     margin-top: 10px;
-
     font-size: 1rem;
 }
 
@@ -146,6 +250,17 @@ LOADER RESPONSIVE
 
 @media (max-width: 991px)
 {
+
+    *
+    {
+        margin:0;
+        padding:0;
+    }
+
+    footer
+    {
+        margin-top: 23%;
+    }
     
     .loader-content
     {
@@ -153,9 +268,10 @@ LOADER RESPONSIVE
         margin-top: -35%;
     }
     
-    .loader-wheel
+    .loader-logo
     {
-        font-size: 70px;
+        width: 270px;
+        height: auto;
     }
 
     .loader-title
@@ -168,29 +284,7 @@ LOADER RESPONSIVE
     .loader-subtitle
     {
         font-size: .9rem;
-
         padding: 0 20px;
-    }
-}
-
-@media (max-width: 576px)
-{
-    .loader-wheel
-    {
-        font-size: 55px;
-    }
-
-    .loader-title
-    {
-        font-size: 2.2rem;
-        line-height: 1.3;
-    }
-
-    .loader-subtitle
-    {
-        font-size: .8rem;
-
-        padding: 0 25px;
     }
 }
 
@@ -218,47 +312,6 @@ background:#111827;
 border-radius:50px;
 }
 
-
-/* ================================
-    MOBILE PHONE SCROLL BAR
-   ================================ */
-
-@media (max-width: 991px)
-{
-    ::-webkit-scrollbar
-    {
-        width: 6px;
-    }
-
-    ::-webkit-scrollbar-track
-    {
-        background: #111827;
-    }
-
-    ::-webkit-scrollbar-thumb
-    {
-        background: linear-gradient(
-            180deg,
-            #f4b400,
-            #ff8f00,
-            #d97706
-        );
-
-        border-radius: 50px;
-
-        border: 1px solid rgba(255,255,255,.08);
-    }
-
-    ::-webkit-scrollbar-thumb:hover
-    {
-        background: linear-gradient(
-            180deg,
-            #ffd54f,
-            #f4b400,
-            #ff6f00
-        );
-    }
-}
 
 /* ==========================================
 ANIMATED BACKGROUND
@@ -352,11 +405,8 @@ ANIMATED BACKGROUND
 .art-7  { top:1150px; left:1150px; }
 .art-8  { top:1100px; right:300px; }
 .art-9  { top:1400px; left:50px; }
-.art-10 { top:2700px; right:150px; }
-.art-11 { top:1800px; left:400px; }
-.art-12 { top:1920px; right:250px; }
 
-.art-13 { top:2600px; left:180px; }
+.art-12 { top:1920px; right:250px; }
 .art-14 { top:1800px; right:280px; }
 .art-15 { top:1900px; left:50px; }
 
@@ -498,7 +548,6 @@ width:100%;
 
 @media (max-width: 991px) 
 {
-
     .navbar-toggler 
     {
         border: 2px solid rgba(255,255,255,.2);
@@ -508,7 +557,6 @@ width:100%;
 
     .navbar-collapse 
     {
-
         position: absolute;
         top: 70px;
         left: 15px;
@@ -1096,31 +1144,7 @@ RESPONSIVE
 
 @media(max-width:992px)
 {
-    .hero-title
-    {
-        font-size:3rem;
-    }
 
-    .section-title h2
-    {
-        font-size:2.3rem;
-    }
-
-    .social-links 
-    {
-        margin-top: 15px;
-    }
-
-    .social-links a
-    { 
-        align-items: center;
-        justify-content: center;
-    }
-
-}
-
-@media(max-width:768px)
-{
     section
     {
         padding:70px 0;
@@ -1152,14 +1176,14 @@ RESPONSIVE
     }
 
     .social-links 
-        {
-            margin-top: 15px;
-        }
+    {
+        margin-top: 15px;
+    }
 
     .social-links a
-        { 
-            align-items: center;
-            justify-content: center;
-        }
- 
+    { 
+        align-items: center;
+        justify-content: center;
+    }
+
 }

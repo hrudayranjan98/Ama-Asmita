@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px),
+@media screen and (max-width: 991px),
        screen and (orientation: portrait){
 
     .food-hero{
@@ -45,11 +45,10 @@
 }
 
 .hero-content {
-    max-width: 850px;
     margin: auto;
 }
 
-@media (max-width: 768px){
+@media (max-width: 991px){
 
     .food-hero
     {
@@ -67,22 +66,23 @@
 
     h1.hero-title
     {
-        font-size: 2.8rem;
+        font-size: 2.1rem;
+        margin-top: 30%;
         line-height: 1.15;
         margin-bottom: 20px;
-        margin-top: 0px;
     }
 
     .hero-title span
     {
-        display: block;
+        /* display: block; */
     }
 
     .hero-description
     {
-        font-size: 1.15rem;
-        line-height: 1.8;
+        font-size: .7rem;
+        line-height: 1.4;
         max-width: 100%;
+        gap:0.5%;
     }
 
     .btn-food
@@ -90,7 +90,15 @@
         display: flex;
         width: 220px;
         height: 55px;
-        margin: 30px auto 0;
+        width: 78%;
+        justify-content: center;
+        padding: 3% 0.5% 3% 0.5%;
+    }
+
+    .loader-content
+    {
+        margin-left: 0%;
+        margin-top: -15%;
     }
 
 }
@@ -424,7 +432,7 @@
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 
     .dyk-card {
         flex-direction: column;

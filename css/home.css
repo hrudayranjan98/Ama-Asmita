@@ -2,22 +2,21 @@
 HERO SECTION
 ========================================== */
 
-.hero-section {
+.hero-section 
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 
- 
-min-height: 100vh;
-display: flex;
-align-items: center;
-position: relative;
-overflow: hidden;
-
-background:
-        linear-gradient(
-            rgba(0,0,0,0.55),
-            rgba(0,0,0,0.75)
-        ),
-        url("../assets/images/main-banner-desktop.png");
-color: white;
+    background:
+            linear-gradient(
+                rgba(0,0,0,0.55),
+                rgba(0,0,0,0.75)
+            ),
+            url("../assets/images/main-banner-desktop.png");
+    color: white;
 }
 
 .hero-features
@@ -30,109 +29,68 @@ color: white;
     margin-top: -5%;
 }
 
-.hero-tag {
+.hero-tag 
+{ 
+    display: inline-block;
+    padding: .6rem 1.2rem;
+    border-radius: 50px;
+    background:
+        rgba(255,255,255,.1);
 
- 
-display: inline-block;
-
-padding: .6rem 1.2rem;
-
-border-radius: 50px;
-
-background:
-    rgba(255,255,255,.1);
-
-border:
-    1px solid rgba(255,255,255,.15);
-
-margin-bottom: 1rem;
-
-font-weight: 600;
- 
-
+    border:
+        1px solid rgba(255,255,255,.15);
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.hero-title {
-
- 
-font-size: 4rem;
-
-font-weight: 900;
-
-line-height: 1.1;
-
-margin-bottom: 1.5rem;
- 
-
+.hero-title 
+{ 
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
 }
 
-.hero-title span {
+.hero-title span 
+{ 
+    background:
+        linear-gradient(
+            135deg,
+            #ff6b35,
+            #f4b400
+        );
 
- 
-background:
-    linear-gradient(
-        135deg,
-        #ff6b35,
-        #f4b400
-    );
-
--webkit-background-clip: text;
-
--webkit-text-fill-color: transparent;
- 
-
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.hero-description {
-
- 
-font-size: 1.2rem;
-
-line-height: 1.8;
-
-opacity: .9;
-
-margin-bottom: 2rem;
- 
-
+.hero-description 
+{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    opacity: .9;
+    margin-bottom: 2rem;
 }
 
-.hero-buttons {
-
- 
-display: flex;
-
-gap: 1rem;
-
-flex-wrap: wrap;
- 
-
+.hero-buttons 
+{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.btn-custom {
-
- 
-padding: .9rem 2rem;
-
-border-radius: 50px;
-
-font-weight: 700;
-
-transition: .4s;
- 
-
+.btn-custom 
+{ 
+    padding: .9rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: .4s;
 }
 
-.btn-custom:hover {
-
- 
-transform:
-    translateY(-4px);
-
-box-shadow:
-    0 15px 35px rgba(0,0,0,.25);
- 
-
+.btn-custom:hover 
+{
+    transform: translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 
 /* ==========================================
@@ -525,7 +483,7 @@ padding: 6rem 0;
 MOBILE
 ========================================== */
 
-@media (max-width:768px) {
+@media (max-width:991px) {
 
  
 .hero-section {

@@ -103,6 +103,7 @@ HERO SECTION
     z-index: 2;
     max-width: 900px;
     padding: 2rem;
+    margin-top: 6%;
 }
 
 /* .hero-badge {
@@ -326,42 +327,6 @@ HERO SECTION
             MOBILE VERSION
 ======================================== */
 
-@media (max-width: 768px) {
-
-    .tourist-hero {
-
-        min-height: 70vh;
-
-        background:
-            linear-gradient(
-                rgba(0,0,0,.45),
-                rgba(0,0,0,.60)
-            ),
-            url("../assets/images/tourist-banner-portrait.png");
-
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-
-    .tourist-hero h1 {
-
-        font-size: 2.3rem;
-        line-height: 1.2;
-    }
-
-    .tourist-hero p {
-
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-
-    .hero-btn {
-
-        width: 60%;
-        justify-content: center;
-    }
-}
 
 /* =====================================
    Did You Know - Tourist Spot Edition
@@ -512,7 +477,7 @@ HERO SECTION
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
     .dyk-card {
         flex-direction: column;
@@ -532,6 +497,12 @@ HERO SECTION
 
     .dyk-content p {
         font-size: .95rem;
+    }
+
+    .loader-content
+    {
+        margin-left: 0%;
+        margin-top: -15%;
     }
 }
 
@@ -897,25 +868,8 @@ SUBTITLE
     font-weight:900;
 }
 
-/* Mobile */
 
-@media (max-width:768px){
-
-    .spot-subtitle{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .spot-location{
-        width:100%;
-    }
-
-    .map-btn{
-        width:100%;
-        justify-content:center;
-    }
-}
-
+    
 /* ==========================================
 DESCRIPTION
 ========================================== */
@@ -1203,83 +1157,72 @@ opacity: .8;
 RESPONSIVE
 ========================================== */
 
-@media(max-width:992px){
+@media(max-width:992px)
+{
 
- 
-.tourist-hero h1{
-    font-size: 3rem;
-}
+    .tourist-hero 
+    {
 
-.tourist-content h2{
-    font-size: 1.7rem;
-}
- 
+            min-height: 70vh;
 
-}
+            background:
+                linear-gradient(
+                    rgba(0,0,0,.45),
+                    rgba(0,0,0,.60)
+                ),
+                url("../assets/images/tourist-banner-portrait.png");
 
-@media(max-width:768px){
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
 
- 
-.tourist-hero{
 
-    min-height: 50vh;
-}
+    .tourist-hero h1
+    {
+        font-size: 2.1rem;
+        margin-top: 30%;
+    }
 
-.tourist-hero h1{
+    .tourist-hero p
+    {
+        font-size: .7rem;
+        margin-top: 10%;
+    }
 
-    font-size: 2.4rem;
-}
+    .hero-btn 
+    {
 
-.tourist-hero p{
+        width: 60%;
+        justify-content: center;
+        padding: 3% 0.5% 3% 0.5%;
+    }
 
-    font-size: 1rem;
-}
+    .spot-subtitle{
+        flex-direction:column;
+        align-items:flex-start;
+    }
 
-.spot-subtitle{
+    .spot-location
+    {
+        width:100%;
+    }
+    
+    .map-btn
+    {
+        width: 100%;
+        text-align: center;
+    }
 
-    flex-direction: column;
+    .contributor
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-    align-items: flex-start;
-}
-
-.map-btn{
-
-    width: 100%;
-    text-align: center;
-}
-
-.contributor{
-
-    flex-direction: column;
-
-    align-items: flex-start;
-}
- 
-
-}
-
-@media(max-width:576px){
-
- 
-.filter-box{
-    padding: 20px;
-}
-
-.tourist-content{
-    padding: 20px;
-}
-
-.tourist-content h2{
-    font-size: 1.4rem;
-}
-
-.tourist-image img{
-    height: 240px;
-}
-
-.tourist-hero h1{
-    font-size: 2rem;
-}
- 
+    .tourist-content h2
+    {
+        font-size: 1.7rem;
+    }
 
 }

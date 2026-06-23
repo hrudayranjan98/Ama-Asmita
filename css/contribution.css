@@ -1,25 +1,5 @@
 
 /* ==========================================
-                LOADER
-========================================== */
-/* 
-.loader-title
-{
-    margin-top: 15px;
-
-    font-family:
-    "Noto Sans Oriya",
-    sans-serif;
-
-    font-size: 2rem;
-
-    color: #fff;
-
-    letter-spacing: 2px;
-} */
-
-
-/* ==========================================
 BACKGROUND
 ========================================== */
 
@@ -285,11 +265,13 @@ animation: uploadFly .8s ease;
         CONTRIBUTION HERO MOBILE
 ===================================== */
 
-@media screen and (max-width: 768px),
+@media screen and (max-width: 992px),
        screen and (orientation: portrait){
 
-    .contribution-hero{
+    .contribution-hero
+    {
 
+        min-height: 70vh;
         background:
             linear-gradient(
                 rgba(0,0,0,.45),
@@ -308,63 +290,6 @@ animation: uploadFly .8s ease;
     margin: auto;
 }
 
-@media (max-width: 768px){
-
-    .history-hero
-    {
-        min-height: 100vh;
-        padding: 120px 20px 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-content
-    {
-        max-width: 100%;
-    }
-
-    .hero-tag
-    {
-        font-size: 0.9rem;
-        padding: 12px 22px;
-        margin-bottom: 20px;
-    }
-
-    .hero-title
-    {
-        font-size: 3rem;
-        line-height: 1.15;
-        margin-bottom: 20px;
-        margin-top: 0px;
-    }
-
-    .hero-title span
-    {
-        display: block;
-    }
-
-    .hero-description
-    {
-        font-size: 1.15rem;
-        line-height: 1.8;
-        max-width: 100%;
-    }
-
-    .hero-btn
-    {
-        display: flex;
-        width: 20%;
-        height: 55px;
-        margin: 30px auto 0;
-    }
-
-    .submit-btn
-    {
-        font-size: 1rem;
-    }
-
-}
 
 
 /* ==========================================
@@ -1296,47 +1221,59 @@ transition: .4s;
 MOBILE
 ========================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) 
+{
+    .contribution-hero 
+    {
 
- 
-.contribution-hero {
+        min-height: 90vh;
 
-    min-height: 70vh;
+        background:
+            linear-gradient(
+                rgba(0,0,0,.45),
+                rgba(0,0,0,.65)
+            ),
+            url("../assets/images/contribution-banner-mobile.png");
 
-    background:
-        linear-gradient(
-            rgba(0,0,0,.45),
-            rgba(0,0,0,.65)
-        ),
-        url("../assets/images/contribution-banner-mobile.png");
+        background-size: cover;
+        background-position: center;
+    }
 
-    background-size: cover;
-    background-position: center;
-}
+    .hero-content
+    {
+        margin-top: 35%;
+    }
 
-.hero-title {
+    .hero-title 
+    {
+        font-size: 2.5rem;
+    }
 
-    font-size: 2.5rem;
-}
+    .hero-subtitle 
+    {
+        font-size: 1rem;
+    }
 
-.hero-subtitle {
+    .hero-btn 
+    {
+        width: 80%;
+        justify-content: center;
+    }
 
-    font-size: 1rem;
-}
+    .dyk-card 
+    {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.hero-btn {
-
-    width: 80%;
-
-    justify-content: center;
-}
-
-.dyk-card {
-
-    flex-direction: column;
-
-    text-align: center;
-}
+    .submit-btn
+    {
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        margin-top: 2rem;
+    }
 
 }
 
