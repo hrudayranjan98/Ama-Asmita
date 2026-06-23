@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("historyContainer");
 
     const JSON_PATH =
-        "/data/history.json";
+        "data/history.json";
 
     let historyData = [];
     let noResultMessage = null;
