@@ -222,39 +222,64 @@ document.addEventListener("DOMContentLoaded", () => {
         animateCards();
         initializeCards();
 
-        function getCategoryIcon(category) {
+        function getCategoryIcon(category) 
+        {
+            const icons = 
+            {
 
-    const icons = {
+                "King":
+                    "fa-crown",
 
-        "King":
-            "fa-crown",
+                "Freedom Fighter":
+                    "fa-shield-alt",
 
-        "Freedom Fighter":
-            "fa-shield-alt",
+                "Politician":
+                    "fa-landmark",
 
-        "Politician":
-            "fa-landmark",
+                "Poet":
+                    "fa-feather-alt",
 
-        "Poet":
-            "fa-feather-alt",
+                "Writer":
+                    "fa-feather-alt",
 
-        "Writer":
-            "fa-feather-alt",
+                "Scholar":
+                    "fa-book-open",
 
-        "Scholar":
-            "fa-book-open",
+                "Saint":
+                    "fa-praying-hands",
 
-        "Saint":
-            "fa-praying-hands",
+                "Social Reformer":
+                    "fa-people-group",
 
-        "Social Reformer":
-            "fa-people-group",
+                "Revolutionary":
+                    "fa-fist-raised",
 
-        "Revolutionary":
-            "fa-fist-raised",
+                "Cultural Icon":
+                    "fa-star",
 
-        "Cultural Icon":
-            "fa-star"
+                "Actor":
+                    "fa-masks-theater",
+
+                "Singer":
+                    "fa-microphone",
+
+                "Dancer":
+                    "fa-person-walking",
+
+                "Bhajan Singer":
+                    "bi bi-music-note-beamed",
+                
+                "Writer":
+                    "bi bi-pen-fill",
+                
+                "Journalist":
+                    "bi bi-newspaper",
+                
+                "Divine Dancer":
+                    "bi-person-arms-up",
+                
+                "Prince":
+                    "bi-shield-fill-check"
 
     };
 
@@ -567,7 +592,7 @@ setInterval(() => {
 const loadMoreBtn = 
     document.getElementById("loadMoreBtn");
 
-const cardsPerPage = 10;
+const cardsPerPage = 16;
 
 let currentVisible =
     cardsPerPage;
@@ -648,8 +673,10 @@ loadMoreBtn?.addEventListener(
             cards.length
         ) {
 
-            loadMoreBtn.innerText =
-                "All Legends Loaded";
+            loadMoreBtn.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                All Legends Loaded
+            `;
 
             loadMoreBtn.disabled =
                 true;

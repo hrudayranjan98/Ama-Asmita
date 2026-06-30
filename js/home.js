@@ -1,6 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => 
 {
 
+
+/* ==========================================
+   FETCH COUNTS FROM JSON
+========================================== */
+
+async function loadCounts() {
+
+    try {
+
+        const touristData =
+            await fetch("data/tourist-spots.json")
+            .then(res => res.json());
+
+        const foodData =
+            await fetch("data/foods.json")
+            .then(res => res.json());
+
+        const historyData =
+            await fetch("data/history.json")
+            .then(res => res.json());
+
+        document.getElementById("touristCount")
+            .innerText = touristData.length + "+";
+
+        document.getElementById("foodCount")
+            .innerText = foodData.length + "+";
+
+        document.getElementById("historyCount")
+            .innerText = historyData.length + "+";
+
+    }
+
+    catch(error) {
+
+        console.error(
+            "Error loading counts:",
+            error
+        );
+    }
+
+}
+
+loadCounts();
+
 /* ==========================================
    STAT COUNTER
 ========================================== */

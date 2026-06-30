@@ -25,7 +25,7 @@ const JSON_PATH =
     "data/tourist.json";
 
 let touristData = [];
-let currentVisible = 6;
+let currentVisible = 16;
 let noResultMessage = null;
 
 /* ==========================
@@ -449,7 +449,7 @@ loadMoreBtn?.addEventListener(
     "click",
     () => {
 
-        currentVisible += 6;
+        currentVisible += 16;
 
         const cards =
             document.querySelectorAll(
@@ -475,8 +475,10 @@ loadMoreBtn?.addEventListener(
             cards.length
         ) {
 
-            loadMoreBtn.innerText =
-                "All Places Loaded";
+            loadMoreBtn.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                All Places Loaded
+            `;
 
             loadMoreBtn.disabled =
                 true;

@@ -9,7 +9,15 @@
 "Politician",
 "Revolutionary",
 "Writer",
-"Cultural Icon"
+"Cultural Icon",
+"Actor",
+"Singer",
+"Dancer",
+"Bhajan Singer",
+"Writer",
+"Journalist",
+"Divine Dancer",
+"Prince"
 ],
 
 "personalities": [
@@ -135,7 +143,7 @@
   "category": "Scholar",
   "birthPlace": "Kenduli",
   "image": "assets/history/jayadeva.jpg",
-  "description": "The celebrated Sanskrit poet who authored the immortal work Gita Govinda.",
+  "description": "The celebrated Sanskrit poet who authored the immortal Gita Govinda, whose verses are sung daily in the rituals of Lord Jagannath at the Puri Temple.",
   "wikiLink": "https://en.wikipedia.org/wiki/Jayadeva",
   "contributor": {
     "name": "Hrudayranjan Parida",
@@ -149,20 +157,20 @@
 
 {
   "id": 8,
-  "name": "Acharya Harihar",
-  "tenure": "1879 - 1971",
-  "category": "Freedom Fighter",
-  "birthPlace": "Puri",
-  "image": "assets/history/acharya-harihar.png",
-  "description": "A prominent freedom fighter and social worker who dedicated his life to public service.",
-  "wikiLink": "https://en.wikipedia.org/wiki/Acharya_Harihar",
-  "contributor": {
-    "name": "Hrudayranjan Parida",
-    "designation": "History Contributor",
-    "image": "assets/images/contributors/hrudayranjan.jpeg",
-    "facebook": "https://www.facebook.com/kumar.hrp123",
-    "instagram": "https://www.instagram.com/kumar_hrp_143",
-    "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+  "name": "Upendra Bhanja",
+    "tenure": "1670 - 1740",
+    "category": "Poet",
+    "birthPlace": "Kulada, Ganjam",
+    "image": "assets/history/upendra-bhanja.png",
+    "description": "Widely regarded as Kabi Samrat, well known for his greatest classical masterpieces like Baidehisha Bilasa and Lavanyabati.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Upendra_Bhanja",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
   }
 },
 
@@ -316,7 +324,659 @@
     "instagram": "https://www.instagram.com/kumar_hrp_143",
     "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
   }
-}
+},
+
+  {
+    "id": 17,
+    "name": "Langula Narasingha Deva I",
+    "tenure": "1206 - 1264",
+    "category": "King",
+    "birthPlace": "Odisha",
+    "image": "assets/history/langula-narasingha-deva.png",
+    "description": "The mighty Eastern Ganga ruler who commissioned the world-famous Konark Sun Temple and expanded the Kalinga Empire.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Narasimhadeva_I",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Kumar Hamvira Deva",
+    "tenure": "14th Century",
+    "category": "Prince",
+    "birthPlace": "Odisha",
+    "image": "assets/history/kumar-hamvira-deva.png",
+    "description": "A renowned prince and military commander of the Gajapati dynasty remembered for his successful southern campaigns.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Hamvira_Deva",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Akshaya Mohanty",
+    "tenure": "1936 - 2002",
+    "category": "Singer",
+    "birthPlace": "Cuttack",
+    "image": "assets/history/akshaya-mohanty.png",
+    "description": "Fondly known as Khoka Bhai, he revolutionized modern Odia music as a legendary singer, composer and lyricist.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Akshaya_Mohanty",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Bijay Mohanty",
+    "tenure": "1950 - 2020",
+    "category": "Actor",
+    "birthPlace": "Pandiri, Kendrapara",
+    "image": "assets/history/bijay-mohanty.png",
+    "description": "One of Odisha's most celebrated actors who appeared in over 150 Odia films during a career spanning four decades.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Bijay_Mohanty",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Guru Kelucharan Mohapatra",
+    "tenure": "1926 - 2004",
+    "category": "Dancer",
+    "birthPlace": "Raghurajpur, Puri",
+    "image": "assets/history/guru-kelucharan-mohapatra.png",
+    "description": "The legendary exponent of Odissi dance who revived and popularized the Odia classical dance form worldwide.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Kelucharan_Mohapatra",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Mihir Das",
+    "tenure": "1959 - 2022",
+    "category": "Actor",
+    "birthPlace": "Mayurbhanj",
+    "image": "assets/history/mihir-das.jpg",
+    "description": "A versatile Odia film actor admired for his memorable performances in commercial & family oriented cinema.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Mihir_Das",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Mayadhar Mansingh",
+    "tenure": "1905 - 1973",
+    "category": "Poet",
+    "birthPlace": "Nandala, Khordha",
+    "image": "assets/history/mayadhar-mansingh.png",
+    "description": "An eminent Odia poet, scholar and historian who made remarkable contributions to Odia literature.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Mayadhar_Mansingh",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Rai Mohan Parida",
+    "tenure": "1963 - 2022",
+    "category": "Actor",
+    "birthPlace": "Keonjhar",
+    "image": "assets/history/rai-mohan-parida.png",
+    "description": "A popular Odia actor remembered for his iconic villainous and character roles in films and television.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Rai_Mohan_Parida",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Dukhiram Swain",
+    "tenure": "1948 - 2021",
+    "category": "Actor",
+    "birthPlace": "Jagatsinghpur",
+    "image": "assets/history/dukhiram-swain.png",
+    "description": "A veteran Odia comedian and actor widely loved for his humorous performances in films and stage plays.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Dukhiram_Swain",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Manoj Das",
+    "tenure": "1934 - 2021",
+    "category": "Writer",
+    "birthPlace": "Balasore",
+    "image": "assets/history/manoj-das.png",
+    "description": "An internationally acclaimed author whose literary works in Odia and English earned him the Padma Shri.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Manoj_Das",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+
+  {
+    "id": 27,
+    "name": "Sarala Das",
+    "tenure": "15th Century",
+    "category": "Poet",
+    "birthPlace": "Kanakpur, Jagatsinghpur",
+    "image": "assets/history/sarala-das.png",
+    "description": "Known as Adi Kabi of Odia literature, he authored the Odia Mahabharata and laid the foundation of classical Odia literature.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Sarala_Das",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Jagannath Das",
+    "tenure": "1490 - 1550",
+    "category": "Saint",
+    "birthPlace": "Kapileswarpur, Puri",
+    "image": "assets/history/jagannath-das.png",
+    "description": "One of the Panchasakha saints, he composed the Odia Bhagabata, one of Odisha's most revered religious texts.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Jagannath_Das",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Prafulla Kar",
+    "tenure": "1939 - 2020",
+    "category": "Singer",
+    "birthPlace": "Puri",
+    "image": "assets/history/prafulla-kar.png",
+    "description": "A legendary Odia singer, composer and lyricist whose timeless songs shaped modern Odia music.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Prafulla_Kar",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Jairam Samal",
+    "tenure": "1948 - Present",
+    "category": "Actor",
+    "birthPlace": "Balipatna, Khordha",
+    "image": "assets/history/jairam-samal.png",
+    "description": "Popularly known as Jayiram, he is one of the most celebrated comedians and character actors in Odia cinema.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Jairam_Samal",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Bhikari Bal",
+    "tenure": "1929 - 2015",
+    "category": "Bhajan Singer",
+    "birthPlace": "Puri",
+    "image": "assets/history/bhikari-bal.png",
+    "description": "Fondly known as the Bhajan Samrat of Odisha, he popularized Odia devotional music across generations.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Bhikari_Bal",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Maharaja Krushna Chandra Gajapati",
+    "tenure": "1892 - 1974",
+    "category": "King",
+    "birthPlace": "Paralakhemundi, Gajapati",
+    "image": "assets/history/maharaja-krushna-chandra-gajapati.png",
+    "description": "The Maharaja of Paralakhemundi and a visionary statesman who played a pivotal role in the formation of Odisha as a separate linguistic state in 1936. He also served as the first Prime Minister of Odisha.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Krushna_Chandra_Gajapati",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Gouri Shankar Ray",
+    "tenure": "1838 - 1917",
+    "category": "Journalist",
+    "birthPlace": "Balasore, Odisha",
+    "image": "assets/history/gouri-shankar-ray.png",
+    "description": "A pioneering journalist, social reformer and nationalist who founded the influential Odia newspaper Utkal Deepika and played a vital role in the movement for a separate Odisha province.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Gouri_Shankar_Ray",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Arabinda Muduli",
+    "tenure": "1961 - 2024",
+    "category": "Bhajan Singer",
+    "birthPlace": "Khordha",
+    "image": "assets/history/arabinda-muduli.png",
+    "description": "A renowned Odia devotional singer whose soulful Jagannath bhajans earned him immense popularity.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Arabinda_Muduli",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Bibhuti Pattnaik",
+    "tenure": "1937 - Present",
+    "category": "Writer",
+    "birthPlace": "Cuttack",
+    "image": "assets/history/bibhuti-pattnaik.png",
+    "description": "An eminent novelist and storyteller whose literary works have enriched modern Odia literature.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Bibhuti_Pattnaik",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Rama Devi",
+    "tenure": "1899 - 1985",
+    "category": "Freedom Fighter",
+    "birthPlace": "Satyabhamapur, Cuttack",
+    "image": "assets/history/rama-devi.png",
+    "description": "Popularly known as Maa Rama Devi, she was a pioneering freedom fighter and social reformer dedicated to women's empowerment.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Rama_Devi",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Kuntala Kumari Sabat",
+    "tenure": "1901 - 1938",
+    "category": "Poet",
+    "birthPlace": "Cuttack",
+    "image": "assets/history/kuntala-kumari-sabat.png",
+    "description": "A pioneering Odia poet, writer, physician and social reformer who championed women's education and empowerment.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Kuntala_Kumari_Sabat",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Ramakanta Rath",
+    "tenure": "1934 - Present",
+    "category": "Poet",
+    "birthPlace": "Cuttack",
+    "image": "assets/history/ramakanta-rath.png",
+    "description": "A Jnanpith Award-winning Odia poet celebrated for his profound contributions to modern Indian literature.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Ramakanta_Rath",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Sadhu Meher",
+    "tenure": "1939 - Present",
+    "category": "Actor",
+    "birthPlace": "Kudapali, Bargarh, Odisha",
+    "image": "assets/history/sadhu-meher.png",
+    "description": "A National Film Award-winning actor, director and social activist renowned for his outstanding performances in both Odia and Hindi cinema, and one of Odisha's most celebrated film personalities.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Sadhu_Meher",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 40,
+    "name": "Nimai Harichandan",
+    "tenure": "1948 - Present",
+    "category": "Bhajan Singer",
+    "birthPlace": "Puri",
+    "image": "assets/history/nimai-harichandan.png",
+    "description": "A renowned Odia devotional singer best known for his soulful Jagannath bhajans and spiritual music.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Nimai_Harichandan",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Dukhishyam Tripathy",
+    "tenure": "1946 - 2013",
+    "category": "Bhajan Singer",
+    "birthPlace": "Puri",
+    "image": "assets/history/dukhishyam-tripathy.png",
+    "description": "A legendary Odia devotional singer remembered for his melodious Jagannath bhajans and spiritual compositions.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Dukhishyam_Tripathy",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Sashimani Devi",
+    "tenure": "1922 - 2015",
+    "category": "Divine Dancer",
+    "birthPlace": "Puri",
+    "image": "assets/history/sashimani-devi.png",
+    "description": "The last Mahari (Devadasi) of the Jagannath Temple, remembered for preserving Odisha's sacred temple dance tradition and spiritual heritage.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Sasimani_Debi",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Radhanath Ray",
+    "tenure": "1848 - 1908",
+    "category": "Poet",
+    "birthPlace": "Soro, Balasore",
+    "image": "assets/history/radhanath-ray.png",
+    "description": "A pioneering modern Odia poet whose literary works played a vital role in shaping contemporary Odia literature.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Radhanath_Ray",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Godabarish Mishra",
+    "tenure": "1886 - 1956",
+    "category": "Poet",
+    "birthPlace": "Banapur, Khordha",
+    "image": "assets/history/godabarish-mishra.png",
+    "description": "A distinguished writer, freedom fighter and member of the Satyabadi Group who contributed immensely to Odia literature.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Godabarish_Mishra",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Gopinath Mohanty",
+    "tenure": "1914 - 1991",
+    "category": "Writer",
+    "birthPlace": "Nagabali, Cuttack",
+    "image": "assets/history/gopinath-mohanty.png",
+    "description": "A Jnanpith Award-winning novelist whose works vividly portrayed the lives of Odisha's tribal communities.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Gopinath_Mohanty",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Guru Aruna Mohanty",
+    "tenure": "1960 - Present",
+    "category": "Dancer",
+    "birthPlace": "Bhubaneswar, Odisha",
+    "image": "assets/history/guru-aruna-mohanty.png",
+    "description": "A Padma Shri awardee and renowned Odissi exponent, Guru Aruna Mohanty is celebrated for her exceptional contributions to Odissi dance, choreography, and the promotion of Odisha's rich cultural heritage across the world.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Aruna_Mohanty",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 47,
+    "name": "Rabi Singh",
+    "tenure": "1931 - 1998",
+    "category": "Poet",
+    "birthPlace": "Cuttack, Odisha",
+    "image": "assets/history/rabi-singh.png",
+    "description": "A celebrated modern Odia poet and Sahitya Akademi Award recipient, Rabi Singh is remembered for his socially conscious and progressive poetry that enriched Odia literature.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Rabi_Singh",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 48,
+    "name": "Salabega",
+    "tenure": "1607 - 1633",
+    "category": "Poet",
+    "birthPlace": "Puri",
+    "image": "assets/history/salabega.png",
+    "description": "A legendary Odia saint-poet and devotee of Lord Jagannath, whose devotional bhajans remain an integral part of Odisha's spiritual heritage.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Salabega",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 49,
+    "name": "Nabakrushna Choudhury",
+    "tenure": "1901 - 1984",
+    "category": "Freedom Fighter",
+    "birthPlace": "Jagatsinghpur",
+    "image": "assets/history/nabakrushna-choudhury.png",
+    "description": "A distinguished freedom fighter and former Chief Minister of Odisha who championed land reforms, rural development, and social justice.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Nabakrushna_Choudhury",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Acharya Harihar",
+    "tenure": "1879 - 1971",  
+    "category": "Freedom Fighter",
+    "birthPlace": "Puri",
+    "image": "assets/history/acharya-harihar.png",
+    "description": "A prominent freedom fighter and social worker who dedicated his life to public service.", 
+    "wikiLink": "https://en.wikipedia.org/wiki/Acharya_Harihar",
+    "contributor": 
+    {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 51,
+    "name": "Rajat Kumar Kar",
+    "tenure": "1933 - 2022",
+    "category": "Scholar",
+    "birthPlace": "Mahanga, Cuttack",
+    "image": "assets/history/rajat-kumar-kar.png",
+    "description": "A Padma Shri awardee, renowned playwright, Jagannath culture researcher and the longest-serving commentator of the Rath Yatra, with over 600 radio plays to his credit.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Rajat_Kumar_Kar",
+    "contributor": 
+    {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  },
+  {
+    "id": 52,
+     "name": "Baji Raut",
+    "tenure": "1926 - 1938",
+    "category": "Freedom Fighter",
+    "birthPlace": "Dhenkanal",
+    "image": "assets/history/baji-raut.png",
+    "description": "The youngest martyr of India's freedom struggle, Baji Raut laid down his life at the age of 12 after refusing to ferry British police across the Brahmani River during the Dhenkanal Praja Mandal Movement.",
+    "wikiLink": "https://en.wikipedia.org/wiki/Baji_Rout",
+    "contributor": {
+      "name": "Hrudayranjan Parida",
+      "designation": "History Contributor",
+      "image": "assets/images/contributors/hrudayranjan.jpeg",
+      "facebook": "https://www.facebook.com/kumar.hrp123",
+      "instagram": "https://www.instagram.com/kumar_hrp_143",
+      "linkedin": "https://www.linkedin.com/in/hrudayranjan98"
+    }
+  }
 
 ]
 }

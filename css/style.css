@@ -127,6 +127,7 @@ LOADER BACKGROUND
 
     animation:
         particleMove 20s linear infinite;
+        
 }
 
 /* Gradient Animation */
@@ -144,7 +145,7 @@ LOADER BACKGROUND
 
     100%
     {
-        background-position: 0% 50%;
+        background-position: 0% 100%;
     }
 }
 

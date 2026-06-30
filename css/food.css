@@ -1069,6 +1069,28 @@ PAGINATION
         );
 }
 
+#loadMoreBtn:disabled
+{
+    background: linear-gradient(
+        135deg,
+        #2e7d32,
+        #235e26
+    );
+
+    color: #fff;
+
+    border: none;
+
+    cursor: not-allowed;
+
+    opacity: .95;
+}
+
+#loadMoreBtn:disabled i
+{
+    margin-right: 8px;
+}
+
 @keyframes floatBtn{
 
     0%,100%{

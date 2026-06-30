@@ -129,7 +129,17 @@ try {
 
     foodData = data.foods;
     populateCategories(data.categories);
-    populateAreas(data.districts);
+
+    /* Get unique districts from all foods */
+    const uniqueDistricts = [
+        ...new Set(
+            foodData.flatMap(
+                food => food.district
+            )
+        )
+    ];
+
+    populateAreas(uniqueDistricts);
     renderFoods(foodData);
 
 } catch (error) {
@@ -175,7 +185,14 @@ foods.forEach(food => {
 <div
     class="col-lg-6 food-card-item"
     data-category="${food.category.toLowerCase()}"
-    data-area="${food.district.toLowerCase()}">
+    data-area="${
+    (Array.isArray(food.district)
+        ? food.district
+        : [food.district]
+    )
+    .map(d => d.toLowerCase())
+    .join(',')
+}">
 
  
 <div class="food-card">
@@ -200,7 +217,7 @@ foods.forEach(food => {
 
                 <i class="fas fa-location-dot"></i>
 
-                ${food.district}
+                ${food.location}
 
             </span>
 
@@ -348,7 +365,6 @@ FILTER
 
 function filterFoods() {
 
- 
 const selectedCategory =
     categoryFilter.value.toLowerCase();
 
@@ -384,34 +400,48 @@ cards.forEach(card => {
 
     const areaMatch =
         selectedArea === "" ||
-        area === selectedArea;
+        area.split(",").includes(selectedArea);
 
     const searchMatch =
         title.includes(searchText);
 
-    if 
-    (
+    if (
         categoryMatch &&
         areaMatch &&
         searchMatch
-    ) 
-    {
-        card.classList.remove("d-none");
+    ) {
+
+        card.style.display = "block";
         visibleCards++;
-    } 
-    else 
-    {
-        card.classList.add("d-none");
+
+    } else {
+
+        card.style.display = "none";
     }
 
 });
 
+/* Hide Load More when filters are active */
+if (
+    selectedCategory !== "all" ||
+    selectedArea !== "" ||
+    searchText !== ""
+) {
+
+    card.style.display = "block";
+            visibleCards++;
+
+} else {
+
+    initializeCards();
+}
+
 showNoResults(
     visibleCards
 );
- 
 
 }
+
 
 /* ==========================
 NO RESULT
@@ -526,15 +556,69 @@ loadFoods();
 });
 
 /* ==========================
-   LOAD MORE FOODS
+   DID YOU KNOW FACTS
 ========================== */
 
-const loadMoreBtn =
+const facts = [
+
+    "Kharavela's Hathigumpha Inscription is one of the most important historical records of ancient India.",
+
+    "Odisha became a separate state on 1 April 1936 based on linguistic identity.",
+
+    "Konark Sun Temple was designed in the shape of a colossal chariot with 24 wheels.",
+
+    "Madhusudan Das was the first Odia graduate and is known as Utkal Gourab.",
+
+    "The ancient maritime traders of Kalinga sailed as far as Bali, Java and Sumatra.",
+
+    "Bali Jatra commemorates Odisha's glorious maritime heritage.",
+
+    "Jagannath Culture is one of the oldest living traditions in India.",
+
+    "Kalinga was one of the most powerful kingdoms of ancient India."
+
+];
+
+let factIndex = 0;
+
+setInterval(() => {
+
+    const factText =
+        document.getElementById(
+            "foodFactText"
+        );
+
+    if (!factText) return;
+
+    factIndex =
+        (factIndex + 1) %
+        facts.length;
+
+    foodFactText.style.opacity =
+        "0";
+
+    setTimeout(() => {
+
+        foodFactText.textContent =
+            facts[factIndex];
+
+        foodFactText.style.opacity =
+            "1";
+
+    }, 300);
+
+}, 5000);
+
+/* ==========================
+   LOAD MORE
+========================== */
+
+const loadMoreBtn = 
     document.getElementById("loadMoreBtn");
 
 const cardsPerPage = 10;
 
-let currentVisible = 
+let currentVisible =
     cardsPerPage;
 
 function initializeCards() {
@@ -545,12 +629,13 @@ function initializeCards() {
         );
 
     cards.forEach(
-        (card, index) => 
-        {
+        (card, index) => {
+
             card.style.display =
                 index < currentVisible
                     ? "block"
                     : "none";
+
         }
     );
 
@@ -572,6 +657,7 @@ function initializeCards() {
         }
 
     }
+
 }
 
 /* ==========================
@@ -624,6 +710,7 @@ loadMoreBtn?.addEventListener(
     }
 );
 
+
 /* ==========================================
 PAGE LOADER
 ========================================== */
@@ -636,5 +723,5 @@ window.addEventListener('load', () =>
     setTimeout(() =>
     {
         loader.classList.add('hide');
-    }, 600);
+    }, 200);
 });
