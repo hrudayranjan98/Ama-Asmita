@@ -1173,7 +1173,26 @@ RESPONSIVE
 
     .section-title h2
     {
-        font-size:2rem;
+        font-size:1.5rem;
+    }
+
+    #slideTourist
+    {
+        width: 75%;
+        margin-top: -30%;
+    }
+
+    #slideFood
+    {
+        width: 75%;
+        margin-top: -30%;
+    }
+
+    .destination-card
+    {
+        width:95%;
+        align-items: center;
+        margin-left: 2.5%;
     }
 
     .social-links 

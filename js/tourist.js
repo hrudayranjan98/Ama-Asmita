@@ -246,17 +246,19 @@ function renderCards(data) {
     function getLocationIcon(category) 
     {
 
-        const icons = {
+        const icons = 
+        {
             heritage: "fa-landmark",
             religious: "fa-gopuram",
             hill: "fa-mountain",
             waterfall: "fa-water",
             wildlife: "fa-paw",
-            coastal: "fa-water",
-            adventure: "fa-hiking",
-            entertainment: "fa-ticket",
+            coastal: "fa-umbrella-beach",
+            adventure: "fa-person-hiking",
+            entertainment:  "bi-ticket-perforated-fill",
             museum: "fa-building-columns",
-            ecotourism: "fa-tree"
+            ecotourism: "fa-seedling",
+            naturalwonders: "fa-earth-asia"
         };
 
         return icons[category] || "fa-location-dot";
@@ -297,6 +299,9 @@ function renderCards(data) {
 
             case "adventure":
                 return "adventure-icon";
+
+            case "naturalwonders":
+                return "naturalwonders-icon";
 
             default:
                 return "default-icon";

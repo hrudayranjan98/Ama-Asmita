@@ -755,6 +755,15 @@ SUBTITLE
     );
 }
 
+/*  Natural Wonders */
+.naturalwonders-icon{
+    background:linear-gradient(
+        135deg,
+        #9b001a,
+        #ffc800
+    );
+}
+
 /* Default */
 .default-icon{
     background:linear-gradient(
@@ -798,6 +807,8 @@ SUBTITLE
         inset 0 1px 1px rgba(255,255,255,0.18);
         margin-left: -1%;
 }
+
+
 
 /* Google Map Button */
 
@@ -1182,9 +1193,6 @@ RESPONSIVE
 
     .tourist-hero 
     {
-
-            min-height: 70vh;
-
             background:
                 linear-gradient(
                     rgba(0,0,0,.45),

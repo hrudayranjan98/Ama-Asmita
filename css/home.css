@@ -274,6 +274,17 @@ DISCLAIMER
         font-size: 3rem;
     }
 
+    .container2 h2
+    {
+        margin-top: 25%;
+        margin-bottom: -6%;
+    }
+
+    .container1 h2
+    {
+        margin-bottom: -6%;
+    }
+
 }
 
 .ama-odisha
