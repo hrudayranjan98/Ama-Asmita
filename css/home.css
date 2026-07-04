@@ -246,21 +246,31 @@ DISCLAIMER
     margin-bottom: 3%;
 }
 
-@media (max-width: 991px) 
+@media (max-width: 992px) 
 {
     .motto-section h2 
     {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         font-weight: 800;
         margin-bottom: 1rem;
+    }
+
+    .motto-section i
+    {
+        font-size: 1.5rem;
     }
 
     .motto-section p 
     {
         max-width: 800px;
         margin: auto;
-        font-size: 1rem;
+        font-size: 0.8rem;
         line-height: 1.5;
+    }
+
+    .disclaimer-title
+    {
+        font-size: 1.4rem;
     }
 
     .section-title
@@ -284,7 +294,6 @@ DISCLAIMER
     {
         margin-bottom: -6%;
     }
-
 }
 
 .ama-odisha
@@ -455,8 +464,8 @@ padding: 6rem 0;
 {
     background: linear-gradient(
         135deg,
-        #f4b400,
-        #ff8f00
+        #008ef4,
+        #00ffee
     );
 
     border: none;
@@ -465,7 +474,7 @@ padding: 6rem 0;
     padding: 14px 40px;
     border-radius: 50px;
     box-shadow:
-        0 8px 25px rgba(244,180,0,.25);
+        0 8px 25px rgba(0, 244, 232, 0.338);
     transition: all .3s ease;
     margin-top: -4%;
 }
@@ -486,7 +495,7 @@ padding: 6rem 0;
 {
     transform: translateY(-4px);
     box-shadow:
-        0 15px 35px rgba(244,180,0,.4);
+        0 15px 35px rgba(0, 211, 244, 0.446);
     color: #fff;
 }
 
@@ -494,45 +503,80 @@ padding: 6rem 0;
 MOBILE
 ========================================== */
 
-@media (max-width:991px) {
 
- 
-.hero-section {
+@media screen and (max-width: 992px),
+       screen and (orientation: portrait)
+    { 
 
-    text-align: center;
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.55),
-            rgba(0,0,0,0.75)
-        ),
-        url("../assets/images/main-banner-mobile.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+        .loader-content
+        {
+            margin-left: 0%;
+            margin-top: -15%;
+        }
 
-.hero-title {
+        .hero-section 
+        {
+            text-align: center;
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.75)
+                ),
+                url("../assets/images/main-banner-mobile.png");
+            background-size: cover;
+            background-position: center center;
+            margin-top: -10%;
+            min-height: 95vh;
+            overflow: hidden;
+        }
 
-    font-size: 2.8rem;
-}
+        .hero-title
+        {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            margin-top: 15%;
+            margin-bottom: 14px;
+        }
 
-.hero-buttons {
+        .hero-description
+        {
+            font-size: 0.8rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
 
-    justify-content: center;
-}
+        .hero-buttons
+        {
+            justify-content: center;
+            gap: 12px;
+        }
 
-.hero-buttons .btn {
+        .hero-buttons .btn-custom
+        {
+            width: auto;
+            min-width: 80%;
+        }
 
-    width: 100%;
-}
+        .feature-card {
+            text-align: center;
+        }
 
-.feature-card {
+        .stat-card {
 
-    text-align: center;
-}
+            margin-bottom: 1rem;
+            width:95%;
+            margin-left:2%;
+        }
 
-.stat-card {
+        .disclaimer-list 
+        {
+            padding:5%;
+            font-size: 0.7rem;
+        }
 
-    margin-bottom: 1rem;
-}
-}
+    }
+
+
+
+    

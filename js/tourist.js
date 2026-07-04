@@ -254,6 +254,7 @@ function renderCards(data) {
             waterfall: "fa-water",
             wildlife: "fa-paw",
             coastal: "fa-umbrella-beach",
+            lakes:"bi-tsunami",
             adventure: "fa-person-hiking",
             entertainment:  "bi-ticket-perforated-fill",
             museum: "fa-building-columns",
@@ -287,6 +288,9 @@ function renderCards(data) {
 
             case "coastal":
                 return "coastal-icon";
+
+            case "lakes":
+                return "lakes-icon";
 
             case "entertainment":
                 return "entertainment-icon";
@@ -560,7 +564,13 @@ const touristFacts = [
     "Jagannath Temple is one of the Char Dham pilgrimage sites.",
     "Daringbadi is known as the Kashmir of Odisha.",
     "Hirakud Dam is one of the world's longest earthen dams.",
-    "Similipal is a UNESCO Biosphere Reserve."
+    "Similipal is a UNESCO Biosphere Reserve.",
+    "Nabhi Gaya at Jajpur is one of the three sacred Gaya Kshetras in Hindu tradition, believed to be the place where Goddess Sati's navel (Nabhi) fell.",
+    "Fategarh Ram Mandir in Bhadrak is popularly known as Odisha's Second Ayodhya, as its consecration ceremony was held on the same day as the Ram Mandir inauguration in Ayodhya.",
+    "Puri Golden Beach is India's first beach to receive the prestigious Blue Flag certification for cleanliness, safety, and environmental standards.",
+    "Odisha is home to more than 500 identified tourist destinations, ranging from heritage monuments and beaches to waterfalls and wildlife sanctuaries.",
+    "Chilika Lake attracts over one million migratory birds annually, making it one of the most important birding destinations in Asia.",
+    "Odisha has multiple internationally recognized sites, including a UNESCO World Heritage Site, a UNESCO Biosphere Reserve, and a Ramsar Wetland of International Importance."
 
 ];
 
@@ -614,5 +624,5 @@ window.addEventListener('load', () =>
     setTimeout(() =>
     {
         loader.classList.add('hide');
-    }, 800);
+    }, 150);
 });

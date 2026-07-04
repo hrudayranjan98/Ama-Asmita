@@ -561,21 +561,21 @@ loadFoods();
 
 const facts = [
 
-    "Kharavela's Hathigumpha Inscription is one of the most important historical records of ancient India.",
-
-    "Odisha became a separate state on 1 April 1936 based on linguistic identity.",
-
-    "Konark Sun Temple was designed in the shape of a colossal chariot with 24 wheels.",
-
-    "Madhusudan Das was the first Odia graduate and is known as Utkal Gourab.",
-
-    "The ancient maritime traders of Kalinga sailed as far as Bali, Java and Sumatra.",
-
-    "Bali Jatra commemorates Odisha's glorious maritime heritage.",
-
-    "Jagannath Culture is one of the oldest living traditions in India.",
-
-    "Kalinga was one of the most powerful kingdoms of ancient India."
+    "The Mahaprasad of Jagannath Temple is cooked in earthen pots stacked one above another, yet the topmost pot cooks first.",
+    "Odisha is considered the birthplace of many Chhena-based sweets, including Rasagola and Chhena Poda.",
+    "Chhena Poda was accidentally invented when sweetened chhena was left in a warm oven overnight.",
+    "Pakhala Dibasa is celebrated every year on 20th March to honor Odisha's traditional fermented rice dish.",
+    "Dalma, one of Odisha's most loved dishes, is prepared without onion or garlic in its traditional form.",
+    "The temple kitchens of Puri are among the largest in the world, serving Mahaprasad to thousands every day.",
+    "Arisa Pitha is one of Odisha's oldest traditional sweets and is commonly prepared during festivals and weddings.",
+    "Kendrapara's Rasabali is believed to have originated as an offering to Lord Baladevjew.",
+    "Mudhi Mansa, a combination of puffed rice and mutton curry, is a uniquely Odia culinary tradition.",
+    "Poda Pitha is traditionally prepared during Raja and Rath Yatra festivals and is often called Odisha's baked cake.",
+    "The famous Pahala Rasagola village between Bhubaneswar and Cuttack is known as Odisha's sweet capital.",
+    "Many Odia dishes use mustard paste as a key ingredient, giving them their distinctive flavor.",
+    "Chenna Jhili from Nimapada is one of Odisha's most iconic sweets and predates many modern chhena desserts.",
+    "Odia cuisine is one of the few Indian cuisines that extensively combines vegetables and lentils in a single dish like Dalma.",
+    "The GI-tagged Odisha Rasagola received official recognition for its unique recipe and historical origin."
 
 ];
 
@@ -605,7 +605,7 @@ setInterval(() => {
         foodFactText.style.opacity =
             "1";
 
-    }, 300);
+    }, 400);
 
 }, 5000);
 
@@ -723,5 +723,5 @@ window.addEventListener('load', () =>
     setTimeout(() =>
     {
         loader.classList.add('hide');
-    }, 200);
+    }, 150);
 });

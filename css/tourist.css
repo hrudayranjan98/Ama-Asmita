@@ -667,100 +667,109 @@ SUBTITLE
 
 /* Heritage */
 .heritage-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #D4A017,
-        #F7C948
+        #4d031a,
+        #5b3500
     );
 }
 
 /* Religious */
 .religious-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #FF6B35,
-        #FFB347
+        #ff3c00,
+        #FBBF24
     );
 }
 
 /* Hill */
 .hill-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #2E8B57,
-        #6BCB77
+        #166534,
+        #4ADE80
     );
 }
 
 /* Waterfall */
 .waterfall-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #00B4DB,
-        #0083B0
+        #0284C7,
+        #38BDF8
     );
 }
 
 /* Wildlife */
 .wildlife-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #4CAF50,
-        #8BC34A
+        #365314,
+        #84CC16
     );
 }
 
 /* Coastal */
 .coastal-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #0093E9,
-        #80D0FF
+        #0369A1,
+        #60A5FA
+    );
+}
+
+/* Lakes */
+.lakes-icon{
+    background: linear-gradient(
+        135deg,
+        #0F766E,
+        #2DD4BF
     );
 }
 
 /* Entertainment */
 .entertainment-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #8E44AD,
-        #C56CF0
+        #7E22CE,
+        #C084FC
     );
 }
 
 /* Museum */
 .museum-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #6D4C41,
-        #A1887F
+        #7C2D12,
+        #D97706
     );
 }
 
 /* Ecotourism */
 .ecotourism-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #11998E,
-        #38EF7D
+        #047857,
+        #34D399
     );
 }
 
 /* Adventure */
 .adventure-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #FF512F,
-        #F09819
+        #DC2626,
+        #FB923C
     );
 }
 
-/*  Natural Wonders */
+/* Natural Wonders */
 .naturalwonders-icon{
-    background:linear-gradient(
+    background: linear-gradient(
         135deg,
-        #9b001a,
-        #ffc800
+        #B91C1C,
+        #FACC15
     );
 }
 
@@ -1220,10 +1229,15 @@ RESPONSIVE
 
     .hero-btn 
     {
-
         width: 60%;
         justify-content: center;
         padding: 3% 0.5% 3% 0.5%;
+        font-size: 0.9rem;
+    }
+
+    .tourist-section
+    {
+        padding:1%;
     }
 
     .spot-subtitle{
@@ -1239,7 +1253,7 @@ RESPONSIVE
     .map-btn
     {
         width: 100%;
-        text-align: center;
+        justify-content: center;
     }
 
     .contributor

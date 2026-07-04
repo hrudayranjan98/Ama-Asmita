@@ -536,21 +536,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const facts = [
 
+    "Mahameghavahana Kharavela was one of the most powerful rulers of ancient India.",
     "Kharavela's Hathigumpha Inscription is one of the most important historical records of ancient India.",
-
+    "Emperor Kapilendra Deva of the Suryavanshi Gajapati dynasty built one of the largest empires from Ganga to Kaveri.",
+    "Under the Gajapati rulers, Odisha emerged as the dominant power of eastern India,",
     "Odisha became a separate state on 1 April 1936 based on linguistic identity.",
-
     "Konark Sun Temple was designed in the shape of a colossal chariot with 24 wheels.",
-
     "Madhusudan Das was the first Odia graduate and is known as Utkal Gourab.",
-
     "The ancient maritime traders of Kalinga sailed as far as Bali, Java and Sumatra.",
-
     "Bali Jatra commemorates Odisha's glorious maritime heritage.",
-
     "Jagannath Culture is one of the oldest living traditions in India.",
-
-    "Kalinga was one of the most powerful kingdoms of ancient India."
+    "Kalinga was one of the most powerful kingdoms of ancient India.",
+    "The Paika Rebellion of 1817 began in Odisha and is widely regarded as the first organized freedom struggle against British colonial rule in India.",
+    "Utkal Gourab Madhusudan Das became the first Odia graduate and played a crucial role in the formation of Odisha as a separate linguistic state."
 
 ];
 

@@ -64,7 +64,7 @@
         max-width: 100%;
     }
 
-    h1.hero-title
+    .food-hero h1
     {
         font-size: 2.1rem;
         margin-top: 30%;
@@ -77,22 +77,19 @@
         /* display: block; */
     }
 
-    .hero-description
+    .food-hero p
     {
-        font-size: .7rem;
-        line-height: 1.4;
+        font-size: 0.8rem;
+        line-height: 1.5;
         max-width: 100%;
         gap:0.5%;
     }
 
     .btn-food
     {
-        display: flex;
-        width: 220px;
-        height: 55px;
-        width: 78%;
+        width: 73%;
         justify-content: center;
-        padding: 3% 0.5% 3% 0.5%;
+        font-size: 0.9rem;
     }
 
     .loader-content

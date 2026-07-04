@@ -270,8 +270,6 @@ animation: uploadFly .8s ease;
 
     .contribution-hero
     {
-
-        min-height: 92vh;
         background:
             linear-gradient(
                 rgba(0,0,0,.45),
@@ -281,7 +279,7 @@ animation: uploadFly .8s ease;
 
         background-size: cover;
         background-position: center center;
-        margin-top: 14%;
+        margin-top: 5%;
     }
 
 }
@@ -1226,9 +1224,7 @@ MOBILE
 {
     .contribution-hero 
     {
-
-        min-height: 92vh;
-
+        min-height: 105vh;
         background:
             linear-gradient(
                 rgba(0,0,0,.45),
@@ -1274,6 +1270,7 @@ MOBILE
         border-radius: 50px;
         padding: 0.8rem 1rem 0.8rem 1rem;
         margin-top: 2rem;
+        font-size: 0.9rem;
     }
 
 }

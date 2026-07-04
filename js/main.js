@@ -253,5 +253,5 @@ window.addEventListener('load', () =>
     setTimeout(() =>
     {
         loader.classList.add('hide');
-    }, 350);
+    }, 150);
 });
