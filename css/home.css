@@ -474,7 +474,7 @@ padding: 6rem 0;
     padding: 14px 40px;
     border-radius: 50px;
     box-shadow:
-        0 8px 25px rgba(0, 244, 232, 0.338);
+        0 8px 25px rgba(0, 114, 244, 0.594);
     transition: all .3s ease;
     margin-top: -4%;
 }
@@ -495,7 +495,7 @@ padding: 6rem 0;
 {
     transform: translateY(-4px);
     box-shadow:
-        0 15px 35px rgba(0, 211, 244, 0.446);
+        0 15px 35px rgba(0, 89, 244, 0.709);
     color: #fff;
 }
 
