@@ -90,6 +90,7 @@ LOADER BACKGROUND
     overflow: hidden;
     transition: all .8s ease;
     animation: particleMove 30s linear infinite;
+    position: fixed;
 }
 
 @keyframes particleMove
@@ -110,7 +111,7 @@ LOADER BACKGROUND
 {
     content: "";
 
-    position: absolute;
+    position: fixed;
     inset: 0;
     animation:
         glowMove 10s ease-in-out infinite alternate;
@@ -120,8 +121,7 @@ LOADER BACKGROUND
 #page-loader::after
 {
     content: "";
-
-    position: absolute;
+    position: fixed;
     inset: 0;
 
     background-image:
@@ -967,7 +967,19 @@ padding-right: 2%;
     text-align: center;
 }
 
-footer h4,
+.footer-logo
+{
+    width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: .4s ease;
+}
+
+.footer-logo:hover
+{
+    transform: scale(1.08);
+}
+
 footer h5 {
 
     margin-bottom: 1rem;

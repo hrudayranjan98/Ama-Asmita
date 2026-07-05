@@ -99,9 +99,10 @@
         display: block;
     }
 
-    .hero-description
+    .history-hero p
     {
-        font-size: 1.15rem;
+        font-size: .7rem;
+        margin-top: 10%;
         line-height: 1.8;
         max-width: 100%;
     }
