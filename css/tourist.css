@@ -592,20 +592,15 @@ IMAGE
 
 .tourist-image
 {
-overflow: hidden;
+    overflow: hidden;
 }
 
 .tourist-image img
-{
- 
-width: 100%;
-height: 320px;
-
-object-fit: cover;
-
-transition: .6s;
- 
-
+{ 
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: .6s;
 }
 
 
@@ -613,21 +608,17 @@ transition: .6s;
 CONTENT
 ========================================== */
 
-.tourist-content{
-padding: 25px;
+.tourist-content
+{
+    padding: 25px;
 }
 
-.tourist-content h2{
-
- 
-font-size: 2rem;
-font-weight: 700;
-
-margin-bottom: 15px;
-
-color: #fff;
- 
-
+.tourist-content h2
+{ 
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
 }
 
 /* ==========================================
@@ -1264,7 +1255,31 @@ RESPONSIVE
 
     .tourist-content h2
     {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+
+    .spot-description p
+    {
+        font-size: 0.85rem;
+    }
+
+    .tourist-image
+    {
+        overflow: hidden;
+    }
+
+    .tourist-image img
+    { 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .6s;
+    }
+
+
+    .pagination-section .btn
+    {
+       margin-top: 5%;
     }
 
 }

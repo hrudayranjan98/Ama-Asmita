@@ -29,7 +29,8 @@
 @media screen and (max-width: 991px),
        screen and (orientation: portrait){
 
-    .food-hero{
+    .food-hero
+    {
 
         background:
             linear-gradient(
@@ -47,6 +48,8 @@
 .hero-content {
     margin: auto;
 }
+
+
 
 @media (max-width: 991px){
 
@@ -68,7 +71,7 @@
     {
         font-size: 2.1rem;
         margin-top: 30%;
-        line-height: 1.15;
+        line-height: 1.20;
         margin-bottom: 20px;
     }
 
@@ -79,18 +82,43 @@
 
     .food-hero p
     {
-        font-size: 0.8rem;
-        line-height: 1.5;
+        font-size: 0.7rem;
+        line-height: 1.3rem;
         max-width: 100%;
         gap:0.5%;
     }
 
     .btn-food
     {
-        width: 73%;
+        width: 76%;
         justify-content: center;
         font-size: 0.9rem;
     }
+
+    .food-meta
+    {
+        margin-bottom: 2%;
+    }
+
+    .food-category
+    {
+        margin-top: -2%;
+    }
+
+    .food-location p
+    {
+        font-size: 0.8rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .food-category p
+    {
+        font-size: 0.8rem;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
 
     .loader-content
     {

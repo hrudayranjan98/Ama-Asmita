@@ -40,7 +40,7 @@ const icons = {
     "seafood": "fa-fish",
     "festival special": "fa-star",
     "pitha": "fa-cheese",
-    "temple food": "fa-gopuram",
+    "prasadam": "fa-gopuram",
     "side dish": "fa-utensils"
 
 };
@@ -217,7 +217,7 @@ foods.forEach(food => {
 
                 <i class="fas fa-location-dot"></i>
 
-                ${food.location}
+                <p>${food.location} </p>
 
             </span>
 
@@ -225,7 +225,7 @@ foods.forEach(food => {
 
                 <i class="fas ${getCategoryIcon(food.category)}"></i>
 
-                ${food.category}
+               <p> ${food.category} </p>
 
             </span>
 

@@ -255,3 +255,66 @@ window.addEventListener('load', () =>
         loader.classList.add('hide');
     }, 150);
 });
+
+
+// Download Feature
+
+if ("serviceWorker" in navigator)
+{
+    window.addEventListener(
+        "load",
+        () =>
+        {
+            navigator.serviceWorker
+            .register("./sw.js")
+
+            .then(() =>
+            {
+                console.log(
+                    "Service Worker Registered"
+                );
+            })
+
+            .catch(error =>
+            {
+                console.error(error);
+            });
+        }
+    );
+}
+
+// Download Button
+
+let deferredPrompt;
+
+window.addEventListener(
+    "beforeinstallprompt",
+    (e) =>
+    {
+
+        e.preventDefault();
+
+        deferredPrompt = e;
+
+        document
+        .getElementById("installBtn")
+        .style.display = "block";
+
+    }
+);
+
+document
+.getElementById("installBtn")
+.addEventListener(
+    "click",
+    async () =>
+    {
+
+        deferredPrompt.prompt();
+
+        await deferredPrompt.userChoice;
+
+        deferredPrompt = null;
+
+    }
+);

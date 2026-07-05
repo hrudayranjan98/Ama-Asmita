@@ -2,7 +2,7 @@
   "categories": [
     "Main Course",
     "Sweet",
-    "Temple Food",
+    "Prasadam",
     "Seafood",
     "Street Food",
     "Snack",
@@ -15,7 +15,7 @@
   ],
 
   "districts": [
-    "All Over Odisha",
+    "Across Odisha",
     "Angul",
     "Balangir",
     "Balasore",
@@ -54,8 +54,8 @@
   {
   "id": 1,
   "name": "Pakhala Bhata",
-  "district": "All Over Odisha",
-  "location":"All Over Odisha",
+  "district": "Across Odisha",
+  "location":"Across Odisha",
   "category": "Main Course",
   "image": "assets/foods/pakhala.png",
   "description": "A traditional fermented rice dish served with water, curd, vegetables and various side dishes across Odisha.",
@@ -76,8 +76,8 @@
   {
   "id": 2,
   "name": "Dalma",
-  "district": "All Over Odisha",
-  "location":"All Over Odisha",
+  "district": "Across Odisha",
+  "location":"Across Odisha",
   "category": "Main Course",
   "image": "assets/foods/dalma.png",
   "description": "A nutritious preparation of lentils and seasonal vegetables cooked together with authentic Odia spices.",
@@ -164,7 +164,7 @@
   {
   "id": 6,
   "name": "Macha Besara",
-  "district": "All Over Odisha",
+  "district": "Across Odisha",
   "location":"Coastal Areas",
   "category": "Seafood",
   "image": "assets/foods/macha-besara.png",
@@ -186,8 +186,8 @@
 {
   "id": 7,
   "name": "Chakuli Pitha",
-  "district": "All Over Odisha",
-  "location":"All Over Odisha",
+  "district": "Across Odisha",
+  "location":"Across Odisha",
   "category": "Snack",
   "image": "assets/foods/chakuli-pitha.png",
   "description": "A soft rice and black gram pancake traditionally served with dalma or ghuguni.",
@@ -230,8 +230,8 @@
 {
   "id": 9,
   "name": "Manda Pitha",
-  "district": "All Over Odisha",
-  "location":"All Over Odisha",
+  "district": "Across Odisha",
+  "location":"Across Odisha",
   "category": "Festival Special",
   "image": "assets/foods/manda-pitha.png",
   "description": "A steamed rice dumpling stuffed with coconut and jaggery filling.",
@@ -252,8 +252,8 @@
 {
   "id": 10,
   "name": "Arisa Pitha",
-  "district": "All Over Odisha",
-  "location":"All Over Odisha",
+  "district": "Across Odisha",
+  "location":"Across Odisha",
   "category": "Festival Special",
   "image": "assets/foods/arisa-pitha.png",
   "description": "A crispy traditional sweet made from rice flour and jaggery. It is one of the most common Festival Spl. Food.",
@@ -296,8 +296,8 @@
 {
   "id": 12,
   "name": "Bela Pana",
-  "district": "All Over Odisha",
-  "location":"All Over Odisha",
+  "district": "Across Odisha",
+  "location":"Across Odisha",
   "category": "Beverage",
   "image": "assets/foods/bela-pana.png",
   "description": "A refreshing summer drink prepared from bael fruit, milk and jaggery.",
@@ -339,7 +339,7 @@
 {
   "id": 14,
   "name": "Besara",
-  "district": "All Over Odisha",
+  "district": "Across Odisha",
   "location":"Mostly In Temples",
   "category": "Main Course",
   "image": "assets/foods/veg-besara.jpg",
@@ -381,8 +381,8 @@
 {
   "id": 16,
   "name": "Poda Pitha",
-  "district": ["All Over Odisha", "Khordha", "Ganjam"],
-  "location": "All Over Odisha",
+  "district": ["Across Odisha", "Khordha", "Ganjam"],
+  "location": "Across Odisha",
   "category": "Dessert",
   "image": "assets/foods/poda-pitha.png",
   "description": "A slow-baked traditional rice cake offered to Lord Jagannath during Bahuda Yatra, with Bhubaneswar famed for classic Poda Pitha and Berhampur for its unique Khira Poda Pitha.",
@@ -402,7 +402,7 @@
 {
   "id": 17,
   "name": "Badi Chura",
-  "district": ["All Over Odisha", "Keonjhar"],
+  "district": ["Across Odisha", "Keonjhar"],
   "location": "Dimbo, Keonjhar",
   "category": "Side Dish",
   "image": "assets/foods/badi-chura.png",
