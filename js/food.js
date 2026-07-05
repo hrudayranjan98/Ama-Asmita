@@ -41,7 +41,8 @@ const icons = {
     "festival special": "fa-star",
     "pitha": "fa-cheese",
     "prasadam": "fa-gopuram",
-    "side dish": "fa-utensils"
+    "side dish": "fa-utensils",
+    "non-vegetarian": "fa-drumstick-bite"
 
 };
 

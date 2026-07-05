@@ -615,59 +615,77 @@
 }
 
 
-.food-category i{
+.food-category i
+{
     font-size:.9rem;
 }
 
-.main-course{
+.main-course
+{
     background:linear-gradient(135deg,#ff7b00,#ffb347);
 }
 
-.breakfast{
+.breakfast
+{
     background:linear-gradient(135deg,#ff9800,#ffc107);
 }
 
-.sweet{
-    background:linear-gradient(135deg,#e91e63,#ff6fa5);
+.sweet
+{
+    background:linear-gradient(135deg,#ff02a6,#b62884);
 }
 
-.dessert{
+.non-vegetarian
+{
+    background:linear-gradient(135deg,#ff0505,#841d15);
+}
+
+.dessert
+{
     background:linear-gradient(135deg,#9c27b0,#ce93d8);
 }
 
-.street-food{
+.street-food
+{
     background:linear-gradient(135deg,#f44336,#ff7961);
 }
 
-.snack{
+.snack
+{
     background:linear-gradient(135deg,#795548,#bcaaa4);
 }
 
-.beverage{
-    background:linear-gradient(135deg,#2196f3,#64b5f6);
+.beverage
+{
+    background:linear-gradient(135deg,#551519,#784a0c);
 }
 
-.traditional-beverage{
+.traditional-beverage
+{
     background:linear-gradient(135deg,#00897b,#4db6ac);
 }
 
-.seafood{
+.seafood
+{
     background:linear-gradient(135deg,#0288d1,#4fc3f7);
 }
 
-.festival-special{
-    background:linear-gradient(135deg,#ffb300,#ffd54f);
+.festival-special
+{
+    background:linear-gradient(135deg,#ff00c8,#ff754f);
 }
 
 .pitha{
     background:linear-gradient(135deg,#8d6e63,#bcaaa4);
 }
 
-.temple-food{
+.prasadam
+{
     background:linear-gradient(135deg,#ff5722,#ff8a65);
 }
 
-.side-dish{
+.side-dish
+{
     background:linear-gradient(135deg,#607d8b,#90a4ae);
 }
 
@@ -687,6 +705,12 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     transition: all 0.35s ease;
     margin-bottom: 5%;
+}
+
+.food-location p
+{
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .food-location i{
@@ -738,6 +762,12 @@
     color: rgba(255,255,255,0.88);
     line-height: 1.7;
     font-size: 0.95rem;
+}
+
+.food-category p 
+{
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 /* ==========================
