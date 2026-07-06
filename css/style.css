@@ -398,18 +398,6 @@ ANIMATED BACKGROUND
     font-weight: lighter;
 }
 
-.art-1  { top:22%;   left:8%; }
-.art-2  { top:22%;  right:8%; }
-.art-4  { top:950px;  right:50px; }
-.art-5  { top:1150px; left:80px; }
-.art-6  { top:1500px; right:2800px; }
-.art-7  { top:1150px; left:1150px; }
-.art-8  { top:1100px; right:300px; }
-.art-9  { top:1400px; left:50px; }
-
-.art-12 { top:1920px; right:250px; }
-.art-14 { top:1800px; right:280px; }
-.art-15 { top:1900px; left:50px; }
 
 
 @keyframes gradientMove
@@ -564,6 +552,21 @@ width:100%;
         border: 2px solid rgba(255,255,255,.2);
         border-radius: 15px;
         padding: 6px 10px;
+        position: relative;
+        right: 0;
+        margin-left: auto;
+    }
+
+     .navbar>.container,
+    .navbar>.container-fluid
+    {
+        overflow: hidden;
+    }
+
+    .custom-navbar
+    {
+        position: relative;
+        z-index: 9999;
     }
 
     .navbar-collapse 
@@ -619,21 +622,6 @@ width:100%;
         overflow:hidden;
     }
 
-    .art-1  { top:15%; left:5%; }
-    .art-2  { top:15%; right:5%; }
-    .art-4  { top:1100px; right:40px; }
-    .art-5  { top:1450px; left:30px; }
-    .art-6  { top:1800px; right:40px; }
-    .art-7  { top:200px; left:75%; }
-    .art-8  { top:2650px; right:40px; }
-    .art-9  { top:3000px; left:30px; }
-    .art-10 { top:3450px; right:40px; }
-    .art-11 { top:3850px; left:50%; }
-    .art-12 { top:4400px; right:10px; }
-    .art-12 { top:4400px; right:10px; }
-    .art-13 { top:4650px; left:30px; }
-    .art-14 { top:5050px; right:40px; }
-    .art-15 { top:5450px; left:30px; }
 }
 
 
