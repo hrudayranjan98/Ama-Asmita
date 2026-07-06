@@ -318,3 +318,25 @@ document
 
     }
 );
+
+// Visitors Counter
+
+window.addEventListener("load", function () {
+
+    const timer = setInterval(function () {
+
+        if (window.goatcounter && window.goatcounter.visit_count) {
+
+            clearInterval(timer);
+
+            window.goatcounter.visit_count({
+                append: "#visitor-counter",
+                type: "html",
+                no_branding: true
+            });
+
+        }
+
+    }, 100);
+
+});
