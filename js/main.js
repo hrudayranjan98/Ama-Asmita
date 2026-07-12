@@ -1,4 +1,125 @@
 /* ==========================================
+   LOAD COMPONENTS
+========================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    async () =>
+{
+    try
+    {
+        /* ======================
+           NAVBAR
+        ====================== */
+
+        const navbarContainer =
+            document.getElementById(
+                "navbar-container"
+            );
+
+        if(navbarContainer)
+        {
+            const navbarResponse =
+                await fetch(
+                    "components/navbar.html"
+                );
+
+            navbarContainer.innerHTML =
+                await navbarResponse.text();
+        }
+
+        fetch("components/navbar.html")
+.then(response => response.text())
+.then(data =>
+{
+    document.getElementById(
+        "navbar-container"
+    ).innerHTML = data;
+
+    const script =
+        document.createElement(
+            "script"
+        );
+
+    script.src =
+        "js/navbar.js";
+
+    document.body.appendChild(
+        script
+    );
+});
+
+        /* ======================
+           FOOTER
+        ====================== */
+
+        const footerContainer =
+            document.getElementById(
+                "footer-container"
+            );
+
+        if(footerContainer)
+        {
+            const footerResponse =
+                await fetch(
+                    "components/footer.html"
+                );
+
+            footerContainer.innerHTML =
+                await footerResponse.text();
+        }
+
+        initializeNavbar();
+    }
+    catch(error)
+    {
+        console.error(
+            "Component Load Error:",
+            error
+        );
+    }
+});
+
+function initializeNavbar()
+{
+    const token =
+        localStorage.getItem(
+            "token"
+        );
+
+    const loginNavItem =
+        document.getElementById(
+            "loginNavItem"
+        );
+
+    const userProfileSection =
+        document.getElementById(
+            "userProfileSection"
+        );
+
+    if(token)
+    {
+        loginNavItem?.classList.add(
+            "d-none"
+        );
+
+        userProfileSection?.classList.remove(
+            "d-none"
+        );
+    }
+    else
+    {
+        loginNavItem?.classList.remove(
+            "d-none"
+        );
+
+        userProfileSection?.classList.add(
+            "d-none"
+        );
+    }
+}
+
+/* ==========================================
 AOS INITIALIZATION
 ========================================== */
 
@@ -340,3 +461,15 @@ window.addEventListener("load", function () {
     }, 100);
 
 });
+
+// Navbar
+
+const script =
+document.createElement("script");
+
+script.src =
+"/js/profile.js";
+
+document.body.appendChild(
+script
+);

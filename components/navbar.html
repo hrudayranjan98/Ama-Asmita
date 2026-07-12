@@ -1,0 +1,324 @@
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold"
+            href="index.html">
+            Ama Asmita
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
+
+            <ul
+                class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="tourist-spots.html">
+                        Tourist Spots
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="foods.html">
+                        Odia Foods
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="history.html">
+                        Legends
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="contribution.html">
+                        Contribution
+                    </a>
+                </li>
+
+                <!-- =========================
+                     LOGIN BUTTON
+                ========================== -->
+
+                <li
+                    class="nav-item"
+                    id="loginNavItem">
+
+                    <a
+                        class="nav-link login-btn-nav"
+                        href="login.html">
+
+                        Login
+
+                    </a>
+
+                </li>
+
+                <!-- =========================
+                     USER SECTION
+                ========================== -->
+
+                <li
+                    class="nav-item d-none"
+                    id="userProfileSection">
+
+                    <div class="nav-user-section">
+
+                        <!-- NOTIFICATION -->
+
+                        <button
+                            id="notificationBtn"
+                            class="notification-btn">
+
+                            <i
+                                class="fas fa-bell">
+                            </i>
+
+                            <span
+                                id="notificationCount"
+                                class="notification-badge">
+
+                                0
+
+                            </span>
+
+                        </button>
+
+                        <!-- PROFILE IMAGE -->
+
+                        <img
+                            id="profileAvatar"
+                            src="assets/images/default-user.png"
+                            alt="Profile"
+                            class="profile-nav-img">
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- ==========================================
+     PROFILE SIDE PANEL
+========================================== -->
+
+<div
+    id="profileSidebarOverlay"
+    class="profile-sidebar-overlay">
+</div>
+
+<div
+    id="profileSidebar"
+    class="profile-sidebar">
+
+    <!-- HEADER -->
+
+    <div class="profile-sidebar-header">
+
+        <h5
+            id="profilePanelTitle">
+
+            User Profile
+
+        </h5>
+
+        <button
+            id="closeProfileSidebar"
+            class="close-sidebar-btn">
+
+            <i
+                class="fas fa-times">
+            </i>
+
+        </button>
+
+    </div>
+
+    <!-- PROFILE INFO -->
+
+    <div
+        class="profile-info-section">
+
+        <div
+            class="profile-avatar-wrapper">
+
+            <img
+                id="sidebarProfileAvatar"
+                src="assets/images/default-user.png"
+                alt="Profile">
+
+        </div>
+
+        <h4
+            id="sidebarUserName">
+
+            User Name
+
+        </h4>
+
+        <p
+            id="sidebarUserEmail">
+
+            user@email.com
+
+        </p>
+
+    </div>
+
+    <!-- MENU -->
+
+    <div
+        class="profile-menu">
+
+        <a
+            href="dashboard.html"
+            class="profile-menu-item">
+
+            <i
+                class="fas fa-chart-line">
+            </i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+        <a
+            href="notifications.html"
+            class="profile-menu-item">
+
+            <i
+                class="fas fa-bell">
+            </i>
+
+            <span>
+                Notification
+            </span>
+
+            <span
+                id="sidebarNotificationCount"
+                class="sidebar-badge">
+
+                0
+
+            </span>
+
+        </a>
+
+        <a
+            href="edit-profile.html"
+            class="profile-menu-item">
+
+            <i
+                class="fas fa-user-edit">
+            </i>
+
+            <span>
+                Edit Profile
+            </span>
+
+        </a>
+
+        <button
+            id="logoutBtn"
+            class="profile-menu-item logout-btn">
+
+            <i
+                class="fas fa-sign-out-alt">
+            </i>
+
+            <span>
+                Logout
+            </span>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ==========================================
+     NOTIFICATION PANEL
+========================================== -->
+
+<div
+    id="notificationSidebarOverlay"
+    class="profile-sidebar-overlay">
+</div>
+
+<div
+    id="notificationSidebar"
+    class="notification-sidebar">
+
+    <div
+        class="profile-sidebar-header">
+
+        <h5>
+            Notifications
+        </h5>
+
+        <button
+            id="closeNotificationSidebar"
+            class="close-sidebar-btn">
+
+            <i
+                class="fas fa-times">
+            </i>
+
+        </button>
+
+    </div>
+
+    <div
+        id="notificationList"
+        class="notification-list">
+
+        <!-- Dynamic Notifications -->
+
+        <div
+            class="notification-empty">
+
+            No Notifications Available
+
+        </div>
+
+    </div>
+
+</div>

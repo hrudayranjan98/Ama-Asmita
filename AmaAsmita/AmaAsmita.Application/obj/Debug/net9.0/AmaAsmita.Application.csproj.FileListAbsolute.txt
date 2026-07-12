@@ -1,0 +1,16 @@
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\bin\Debug\net9.0\AmaAsmita.Application.deps.json
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\bin\Debug\net9.0\AmaAsmita.Application.dll
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\bin\Debug\net9.0\AmaAsmita.Application.pdb
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\bin\Debug\net9.0\AmaAsmita.Domain.dll
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\bin\Debug\net9.0\AmaAsmita.Domain.pdb
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.csproj.AssemblyReference.cache
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.AssemblyInfoInputs.cache
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.AssemblyInfo.cs
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.csproj.CoreCompileInputs.cache
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.sourcelink.json
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmit.75A68F9B.Up2Date
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.dll
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\refint\AmaAsmita.Application.dll
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\AmaAsmita.Application.pdb
+D:\.Net Coding\My Projects\Ama-Asmita\AmaAsmita\AmaAsmita.Application\obj\Debug\net9.0\ref\AmaAsmita.Application.dll

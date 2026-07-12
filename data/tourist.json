@@ -57,6 +57,7 @@
       "location": "Konark, Puri",
       "mapLink": "https://maps.google.com/?q=Konark+Sun+Temple",
       "description": "The Konark Sun Temple, a UNESCO World Heritage Site, is renowned for its magnificent chariot-shaped architecture dedicated to the Sun God. The temple made by Langula Narasimha Dev, named as 'Black Pagoda'.",
+      "detailsPageId": 1,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -76,6 +77,7 @@
       "location": "Sri Kshetra Puri",
       "mapLink": "https://maps.google.com/?q=Shree+Jagannath+Temple+Puri",
       "description": "One of the Char Dham pilgrimage sites, famous for Lord Jagannath and the annual Rath Yatra festival. The presence of lord Jagannath makes Odisha graceful, so the land is called as 'Shree Kshetra.'",
+      "detailsPageId": 2,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -94,6 +96,7 @@
       "location": "Bhubaneswar, Khordha",
       "mapLink": "https://maps.google.com/?q=Nandankanan+Zoological+Park",
       "description": "India's famous zoological park known for its white tigers, lion safari and wildlife conservation programs. Home to the world's first captive-bred White Tiger and spread across a scenic forest and lake ecosystem, offering a unique wildlife experience in Odisha.",
+      "detailsPageId":3,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -112,6 +115,7 @@
       "location": "Satapada, Puri",
       "mapLink": "https://maps.app.goo.gl/mdQxXQmQijdNVXDW8",
       "description": "Asia's largest brackish water lagoon famous for migratory birds, dolphins and scenic beauty. Also home to the revered Kalijai Temple, a sacred island shrine dedicated to Goddess Kalijai, attracting thousands of devotees and visitors throughout the year.",
+      "detailsPageId":4,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -130,6 +134,7 @@
       "location": "Daringbadi, Kandhamal",
       "mapLink": "https://maps.google.com/?q=Daringbadi+Kandhamal",
       "description": "Known as the 'Kashmir of Odisha', Daringbadi is famous for pine forests, waterfalls and cool climate. Nestled in the Eastern Ghats, it is one of the few places in Odisha that occasionally experiences frost during winter, making it a popular hill station and nature getaway.",
+      "detailsPageId":5,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -148,6 +153,7 @@
       "location": "Bhubaneswar, Khordha",
       "mapLink": "https://maps.google.com/?q=Lingaraj+Temple+Bhubaneswar",
       "description": "A masterpiece of Kalinga architecture dedicated to Lord Shiva and one of Odisha's most sacred temples. The Lingaraj Temple was built in the 11th century by King Jajati Keshari of the Somavamsi dynasty which is is renowned for it's towering spire & intricate stone carvings.",
+      "detailsPageId":6,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -166,6 +172,7 @@
       "location": "Mayurbhanj",
       "mapLink": "https://maps.google.com/?q=Similipal+National+Park",
       "description": "A UNESCO Biosphere Reserve famous for dense forests, waterfalls, tigers & elephants. Spread across the Eastern Ghats, Similipal is one of India's largest protected forest ecosystems, renowned for its rich biodiversity, scenic landscapes, and indigenous tribal heritage.",
+      "detailsPageId": 7,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -184,6 +191,7 @@
       "location": "Koraput",
       "mapLink": "https://maps.google.com/?q=Deomali+Hills+Koraput",
       "description": "The highest mountain peak in Odisha offering breathtaking sunrise views, trekking and adventure opportunities. Nestled in the Eastern Ghats of Koraput district, surrounded by lush green valleys, rolling meadows & mist-covered landscapes, making it a paradise for nature lovers and photographers.",
+      "detailsPageId": 8,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -202,6 +210,7 @@
       "location": "Gopalpur, Ganjam",
       "mapLink": "https://maps.google.com/?q=Gopalpur+Beach+Ganjam",
       "description": "A serene beach destination known for golden sands, sea breeze and spectacular sunsets. Once a bustling colonial-era port town, Gopalpur Beach offers a perfect blend of natural beauty, peaceful ambiance, and water-based activities, making it one of Odisha's most popular coastal getaways.",
+      "detailsPageId":9,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -220,6 +229,7 @@
       "location": "Ratnagiri, Jajpur",
       "mapLink": "https://maps.google.com/?q=Ratnagiri+Buddhist+Complex+Jajpur",
       "description": "An important Buddhist archaeological site featuring ancient monasteries, stupas and stone sculptures. Part of Odisha's renowned Diamond Triangle of Buddhist heritage, Ratnagiri flourished as a major center of Mahayana and Vajrayana Buddhism between the 5th and 13th centuries.",
+      "detailsPageId": 10,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -238,6 +248,7 @@
       "location": "Purushottampur, Ganjam",
       "mapLink": "https://maps.google.com/?q=Tara+Tarini+Temple+Ganjam",
       "description": "One of the oldest Shakti Peethas of India, Which is perched atop Kumari Hills overlooking the Rushikulya River. Dedicated to the twin goddesses Tara & Tarini, the temple is a revered pilgrimage destination known for it's spiritual significance, scenic surroundings & grand Chaitra Yatra festival.",
+      "detailsPageId": 11,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -256,6 +267,7 @@
       "location": "Cuttack",
       "mapLink": "https://maps.google.com/?q=Barabati+Fort+Cuttack",
       "description": "A historic fort built by the Eastern Ganga dynasty, Barabati Fort stands as a symbol of Odisha's medieval military architecture. Located in Cuttack, the fort is famous for its impressive nine-storeyed gateway ruins, moat system, and rich historical legacy dating back to the 14th century.",
+      "detailsPageId":12,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -274,6 +286,7 @@
       "location": "Jajpur Town, Jajpur",
       "mapLink": "https://maps.google.com/?q=Biraja+Temple+Jajpur",
       "description": "Dedicated to Goddess Biraja, this ancient temple is one of Odisha's most sacred pilgrimage sites and an important Shakti Peetha. Located in Jajpur, the temple is revered as the abode of Goddess Biraja, attracting thousands of devotees and preserving centuries of spiritual and cultural heritage.",
+      "detailsPageId": 13,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -292,6 +305,7 @@
       "location": "Chandipur, Balasore",
       "mapLink": "https://maps.google.com/?q=Chandipur+Beach+Balasore",
       "description": "The beach is renowned for its rare receding shoreline (Vanishing Sea Phenomena), where the sea retreats up to 5 kilometers during low tide, and for hosting the Missile Launch Centre at the Integrated Test Range, a key hub for India's missile development and testing programs.",
+      "detailsPageId": 14,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -310,6 +324,7 @@
       "location": "Bhubaneswar, Khordha",
       "mapLink": "https://maps.google.com/?q=Wonderla+Amusement+Park+Bhubaneswar",
       "description": "A modern amusement and water park offering thrilling rides, family attractions and exciting entertainment experiences. One of Odisha's newest leisure destinations, Wonderla features world-class rides, water slides, and interactive attractions, making it a popular getaway for families and adventure seekers alike.",
+      "detailsPageId":15,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -328,6 +343,7 @@
       "location": "Dhauli, Bhubaneswar",
       "mapLink": "https://maps.google.com/?q=Dhauli+Shanti+Stupa",
       "description": "Built on the historic Kalinga War site, Dhauli Shanti Stupa symbolizes peace and marks Emperor Ashoka's transformation towards Buddhism. The Dhauli Shanti Stupa, also known as the Peace Pagoda, was constructed by the Japan Buddha Sangha and the Kalinga Nippon Buddha Sangha in 1972.",
+      "detailsPageId": 16,
       "contributor": {
         "name": "Hrudayranjan Parida",
         "designation": "Tourism Contributor",
@@ -347,6 +363,7 @@
   "location": "Ghatagaon, Keonjhar",
   "mapLink": "https://maps.google.com/?q=Tarini+Temple+Ghatagaon",
   "description": "One of Odisha's most revered Shakti shrines. Situated atop a small hill in Ghatagaon, the temple is especially famous for devotees offering coconuts tied with red cloth as a symbol of their wishes.",
+  "detailsPageId": 17,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -365,6 +382,7 @@
   "location": "Hirakud, Sambalpur",
   "mapLink": "https://maps.google.com/?q=Hirakud+Dam",
   "description": "Built across the Mahanadi River, Hirakud Dam is one of the world's longest earthen dams. It offers breathtaking reservoir views, scenic gardens, watch towers and serves as a major source of irrigation and hydroelectric power to whole Odisha.",
+  "detailsPageId": 18,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -383,6 +401,7 @@
   "location": "Keonjhar",
   "mapLink": "https://maps.google.com/?q=Sanaghagara+Waterfall",
   "description": "A picturesque waterfall surrounded by lush forests, which is one of Keonjhar's most popular picnic destinations. The cascading water make it ideal for nature lovers.",
+  "detailsPageId":19,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -401,6 +420,7 @@
   "location": "Ghatagaon, Keonjhar",
   "mapLink": "https://maps.google.com/?q=Gundichaghagi+Waterfall",
   "description": "Nestled amidst dense forests near Ghatagaon, Gundichaghagi Waterfall is known for its crystal-clear waters, tranquil surroundings and scenic trekking trails.",
+  "detailsPageId": 20,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -419,6 +439,7 @@
   "location": "Vyasnagar, Jajpur",
   "mapLink": "https://maps.google.com/?q=Byas+Sarovar+Jajpur",
   "description": "A sacred water tank believed to be associated with Sage Ved Vyas & many symbols of Mahabharat, Vyas Sarovar is an important pilgrimage site and a prominent landmark in the historic town of Jajpur.",
+  "detailsPageId":21,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -437,6 +458,7 @@
   "location": "Bhubaneswar",
   "mapLink": "https://maps.google.com/?q=Khandagiri+Caves",
   "description": "These ancient rock-cut caves were carved during the reign of Emperor Kharavela and once served as residences for Jain monks. They are among Odisha's most significant archaeological monuments.",
+  "detailsPageId": 22,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -455,6 +477,7 @@
   "location": "Bhubaneswar",
   "mapLink": "https://maps.google.com/?q=Udayagiri+Caves",
   "description": "Located opposite Khandagiri, the Udayagiri Caves feature beautifully carved chambers, inscriptions and sculptures dating back to the 2nd century BCE, reflecting Odisha's rich Jain heritage.",
+  "detailsPageId":23,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -473,6 +496,7 @@
   "location": "Chandragiri, Gajapati",
   "mapLink": "https://maps.google.com/?q=Jirang+Buddhist+Monastery",
   "description": "Also known as Padmasambhava Mahavihara, it is the largest Buddhist monastery in Eastern India. The monastery showcases magnificent Tibetan architecture amidst peaceful surroundings.",
+  "detailsPageId": 24,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -491,6 +515,7 @@
   "location": "Taptapani, Ganjam",
   "mapLink": "https://maps.google.com/?q=Taptapani",
   "description": "A popular hill destination famous for its natural hot sulphur springs, lush forests and scenic beauty. The therapeutic spring water attracts visitors throughout the year.",
+  "detailsPageId":25,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -509,6 +534,7 @@
   "location": "Harishankar, Balangir",
   "mapLink": "https://maps.google.com/?q=Harishankar+Temple",
   "description": "A sacred shrine nestled in the Gandhamardan Hills. The Temple is dedicated to both Lord Vishnu and Lord Shiva, which is renowned for it's beautiful waterfall & trekking trails.",
+  "detailsPageId": 26,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -528,6 +554,7 @@
   "location": "Kapilas, Dhenkanal",
   "mapLink": "https://maps.google.com/?q=Kapilas+Temple",
   "description": "Dedicated to Lord Chandrasekhar (Shiva), Kapilas Temple sits atop the scenic Kapilas Hills at an elevation of about 2,239 feet. Devotees climb its 1,352 steps, to enjoy breathtaking panoramic views of the surrounding forests.",
+  "detailsPageId": 27,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -546,6 +573,7 @@
   "location": "Hirakud Reservoir, Bargarh",
   "mapLink": "https://maps.google.com/?q=Debrigarh+Wildlife+Sanctuary",
   "description": "Overlooking the Hirakud Reservoir, Debrigarh Wildlife Sanctuary is home to leopards, elephants, bison, deer and numerous bird species, making it one of Odisha's premier eco-tourism destinations.",
+  "detailsPageId": 28,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -564,6 +592,7 @@
   "location": "Bhawanipatna, Kalahandi",
   "mapLink": "https://maps.google.com/?q=Manikeswari+Temple+Bhawanipatna",
   "description": "Dedicated to Goddess Manikeswari, the presiding deity of the former Kalahandi kingdom, this ancient temple is famous for its grand Chhatar Yatra festival celebrated every Dussehra.",
+  "detailsPageId": 29,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -581,6 +610,7 @@
   "image": "assets/tourist/khirachora-gopinath-temple.png",
   "location": "Remuna, Balasore",
   "mapLink": "https://maps.google.com/?q=Khirachora+Gopinath+Temple",
+  "detailsPageId": 30,
   "description": "A revered Vaishnavite temple dedicated to Lord Krishna, famous for the legend of 'Kshira Chora Gopinath' and its sacred sweet offering, Amruta Keli.",
   "contributor": {
     "name": "Hrudayranjan Parida",
@@ -600,6 +630,7 @@
   "location": "Emami Nagar, Balasore",
   "mapLink": "https://maps.app.goo.gl/zuPrzVpGvqEYMtUC6",
   "description": "A magnificent modern temple inspired by the architecture of the Jagannath Temple in Puri. It has become a prominent spiritual landmark and tourist attraction in Balasore.",
+  "detailsPageId":31,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -618,6 +649,7 @@
   "location": "Satkosia Gorge, Angul",
   "mapLink": "https://maps.google.com/?q=Tikarpada",
   "description": "Situated within Satkosia Tiger Reserve, Tikarpada is renowned for its spectacular Mahanadi Gorge, crocodile conservation centre, boating and riverside eco-tourism experiences.",
+  "detailsPageId":32,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -636,6 +668,7 @@
   "location": "Kendrapara",
   "mapLink": "https://maps.google.com/?q=Gahirmatha+Marine+Sanctuary",
   "description": "The world's largest nesting ground for Olive Ridley sea turtles, Gahirmatha Marine Sanctuary is one of India's most significant marine conservation areas.",
+  "detailsPageId": 33,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -654,7 +687,7 @@
   "location": "Machkund, Koraput",
   "mapLink": "https://maps.google.com/?q=Duduma+Waterfall",
   "description": "One of India's tallest waterfalls, Duduma plunges about 157 meters from the Machkund River amidst lush Eastern Ghats. It is also home to the historic Machkund Hydroelectric Project.",
-
+  "detailsPageId":34,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -673,6 +706,7 @@
   "location": "Aradi, Bhadrak",
   "mapLink": "https://maps.google.com/?q=Akhandalamani+Temple+Aradi",
   "description": "Dedicated to Lord Akhandalamani (Shiva), this sacred riverside temple on the banks of the Baitarani River is one of the most revered pilgrimage sites in northern Odisha.",
+  "detailsPageId": 35,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -691,6 +725,7 @@
   "location": "Chilika Lake, Khordha",
   "mapLink": "https://maps.google.com/?q=Mangalajodi+Chilika",
   "description": "Located on the northern edge of Chilika Lake, Mangalajodi is internationally renowned for community-led bird conservation and offers unforgettable boat safaris to observe thousands of migratory birds.",
+  "detailsPageId":36,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -710,6 +745,7 @@
   "location": "Dhabaleswar Island, Cuttack",
   "mapLink": "https://maps.google.com/?q=Dhabaleswar+Temple",
   "description": "Dedicated to Lord Shiva, Dhabaleswar Temple is situated on a picturesque island in the Mahanadi River and is famous for its iconic suspension bridge and the grand Bada Osha festival.",
+  "detailsPageId":37,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -728,6 +764,7 @@
   "location": "Mahendragiri, Gajapati",
   "mapLink": "https://maps.google.com/?q=Mahendragiri",
   "description": "One of Odisha's highest mountain peaks, Mahendragiri is renowned for trekking, camping, spectacular sunrise views and its mythological association with Lord Parashurama and the Pandavas.",
+  "detailsPageId": 38,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -746,6 +783,7 @@
   "location": "Jhankad, Jagatsinghpur",
   "mapLink": "https://maps.google.com/?q=Jhankad+Sarala+Temple",
   "description": "Dedicated to Goddess Sarala, the temple is an important Shakti shrine and is closely associated with Adikabi Sarala Das, who is believed to have received divine blessings here.",
+  "detailsPageId": 39,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -764,6 +802,7 @@
   "location": "Kendrapara",
   "mapLink": "https://maps.google.com/?q=Bhitarkanika+National+Park",
   "description": "India's second-largest mangrove ecosystem, Bhitarkanika National Park is famous for its saltwater crocodiles, rich biodiversity, mangrove forests and scenic boat cruises.",
+  "detailsPageId": 40,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -782,6 +821,7 @@
   "location": "Chitrakonda, Malkangiri",
   "mapLink": "https://maps.google.com/?q=Chitrakonda",
   "description": "Often called the 'Kashmir of Odisha', Chitrakonda is known for its breathtaking reservoir, picturesque boat rides, lush hills and tranquil natural surroundings.",
+  "detailsPageId": 41,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -800,6 +840,7 @@
   "location": "Khiching, Mayurbhanj",
   "mapLink": "https://maps.app.goo.gl/bbwxiPSg2Hi3eEiT6",
   "description": "An ancient magnificent 100-foot monument renowned for the black chlorite stone sculptures that represent Odisha's rich architectural heritage.",
+  "detailsPageId": 42,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -818,6 +859,7 @@
   "location": "Kotsamalai, Subarnapur",
   "mapLink": "https://maps.google.com/?q=Patali+Jagannath+Kotsamalai",
   "description": "A sacred shrine where the idols of Lord Jagannath are believed to have been secretly worshipped during invasions, making it one of Odisha's most historically significant Jagannath pilgrimage sites.",
+  "detailsPageId": 43,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -836,6 +878,7 @@
   "location": "Fategarh, Nayagarh",
   "mapLink": "https://maps.google.com/?q=Fategarh+Jagannath+Temple",
   "description": "Nestled amidst the scenic Fategarh Ghati, this beautiful Jagannath Temple is renowned for its peaceful surroundings, lush greenery and panoramic hill views.",
+  "detailsPageId": 44,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -854,6 +897,7 @@
   "location": "Sambalpur",
   "mapLink": "https://maps.google.com/?q=Samaleswari+Temple+Sambalpur",
   "description": "Dedicated to Goddess Samaleswari, the presiding deity of Western Odisha, this centuries-old temple is the spiritual and cultural heart of the Sambalpur region.",
+  "detailsPageId": 45,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -872,6 +916,7 @@
   "location": "Bonai, Sundargarh",
   "mapLink": "https://maps.google.com/?q=Khandadhar+Waterfall",
   "description": "Odisha's highest waterfall, cascading from a height of about 244 meters, Khandadhar is surrounded by dense forests and offers spectacular trekking and nature photography opportunities.",
+  "detailsPageId": 46,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -891,6 +936,7 @@
   "location": "Pallahara, Angul",
   "mapLink": "https://maps.google.com/?q=Malayagiri+Hill",
   "description": "The highest mountain peak of Angul district, Malayagiri Hill is a paradise for trekkers, offering dense forests, scenic trails, rich biodiversity and panoramic views of the Eastern Ghats.",
+  "detailsPageId": 47,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -909,6 +955,7 @@
   "location": "Koraput",
   "mapLink": "https://maps.google.com/?q=Sabara+Srikhetra+Koraput",
   "description": "A magnificent Jagannath Temple inspired by the Puri shrine, Sabara Srikhetra celebrates the tribal connection of Lord Jagannath and serves as a major spiritual and cultural landmark of southern Odisha.",
+  "detailsPageId":48,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -927,6 +974,7 @@
   "location": "Malatipatpur, Puri",
   "mapLink": "https://maps.google.com/?q=Wonderland+Water+Park+Malatipatpur",
   "description": "One of Odisha's popular family entertainment destinations, Wonderland Water Park features thrilling water slides, wave pools, rain dance attractions and fun-filled recreational activities for visitors of all ages.",
+  "detailsPageId": 49,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",
@@ -945,6 +993,7 @@
   "location": "Satkosia, Angul",
   "mapLink": "https://maps.google.com/?q=Satkosia+Tiger+Reserve",
   "description": "A spectacular tiger reserve and wildlife sanctuary spread across the Mahanadi Gorge, Satkosia is renowned for its dense forests, crocodile conservation, elephants, leopards, birdlife and unforgettable jungle safaris.",
+  "detailsPageId":50,
   "contributor": {
     "name": "Hrudayranjan Parida",
     "designation": "Tourism Contributor",

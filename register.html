@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Ama Asmita</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="css/register.css">
+
+    <link rel="stylesheet"
+      href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Page Loader -->
+<!-- <div id="page-loader">
+
+    <div class="loader-content">
+
+        <div class="loader-wheel">
+            <img
+                src="assets/icons/loader.png"
+                class="loader-logo">
+        </div>
+
+        <h2 class="loader-title">
+            ଆମ ଅସ୍ମିତା
+        </h2>
+
+        <p class="loader-subtitle">
+            Preserving Heritage • Culture • History
+        </p>
+
+    </div>
+
+</div> -->
+
+    <!-- Background Effects -->
+
+    <div class="bg-shape shape-1"></div>
+
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Register Section -->
+
+    <section class="register-section">
+
+        <div class="register-card">
+
+            <!-- Logo -->
+
+            <div class="register-header">
+
+                <img
+                    src="assets/icons/logo.png"
+                    alt="Ama Asmita Logo"
+                    class="register-logo">
+
+                <h1>
+
+                    Create Account
+
+                </h1>
+
+                <p>
+
+                    Join Ama Asmita and contribute to
+                    Odisha's culture, history and heritage.
+
+                </p>
+
+            </div>
+
+            <!-- Validation Alert -->
+
+            <div
+                id="formAlert"
+                class="form-alert">
+
+                <i class="bi bi-exclamation-circle-fill"></i>
+
+                <span>
+
+                    Please Fill All The Mandatory Fields
+
+                </span>
+
+            </div>
+
+            <!-- Register Form -->
+
+            <form id="registerForm">
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        Full Name
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter Full Name">
+
+                    <small
+                        id="nameError"
+                        class="error-text">
+                    </small>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter Email Address">
+
+                    <small
+                        id="emailError"
+                        class="error-text">
+                    </small>
+
+                </div>
+
+                <!-- Username -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        Username
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Choose Username">
+
+                    <small
+                        id="usernameError"
+                        class="error-text">
+                    </small>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        Password
+
+                    </label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create Password">
+
+                        <button
+                            type="button"
+                            id="togglePassword">
+
+                            <i
+                                class="bi bi-eye-slash"
+                                id="passwordIcon">
+                            </i>
+
+                        </button>
+
+                    </div>
+
+                    <div id="passwordRules"
+                        class="password-rules">
+
+                        <div id="ruleLength">
+                            Minimum 6 Characters
+                        </div>
+
+                        <div id="ruleUpper">
+                            One Uppercase Letter
+                        </div>
+
+                        <div id="ruleLower">
+                            One Lowercase Letter
+                        </div>
+
+                        <div id="ruleNumber">
+                            One Number
+                        </div>
+
+                        <div id="ruleSpecial">
+                            One Special Character
+                        </div>
+
+                    </div>
+
+                    <small
+                        id="passwordError"
+                        class="error-text">
+                    </small>
+
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        Confirm Password
+
+                    </label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm Password">
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword">
+
+                            <i
+                                class="bi bi-eye-slash"
+                                id="confirmPasswordIcon">
+                            </i>
+
+                        </button>
+
+                    </div>
+
+                    <small
+                        id="confirmPasswordError"
+                        class="error-text">
+                    </small>
+
+                </div>
+
+                <!-- Register Button -->
+
+                <button
+                    type="submit"
+                    class="register-btn">
+
+                    <i class="bi bi-person-plus-fill"></i>
+
+                    Register
+
+                </button>
+
+            </form>
+
+            <!-- Login Redirect -->
+
+            <div class="login-section-link">
+
+                <p>
+
+                    Already Have An Account?
+
+                </p>
+
+                <a
+                    href="login.html"
+                    class="login-btn-link">
+
+                    Log In
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SUCCESS MODAL -->
+
+    <div
+        id="successModal"
+        class="custom-modal">
+
+        <div class="custom-modal-box">
+
+            <div class="success-icon">
+
+                <div class="tick-mark"></div>
+
+            </div>
+
+            <h2>
+
+                Registered Successfully
+
+            </h2>
+
+            <p>
+
+                Congratulations! You have been
+                registered to Ama Asmita.
+
+            </p>
+
+            <button
+                id="successOkBtn"
+                class="modal-btn success-btn">
+
+                Okay
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- FAILED MODAL -->
+
+    <div
+        id="failedModal"
+        class="custom-modal">
+
+        <div class="custom-modal-box">
+
+            <div class="failed-icon">
+
+                <div class="cross-mark"></div>
+
+            </div>
+
+            <h2>
+
+                Registration Failed
+
+            </h2>
+
+            <p>
+
+                Sorry, facing some issue.
+                Try to register yourself once again.
+
+            </p>
+
+            <button
+                id="retryBtn"
+                class="modal-btn failed-btn">
+
+                Retry
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/register.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

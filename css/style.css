@@ -625,6 +625,338 @@ width:100%;
 }
 
 
+/* Profile CSS */
+
+/* ==========================================
+   USER NAVBAR SECTION
+========================================== */
+
+.nav-user-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+/* ==========================================
+   NOTIFICATION BUTTON
+========================================== */
+
+.notification-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.notification-btn:hover {
+    transform: scale(1.08);
+}
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    min-width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dc3545;
+    color: #ffffff;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   PROFILE IMAGE
+========================================== */
+
+.profile-nav-img {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    cursor: pointer;
+
+    border: 2px solid rgba(255,255,255,0.25);
+
+    transition: all 0.3s ease;
+}
+
+.profile-nav-img:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
+}
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+.profile-sidebar-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.5);
+
+    z-index: 1040;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.profile-sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ==========================================
+   PROFILE SIDEBAR
+========================================== */
+
+.profile-sidebar {
+    position: fixed;
+
+    top: 0;
+    right: -360px;
+
+    width: 340px;
+    max-width: 100%;
+
+    height: 100vh;
+
+    background: #ffffff;
+
+    z-index: 1050;
+
+    box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+
+    transition: right 0.3s ease;
+
+    overflow-y: auto;
+}
+
+.profile-sidebar.active {
+    right: 0;
+}
+
+/* ==========================================
+   SIDEBAR HEADER
+========================================== */
+
+.profile-sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-sidebar-header h5 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.close-sidebar-btn {
+    border: none;
+    background: transparent;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
+}
+
+/* ==========================================
+   PROFILE INFO
+========================================== */
+
+.profile-info-section {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.profile-avatar-wrapper img {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid #e9ecef;
+}
+
+#sidebarUserName {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#sidebarUserEmail {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   MENU
+========================================== */
+
+.profile-menu {
+    padding: 10px 0;
+}
+
+.profile-menu-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 22px;
+
+    text-decoration: none;
+    color: #212529;
+
+    background: transparent;
+    border: none;
+
+    transition: 0.3s ease;
+
+    cursor: pointer;
+}
+
+.profile-menu-item:hover {
+    background: #f8f9fa;
+}
+
+.profile-menu-item i {
+    width: 22px;
+}
+
+.logout-btn {
+    color: #dc3545;
+}
+
+/* ==========================================
+   SIDEBAR BADGE
+========================================== */
+
+.sidebar-badge {
+    margin-left: auto;
+
+    min-width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dc3545;
+    color: #ffffff;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   NOTIFICATION SIDEBAR
+========================================== */
+
+.notification-sidebar {
+    position: fixed;
+
+    top: 0;
+    right: -420px;
+
+    width: 400px;
+    max-width: 100%;
+
+    height: 100vh;
+
+    background: #ffffff;
+
+    z-index: 1050;
+
+    box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+
+    transition: right 0.3s ease;
+
+    overflow-y: auto;
+}
+
+.notification-sidebar.active {
+    right: 0;
+}
+
+/* ==========================================
+   NOTIFICATION LIST
+========================================== */
+
+.notification-list {
+    padding: 15px;
+}
+
+.notification-empty {
+    text-align: center;
+    color: #6c757d;
+    padding: 40px 10px;
+}
+
+.notification-item {
+    background: #f8f9fa;
+
+    border-radius: 12px;
+
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.notification-message {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.notification-time {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .profile-sidebar,
+    .notification-sidebar {
+        width: 100%;
+    }
+
+    .nav-user-section {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+}
+
 /* ==========================================
 HERO SECTION
 ========================================== */

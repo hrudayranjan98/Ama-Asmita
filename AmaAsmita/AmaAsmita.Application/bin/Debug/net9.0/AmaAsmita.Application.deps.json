@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "AmaAsmita.Application/1.0.0": {
+        "dependencies": {
+          "AmaAsmita.Domain": "1.0.0"
+        },
+        "runtime": {
+          "AmaAsmita.Application.dll": {}
+        }
+      },
+      "AmaAsmita.Domain/1.0.0": {
+        "runtime": {
+          "AmaAsmita.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AmaAsmita.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AmaAsmita.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

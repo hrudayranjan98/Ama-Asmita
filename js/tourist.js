@@ -184,6 +184,31 @@ function renderCards(data) {
 
                     </div>
 
+                    <div class="tourist-actions">
+
+                        <button
+                            class="save-btn"
+                            data-id="${spot.id}"
+                            title="Save Place">
+
+                            <i class="bi bi-star"></i>
+
+                        </button>
+
+                        <button
+                            class="btn btn-view-more"
+                            data-id="${spot.id}">
+
+                            <i class="bi bi-book"></i>
+
+                            View More
+
+                        </button>
+
+                    </div>
+
+                    
+
                     <div class="contributor">
 
                         <div class="contributor-info">
@@ -243,6 +268,89 @@ function renderCards(data) {
     initializeCards();
     animateCards();
 
+    /* ==========================
+   VIEW MORE
+========================== */
+
+document.querySelectorAll(".btn-view-more")
+.forEach(button =>
+{
+    button.addEventListener("click", () =>
+    {
+        const id =
+            button.dataset.id;
+
+        window.location.href =
+            `tourist-details.html?id=${id}`;
+    });
+});
+
+/* ==========================
+   SAVE PLACE
+========================== */
+
+document.querySelectorAll(".save-btn")
+.forEach(button =>
+{
+    button.addEventListener("click", () =>
+    {
+        /* ==========================
+           AUTH CHECK
+        ========================== */
+
+        const token =
+            localStorage.getItem("token");
+
+        if(!token)
+        {
+            const loginModal =
+                new bootstrap.Modal(
+                    document.getElementById(
+                        "loginRequiredModal"
+                    )
+                );
+
+            loginModal.show();
+
+            return;
+        }
+
+        /* ==========================
+           SAVE SUCCESS
+        ========================== */
+
+        button.classList.add("saved");
+
+        const icon =
+            button.querySelector("i");
+
+        icon.classList.remove(
+            "bi-star"
+        );
+
+        icon.classList.add(
+            "bi-star-fill"
+        );
+    });
+});
+
+button.classList.add("saved");
+
+const icon =
+    button.querySelector("i");
+
+icon.classList.remove(
+    "bi-star"
+);
+
+icon.classList.add(
+    "bi-star-fill"
+);
+
+
+/* ==========================
+    GET ICON & COLOR
+========================== */
     function getLocationIcon(category) 
     {
 
@@ -424,20 +532,21 @@ function showNoResults(count) {
     }
 }
 
+
 /* ==========================
    LOAD MORE
 ========================== */
 
-function initializeCards() {
-
+function initializeCards()
+{
     const cards =
         document.querySelectorAll(
             ".tourist-card-item"
         );
 
     cards.forEach(
-        (card, index) => {
-
+        (card, index) =>
+        {
             card.style.display =
                 index < currentVisible
                     ? "block"
@@ -445,10 +554,8 @@ function initializeCards() {
         }
     );
 
-    if (
-        cards.length <= currentVisible
-    ) {
-
+    if(cards.length <= currentVisible)
+    {
         loadMoreBtn.style.display =
             "none";
     }
@@ -456,7 +563,32 @@ function initializeCards() {
 
 loadMoreBtn?.addEventListener(
     "click",
-    () => {
+    () =>
+    {
+        /* ==========================
+           LOGIN CHECK
+        ========================== */
+
+        const token =
+            localStorage.getItem("token");
+
+        if(!token)
+        {
+            const loginModal =
+                new bootstrap.Modal(
+                    document.getElementById(
+                        "loginRequiredModal"
+                    )
+                );
+
+            loginModal.show();
+
+            return;
+        }
+
+        /* ==========================
+           LOAD MORE
+        ========================== */
 
         currentVisible += 16;
 
@@ -466,24 +598,18 @@ loadMoreBtn?.addEventListener(
             );
 
         cards.forEach(
-            (card, index) => {
-
-                if (
-                    index < currentVisible
-                ) {
-
+            (card, index) =>
+            {
+                if(index < currentVisible)
+                {
                     card.style.display =
                         "block";
                 }
-
             }
         );
 
-        if (
-            currentVisible >=
-            cards.length
-        ) {
-
+        if(currentVisible >= cards.length)
+        {
             loadMoreBtn.innerHTML = `
                 <i class="fas fa-check-circle"></i>
                 All Places Loaded
@@ -492,9 +618,10 @@ loadMoreBtn?.addEventListener(
             loadMoreBtn.disabled =
                 true;
         }
-
     }
 );
+
+
 
 /* ==========================
    EVENTS

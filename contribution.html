@@ -42,6 +42,8 @@
     <link rel="stylesheet"
       href="css/contribution.css">
 
+    <link rel="stylesheet" href="css/navbar.css">
+
     <!-- Manifest -->
     <link rel="manifest" href="data/manifest.json">
     <meta name="theme-color" content="#f4b400">
@@ -75,75 +77,11 @@
     <!-- Background Overlay -->
     <div class="contribution-bg"></div>
 
-    <!-- ==========================
-         NAVBAR
-    =========================== -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
-
-        <div class="container">
-
-            <a class="navbar-brand fw-bold"
-                href="index.html">
-
-                Ama Asmita
-
-            </a>
-
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-
-            <div class="collapse navbar-collapse"
-                id="navbarNav">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="tourist-spots.html">
-                            Tourist Spots
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="foods.html">
-                            Odia Foods
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                            href="history.html">
-                            Legends
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="contribution.html">
-                            Contribution
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
 <body>
+
+    <!-- Navbar Component -->
+<div id="navbar-container"></div>
 
 <!-- =====================================
             HERO SECTION
@@ -751,6 +689,7 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="assets/js/auth.js"></script>
 <!-- Main JS -->
 <script src="js/main.js"></script>
 <!-- Food JS -->
