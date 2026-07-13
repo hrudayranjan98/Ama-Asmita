@@ -418,7 +418,7 @@ try
 
     const response =
         await fetch(
-            "http://localhost:5128/api/auth/login",
+            "https://hrudayranjan98.github.io/Ama-Asmita/api/auth/login",
             {
                 method:"POST",
 
