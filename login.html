@@ -252,11 +252,24 @@
 
                 <button
                     type="submit"
-                    class="login-btn">
+                    class="login-btn"
+                    id="loginBtn">
 
-                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span id="loginBtnContent">
 
-                    Login
+                        <i class="bi bi-box-arrow-in-right"></i>
+                        Login
+
+                    </span>
+
+                    <span
+                        id="loginLoader"
+                        class="btn-loader d-none">
+
+                        <span class="spinner"></span>
+                        Signing In...
+
+                    </span>
 
                 </button>
 
@@ -285,6 +298,42 @@
         </div>
 
     </section>
+
+    <!-- LOGIN FAILED MODAL -->
+
+<div
+    id="loginFailedModal"
+    class="custom-modal">
+
+    <div class="custom-modal-content">
+
+        <div class="failed-icon">
+
+            <i class="bi bi-x"></i>
+
+        </div>
+
+        <h3>
+            Login Failed
+        </h3>
+
+        <p id="loginFailedMessage">
+
+            Invalid credentials.
+
+        </p>
+
+        <button
+            id="closeFailedModal"
+            class="modal-btn">
+
+            Try Again
+
+        </button>
+
+    </div>
+
+</div>
 
     <script src="js/login.js"></script>
     <script src="js/main.js"></script>

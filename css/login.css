@@ -311,6 +311,156 @@ body{
     margin-bottom:12px;
 }
 
+/* ==========================
+   BUTTON LOADER
+========================== */
+
+.btn-loader
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.d-none
+{
+    display:none !important;
+}
+
+.spinner
+{
+    width:18px;
+    height:18px;
+    border:3px solid rgba(255,255,255,.3);
+    border-top-color:#fff;
+    border-radius:50%;
+    animation:spin .8s linear infinite;
+}
+
+@keyframes spin
+{
+    to
+    {
+        transform:rotate(360deg);
+    }
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.custom-modal
+{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    backdrop-filter:blur(8px);
+}
+
+.custom-modal.active
+{
+    display:flex;
+}
+
+.custom-modal-content
+{
+    width:90%;
+    max-width:400px;
+    background:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    animation:modalPop .35s ease;
+}
+
+@keyframes modalPop
+{
+    from
+    {
+        transform:scale(.7);
+        opacity:0;
+    }
+
+    to
+    {
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.failed-icon
+{
+    width:80px;
+    height:80px;
+    margin:auto;
+    color:white;
+    border-radius:50%;
+    background: #e53935;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation:shake .5s ease;
+}
+
+.failed-icon i
+{
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    margin-left: 2%;
+    margin-top: 6%;
+}
+
+.custom-modal-content h3, p
+{
+    color:black;
+    margin-top: 3%;
+}
+
+@keyframes shake
+{
+    0%
+    {
+        transform:rotate(0);
+    }
+
+    25%
+    {
+        transform:rotate(-10deg);
+    }
+
+    50%
+    {
+        transform:rotate(10deg);
+    }
+
+    75%
+    {
+        transform:rotate(-10deg);
+    }
+
+    100%
+    {
+        transform:rotate(0);
+    }
+}
+
+.modal-btn
+{
+    margin-top:20px;
+    border:none;
+    background:#e53935;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
 .register-btn{
     display:inline-flex;
     align-items:center;

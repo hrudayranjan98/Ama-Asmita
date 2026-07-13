@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmaAsmita.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+536f7f6d9451fbc6b44e1c10e309beda42ab5c97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf8bbc39aa1702047131f6ed2a641ef9e956bc2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmaAsmita.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmaAsmita.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

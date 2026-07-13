@@ -62,6 +62,36 @@ document.addEventListener(
         document.getElementById(
             "formAlert"
         );
+    
+    const loginBtn =
+    document.getElementById(
+        "loginBtn"
+    );
+
+    const loginBtnContent =
+        document.getElementById(
+            "loginBtnContent"
+        );
+
+    const loginLoader =
+        document.getElementById(
+            "loginLoader"
+        );
+
+    const loginFailedModal =
+        document.getElementById(
+            "loginFailedModal"
+        );
+
+    const loginFailedMessage =
+        document.getElementById(
+            "loginFailedMessage"
+        );
+
+    const closeFailedModal =
+        document.getElementById(
+            "closeFailedModal"
+        );
 
     /* ==========================
        CAPTCHA
@@ -376,6 +406,16 @@ document.addEventListener(
 try
 {
 
+    loginBtn.disabled = true;
+
+    loginBtnContent.classList.add(
+        "d-none"
+    );
+
+    loginLoader.classList.remove(
+        "d-none"
+    );
+
     const response =
         await fetch(
             "http://localhost:5128/api/auth/login",
@@ -451,24 +491,38 @@ try
 }
 catch(error)
 {
-
     console.error(error);
 
-    formAlert.style.display =
-        "flex";
+    loginBtn.disabled = false;
 
-    formAlert.innerHTML =
-        `
-        <i class="bi bi-exclamation-circle-fill"></i>
-        <span>
-            ${
-                error.message ||
-                "Login Failed. Please try again."
-            }
-        </span>
-        `;
+    loginLoader.classList.add(
+        "d-none"
+    );
+
+    loginBtnContent.classList.remove(
+        "d-none"
+    );
+
+    loginFailedMessage.textContent =
+        error.message ||
+        "Login Failed. Please Try Again.";
+
+    loginFailedModal.classList.add(
+        "active"
+    );
 }
+
+closeFailedModal?.addEventListener(
+    "click",
+    () =>
+{
+    loginFailedModal.classList.remove(
+        "active"
+    );
+});
 
     });
 
 });
+
+

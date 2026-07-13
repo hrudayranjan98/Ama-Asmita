@@ -2,23 +2,41 @@
    NAVBAR.JS
    Ama Asmita
 ========================================== */
+console.log("Navbar JS Loaded");
 
-document.addEventListener(
-    "DOMContentLoaded",
-    () =>
-{
+console.log(
+    "Token Value:",
+    localStorage.getItem("token")
+);
 
     const token =
         localStorage.getItem(
             "token"
         );
 
-    const user =
-        JSON.parse(
-            localStorage.getItem(
-                "user"
-            ) || "{}"
-        );
+    let user = {};
+
+try
+{
+    user =
+    JSON.parse(
+        localStorage.getItem(
+            "user"
+        ) || "{}"
+    );
+
+    console.log(
+        "User Object:",
+        user
+    );
+}
+catch(error)
+{
+    console.error(
+        "User Parse Error:",
+        error
+    );
+}
 
     const role =
         localStorage.getItem(
@@ -34,6 +52,7 @@ document.addEventListener(
         document.getElementById(
             "userProfileSection"
         );
+
 
     const profileAvatar =
         document.getElementById(
@@ -89,49 +108,77 @@ document.addEventListener(
        LOGIN / LOGOUT UI
     ========================================== */
 
+    console.log(
+    "Reached IF Block"
+);
+
     if(token)
-    {
+{
+    console.log("User Logged In");
 
-        loginNavItem?.classList.add(
-            "d-none"
-        );
+    loginNavItem?.classList.add(
+        "d-none"
+    );
 
-        userProfileSection?.classList.remove(
-            "d-none"
-        );
+    userProfileSection?.classList.remove(
+        "d-none"
+    );
 
+    const sidebarUserName =
         document.getElementById(
             "sidebarUserName"
-        ).textContent =
+        );
+
+    if(sidebarUserName)
+    {
+        sidebarUserName.textContent =
             user.name ||
             user.userName ||
             "User";
+    }
 
+    const sidebarUserEmail =
         document.getElementById(
             "sidebarUserEmail"
-        ).textContent =
+        );
+
+    if(sidebarUserEmail)
+    {
+        sidebarUserEmail.textContent =
             user.email ||
             "-";
+    }
 
+    const profilePanelTitle =
         document.getElementById(
             "profilePanelTitle"
-        ).textContent =
+        );
+
+    if(profilePanelTitle)
+    {
+        profilePanelTitle.textContent =
             role === "Admin"
             ? "Admin Profile"
             : "User Profile";
     }
-    else
-    {
 
-        loginNavItem?.classList.remove(
-            "d-none"
-        );
+    console.log(
+        "Profile Section Activated"
+    );
+}
+else
+{
+    console.log("User Not Logged In");
 
-        userProfileSection?.classList.add(
-            "d-none"
-        );
-    }
+    loginNavItem?.classList.remove(
+        "d-none"
+    );
 
+    userProfileSection?.classList.add(
+        "d-none"
+    );
+}
+    
     /* ==========================================
        PROFILE SIDEBAR
     ========================================== */
@@ -334,5 +381,4 @@ logoutBtn?.addEventListener(
     window.location.href =
         "login.html";
 
-});
 });

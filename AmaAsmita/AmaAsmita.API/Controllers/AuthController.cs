@@ -96,6 +96,30 @@ public class AuthController : ControllerBase
         );
     }
 
+    [HttpGet("db-test")]
+public async Task<IActionResult> DbTest()
+{
+    try
+    {
+        var count = await _context.Users.CountAsync();
+
+        return Ok(new
+        {
+            success = true,
+            userCount = count
+        });
+    }
+    catch(Exception ex)
+    {
+        return BadRequest(new
+        {
+            success = false,
+            error = ex.Message,
+            inner = ex.InnerException?.Message
+        });
+    }
+}
+
     [HttpPost("login")]
     public async Task<IActionResult> Login(
         LoginRequest request
