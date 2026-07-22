@@ -4,6 +4,8 @@ using AmaAsmita.Domain.Entities;
 using AmaAsmita.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace AmaAsmita.API.Controllers;
 
@@ -182,5 +184,40 @@ public async Task<IActionResult> DbTest()
                 }
             }
         );
+    }
+
+    [Authorize]
+    [HttpGet("me")]
+    public async Task<IActionResult> Me()
+    {
+        var userId =
+            User.FindFirst(
+                ClaimTypes.NameIdentifier
+            )?.Value;
+
+        if(string.IsNullOrEmpty(userId))
+        {
+            return Unauthorized();
+        }
+
+        var user =
+            await _context.Users
+            .FirstOrDefaultAsync(
+                x => x.Id.ToString() == userId
+            );
+
+        if(user == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(new
+        {
+            user.Id,
+            user.Name,
+            user.Email,
+            user.UserName,
+            user.Role
+        });
     }
 }

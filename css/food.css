@@ -830,7 +830,72 @@
     color: #4ade80; /* Season */
 }
 
+/* ===============================
+            SAVE BUTTON
+   =============================== */
 
+   .save-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    color:#ffc107;
+    font-size:1.2rem;
+    transition:.3s;
+}
+
+.save-btn:hover{
+    transform:translateY(-4px) scale(1.1);
+    background:#ffc107;
+    color:#000;
+}
+
+.save-btn.saved{
+    background:#ffc107;
+    color:#ffffff;
+}
+
+.bi-star
+{
+    color:white;
+
+}
+
+.food-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:20px;
+}
+
+.food-actions .save-btn{
+    width:60px;
+    min-width:60px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:80px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    color:#ffc107;
+    font-size:1.4rem;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.food-actions .save-btn:hover{
+    transform:translateY(-4px);
+    background:#ffc107;
+    color:#111;
+}
+
+.food-actions .save-btn.saved{
+    background:#ffc107;
+    color:#fff;
+}
 /* ================================ 
           KNOW MORE BUTTON
    ================================ */

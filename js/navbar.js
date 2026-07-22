@@ -79,9 +79,14 @@ catch(error)
             "closeProfileSidebar"
         );
 
-    const notificationBtn =
+    const navbarNotificationBtn =
         document.getElementById(
-            "notificationBtn"
+            "navbarNotificationBtn"
+        );
+
+    const sidebarNotificationBtn =
+        document.getElementById(
+            "sidebarNotificationBtn"
         );
 
     const notificationSidebar =
@@ -104,9 +109,61 @@ catch(error)
             "logoutBtn"
         );
 
-    /* ==========================================
+function openNotificationPanel()
+{
+    notificationSidebar.classList.add(
+        "active"
+    );
+
+    notificationSidebarOverlay.classList.add(
+        "active"
+    );
+
+    clearNotificationCount();
+}
+
+function loadProfileImages()
+{
+    const profileImage =
+        localStorage.getItem("profileImage");
+
+    if(!profileImage)
+    {
+        return;
+    }
+
+    const profileAvatar =
+        document.getElementById("profileAvatar");
+
+    const sidebarProfileAvatar =
+        document.getElementById("sidebarProfileAvatar");
+
+    if(profileAvatar)
+    {
+        profileAvatar.src =
+            profileImage;
+    }
+
+    if(sidebarProfileAvatar)
+    {
+        sidebarProfileAvatar.src =
+            profileImage;
+    }
+}
+
+window.addEventListener(
+    "load",
+    loadProfileImages
+);
+
+window.addEventListener(
+    "profileImageUpdated",
+    loadProfileImages
+);
+
+/* ==========================================
        LOGIN / LOGOUT UI
-    ========================================== */
+========================================== */
 
     console.log(
     "Reached IF Block"
@@ -225,22 +282,15 @@ else
        NOTIFICATION SIDEBAR
     ========================================== */
 
-    notificationBtn?.addEventListener(
+    navbarNotificationBtn?.addEventListener(
         "click",
-        () =>
-    {
+        openNotificationPanel
+    );
 
-        notificationSidebar.classList.add(
-            "active"
-        );
-
-        notificationSidebarOverlay.classList.add(
-            "active"
-        );
-
-        clearNotificationCount();
-
-    });
+    sidebarNotificationBtn?.addEventListener(
+        "click",
+        openNotificationPanel
+    );
 
     closeNotificationSidebar?.addEventListener(
         "click",
@@ -353,15 +403,61 @@ else
 
     loadNotifications();
 
-    /* ==========================================
-   LOGOUT
+/* ==========================================
+   LOGOUT MODAL
 ========================================== */
+
+const logoutModal =
+    document.getElementById(
+        "logoutModal"
+    );
+
+const confirmLogoutBtn =
+    document.getElementById(
+        "confirmLogoutBtn"
+    );
+
+const cancelLogoutBtn =
+    document.getElementById(
+        "cancelLogoutBtn"
+    );
 
 logoutBtn?.addEventListener(
     "click",
     () =>
 {
+    logoutModal.classList.add(
+        "show"
+    );
+});
 
+cancelLogoutBtn?.addEventListener(
+    "click",
+    () =>
+{
+    logoutModal.classList.remove(
+        "show"
+    );
+});
+
+logoutModal?.addEventListener(
+    "click",
+    e =>
+{
+    if(
+        e.target === logoutModal
+    )
+    {
+        logoutModal.classList.remove(
+            "show"
+        );
+    }
+});
+
+confirmLogoutBtn?.addEventListener(
+    "click",
+    () =>
+{
     localStorage.removeItem(
         "token"
     );
@@ -380,5 +476,4 @@ logoutBtn?.addEventListener(
 
     window.location.href =
         "login.html";
-
 });

@@ -1173,7 +1173,10 @@
         },
         "runtime": {
           "bin/placeholder/AmaAsmita.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "AmaAsmita.Domain/1.0.0": {
         "type": "project",

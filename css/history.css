@@ -387,6 +387,46 @@
     border-color: rgba(255,255,255,0.1);
 }
 
+
+/* ===============================
+            SAVE BUTTON
+   =============================== */
+   
+.history-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:20px;
+}
+
+.history-actions .save-btn{
+    width:60px;
+    min-width:60px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:70px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    color:#ffc107;
+    font-size:1.3rem;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+.history-actions .save-btn:hover{
+    transform:translateY(-4px);
+    background:#ffc107;
+    color:#111;
+}
+
+.history-actions .save-btn.saved{
+    background:#ffc107;
+    color:#fff;
+}
+
 /* ==========================================
 CONTRIBUTOR
 ========================================== */

@@ -282,7 +282,7 @@
                 <input
                     type="hidden"
                     name="_subject"
-                    value="New Contribution Received - Ama Asmita">
+                    value="Congratulations...!!! New Contribution Received - Ama Asmita">
 
                 <input
                     type="hidden"
@@ -297,7 +297,7 @@
                 <input
                     type="hidden"
                     name="_autoresponse"
-                    value="Thank you for contributing to Ama Asmita. Your submission has been received successfully and will be reviewed shortly.">
+                    value="Thank you for contributing to Ama Asmita. Your submission has been received successfully and will be reviewed shortly. Keep tracking at your User Dashboard.">
 
                 <input
                 type="hidden"
@@ -307,41 +307,34 @@
 
                 <div class="row g-4">
 
+                    <!-- Full Name -->
                     <div class="col-md-6">
 
                         <label class="form-label">
-                            Full Name <span class="mandatory"><i class="bi bi-asterisk required-icon"></i></span>
+                            Full Name
+                            <i class="bi bi-asterisk required-icon"></i>
                         </label>
 
                         <input
                             type="text"
+                            id="fullName"
                             name="Full Name"
                             class="form-control"
                             required>
 
                     </div>
 
-                    <div class="col-md-6">
-
-                        <label class="form-label">
-                            Email Address <span class="mandatory"><i class="bi bi-asterisk required-icon"></i></span>
-                        </label>
-
-                        <input
-                            type="email"
-                            name="Email"
-                            class="form-control"
-                            required>
-
-                    </div>
+                    <!-- Category -->
 
                     <div class="col-md-6">
 
                         <label class="form-label">
-                            Contribution Category <i class="bi bi-asterisk required-icon"></i>
+                            Category
+                            <i class="bi bi-asterisk required-icon"></i>
                         </label>
 
                         <select
+                            id="category"
                             class="form-select"
                             name="Category"
                             required>
@@ -350,87 +343,190 @@
                                 Select Category
                             </option>
 
-                            <option>History</option>
-                            <option>Tourism</option>
-                            <option>Food</option>
-                            <option>Festival</option>
-                            <option>Art & Culture</option>
-                            <option>Photography</option>
-                            <option>Literature</option>
-                            <option>Other</option>
+                            <option value="TouristSpot">
+                                Tourist Spot
+                            </option>
+
+                            <option value="Foods">
+                                Foods
+                            </option>
+
+                            <option value="Legends">
+                                Legends
+                            </option>
 
                         </select>
 
                     </div>
 
-                    <div class="col-md-6">
-
-                        <label class="form-label">
-                            Title <i class="bi bi-asterisk required-icon"></i>
-                        </label>
-
-                        <input
-                            type="text"
-                            class="form-control"
-                            name="Title"
-                            required>
-
-                    </div>
+                    <!-- Title -->
 
                     <div class="col-12">
 
                         <label class="form-label">
-                            Description <i class="bi bi-asterisk required-icon"></i>
+                            Title
+                            <i class="bi bi-asterisk required-icon"></i>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="title"
+                            name="Title"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+                    <!-- Full Article -->
+
+                    <div class="col-12">
+
+                        <label class="form-label">
+                            Full Article
+                            <i class="bi bi-asterisk required-icon"></i>
                         </label>
 
                         <textarea
+                            id="article"
+                            rows="8"
+                            name="Article"
                             class="form-control"
-                            rows="6"
-                            name="Description"
                             required></textarea>
 
                     </div>
 
-                    <div class="col-md-6">
-                        
+                    <!-- Google Map -->
+
+                    <div class="col-12">
+
                         <label class="form-label">
-                            Upload Image (Content)
+                            Google Map Link
                         </label>
                         <i class="bi bi-asterisk required-icon"></i>
-                        
 
+                        <input
+                            type="url"
+                            id="mapLink"
+                            name="Google Map Link"
+                            class="form-control"
+                            required
+                            placeholder="https://maps.google.com/...">
+
+                    </div>
+
+                    <!-- Article Photos -->
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Article Photo 1
+                        </label>
+                        <i class="bi bi-asterisk required-icon"></i>
 
                         <input
                             type="file"
+                            id="photo1"
+                            name="Photo 1"
                             class="form-control"
-                            name="Place Image"
-                            accept="image/"> 
-                            
+                            required
+                            accept="image/*">
 
-                        <p class="upload-note">
-                            <i class="bi bi-info-circle-fill"></i>
-                                Please upload images below 2 MB for faster submission.
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Article Photo 2
+                        </label>
+
+                        <input
+                            type="file"
+                            id="photo2"
+                            name="Photo 2"
+                            class="form-control"
+                            accept="image/*">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Article Photo 3
+                        </label>
+
+                        <input
+                            type="file"
+                            id="photo3"
+                            name="Photo 3"
+                            class="form-control"
+                            accept="image/*">
+                    </div>
+
+                    <p class="upload-note"> 
+                            <i class="bi bi-info-circle-fill"></i> 
+                            Please upload images below 2 MB for faster submission
+                            & upload 16:9 HD Resolution Image for better experience.
+                        </p>
+
+                    <!-- Contributor Photo -->
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Contributor Photo
+                            <i class="bi bi-asterisk required-icon"></i>
+                        </label>
+
+                        <input
+                            type="file"
+                            id="contributorPhoto"
+                            name="Contributor Photo"
+                            class="form-control"
+                            accept="image/*">
+                        
+                        <p class="upload-note"> 
+                            <i class="bi bi-info-circle-fill"></i> 
+                            Please upload images below 2 MB for faster submission. 
                         </p>
 
                     </div>
 
+                    <!-- Address -->
+
                     <div class="col-md-6">
 
                         <label class="form-label">
-                            Contributor Image
+                            Contributor Address
                         </label>
                         <i class="bi bi-asterisk required-icon"></i>
 
                         <input
-                            type="file"
+                            type="text"
+                            id="address"
+                            name="Address"
                             class="form-control"
-                            name="Contributor Image"
-                            accept="image/">
+                            required>
 
-                        <p class="upload-note">
-                            <i class="bi bi-info-circle-fill"></i>
-                                Please upload images below 2 MB for faster submission.
+                        <p class="upload-note"> 
+                            <i class="bi bi-info-circle-fill"></i> 
+                            Only share your district, if you have privacy concerns.
                         </p>
+
+                    </div>
+
+                    <!-- Social Links -->
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Facebook Link
+                        </label>
+
+                        <input
+                            type="url"
+                            id="facebook"
+                            name="Facebook"
+                            class="form-control">
 
                     </div>
 
@@ -442,21 +538,9 @@
 
                         <input
                             type="url"
-                            class="form-control"
-                            name="Instagram">
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <label class="form-label">
-                            Facebook Link
-                        </label>
-
-                        <input
-                            type="url"
-                            class="form-control"
-                            name="Facebook">
+                            id="instagram"
+                            name="Instagram"
+                            class="form-control">
 
                     </div>
 
@@ -468,26 +552,13 @@
 
                         <input
                             type="url"
-                            class="form-control"
-                            name="LinkedIn">
-
-                    </div>
-
-                    <div class="col-12">
-
-                        <label class="form-label">
-                            Source / Reference
-                        </label>
-
-                        <textarea
-                            rows="3"
-                            class="form-control"
-                            name="Source"></textarea>
+                            id="linkedin"
+                            name="Linked In"
+                            class="form-control">
 
                     </div>
 
                 </div>
-
                 <button
                     type="submit"
                     class="submit-btn">
@@ -605,7 +676,8 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="assets/js/auth.js"></script>
+
+<script src="js/auth.js"></script>
 <!-- Main JS -->
 <script src="js/main.js"></script>
 <!-- Food JS -->

@@ -263,38 +263,241 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    /* ==========================================
-            FORM SUBMIT BUTTON
-    ========================================== */
+/* ==========================================
+        FORM SUBMIT BUTTON
+========================================== */
 
-    const form =
-        document.getElementById(
-            "contributionForm"
-        );
+const form =
+    document.getElementById(
+        "contributionForm"
+    );
 
-    const submitBtn =
-        document.querySelector(
-            ".submit-btn"
-        );
+const submitBtn =
+    document.querySelector(
+        ".submit-btn"
+    );
 
-    if (form && submitBtn) {
+if (form && submitBtn)
+{
+    form.addEventListener(
+        "submit",
+        async (e) =>
+        {
+            e.preventDefault();
 
-        form.addEventListener("submit", () => {
+            const token =
+                localStorage.getItem(
+                    "token"
+                );
 
-            submitBtn.disabled = true;
+            if (!token)
+            {
+                alert(
+                    "Please login first."
+                );
+                return;
+            }
 
-            submitBtn.innerHTML = `
+            const formData =
+                new FormData();
 
-                <span class="spinner-border spinner-border-sm me-2"></span>
+            formData.append(
+                "FullName",
+                document.getElementById(
+                    "fullName"
+                ).value
+            );
 
-                Submitting...
+            formData.append(
+                "Category",
+                document.getElementById(
+                    "category"
+                ).value
+            );
 
-            `;
+            formData.append(
+                "Title",
+                document.getElementById(
+                    "title"
+                ).value
+            );
 
-        });
+            formData.append(
+                "Article",
+                document.getElementById(
+                    "article"
+                ).value
+            );
 
-    }
+            formData.append(
+                "GoogleMapLink",
+                document.getElementById(
+                    "mapLink"
+                ).value
+            );
 
+            formData.append(
+                "ContributorAddress",
+                document.getElementById(
+                    "address"
+                ).value
+            );
+
+            formData.append(
+                "FacebookLink",
+                document.getElementById(
+                    "facebook"
+                ).value
+            );
+
+            formData.append(
+                "InstagramLink",
+                document.getElementById(
+                    "instagram"
+                ).value
+            );
+
+            formData.append(
+                "LinkedInLink",
+                document.getElementById(
+                    "linkedin"
+                ).value
+            );
+
+            const contributorPhoto =
+                document.getElementById(
+                    "contributorPhoto"
+                ).files[0];
+
+            const photo1 =
+                document.getElementById(
+                    "photo1"
+                ).files[0];
+
+            const photo2 =
+                document.getElementById(
+                    "photo2"
+                ).files[0];
+
+            const photo3 =
+                document.getElementById(
+                    "photo3"
+                ).files[0];
+
+            if (contributorPhoto)
+            {
+                formData.append(
+                    "ContributorPhoto",
+                    contributorPhoto
+                );
+            }
+
+            if (photo1)
+            {
+                formData.append(
+                    "Photo1",
+                    photo1
+                );
+            }
+
+            if (photo2)
+            {
+                formData.append(
+                    "Photo2",
+                    photo2
+                );
+            }
+
+            if (photo3)
+            {
+                formData.append(
+                    "Photo3",
+                    photo3
+                );
+            }
+
+            try
+            {
+                submitBtn.disabled =
+                    true;
+
+                submitBtn.innerHTML = `
+                    <span class="spinner-border spinner-border-sm me-2"></span>
+                    Submitting...
+                `;
+
+                const token =
+                    localStorage.getItem("token");
+
+                console.log("Token:", token);
+
+                const response =
+                    await fetch(
+                        "http://localhost:5128/api/contribution",
+                        {
+                            method: "POST",
+                            headers:
+                            {
+                                Authorization: `Bearer ${token}`
+                            },
+                            body: formData
+                        }
+                    );
+
+                console.log(
+                    "Status:",
+                    response.status
+                );
+
+                const text =
+                    await response.text();
+
+                console.log(
+                    "Response:",
+                    text
+                );
+
+                if (response.ok)
+                {
+                    window.location.href =
+                        "https://hrudayranjan98.github.io/Ama-Asmita/thank-you.html";
+                }
+                else
+                {
+                    submitBtn.disabled =
+                        false;
+
+                    submitBtn.innerHTML = `
+                        <i class="bi bi-send-fill"></i>
+                        Submit Contribution
+                    `;
+
+                    alert(
+                        "Submission failed."
+                    );
+                }
+            }
+            catch (error)
+            {
+                console.error(
+                    error
+                );
+
+                submitBtn.disabled =
+                    false;
+
+                submitBtn.innerHTML = `
+                    <i class="bi bi-send-fill"></i>
+                    Submit Contribution
+                `;
+
+                alert(
+                    "Something went wrong."
+                );
+            }
+        }
+    );
+}
     /* ==========================================
             INPUT FOCUS EFFECT
     ========================================== */

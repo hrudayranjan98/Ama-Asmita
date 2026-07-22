@@ -21,6 +21,7 @@
     font-size: 1.15rem;
     cursor: pointer;
     transition: 0.3s ease;
+    margin-left: 15%;
 }
 
 .notification-btn:hover {
@@ -52,106 +53,182 @@
    PROFILE IMAGE
 ========================================== */
 
-.profile-nav-img {
+.profile-nav-img
+{
     width: 42px;
+    min-width: 42px;
+    max-width: 42px;
+
     height: 42px;
+    min-height: 42px;
+    max-height: 42px;
+
+    display: block;
+
+    aspect-ratio: 1 / 1;
 
     object-fit: cover;
+    object-position: center;
 
     border-radius: 50%;
 
-    border: 2px solid rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,.2);
 
     cursor: pointer;
 
-    transition: 0.3s ease;
+    transition:
+        transform .3s ease,
+        border-color .3s ease;
+
+    flex-shrink: 0;
+
+    margin-left: 12px;
 }
 
-.profile-nav-img:hover {
-    transform: scale(1.05);
-
-    border-color: #ffffff;
+.profile-nav-img:hover
+{
+    transform: scale(1.08);
+    border-color: #fff;
 }
 
 /* ==========================================
-   OVERLAY
+   SIDEBAR OVERLAY
 ========================================== */
 
-.profile-sidebar-overlay {
+.profile-sidebar-overlay
+{
     position: fixed;
     inset: 0;
-
-    background: rgba(0,0,0,0.5);
-
+    background:
+    rgba(0,0,0,.45);
+    backdrop-filter:
+    blur(4px);
     z-index: 1040;
-
     opacity: 0;
     visibility: hidden;
-
-    transition: 0.3s ease;
+    transition:
+    opacity .35s ease,
+    visibility .35s ease;
 }
 
-.profile-sidebar-overlay.active {
+.profile-sidebar-overlay.active
+{
     opacity: 1;
     visibility: visible;
 }
-
 /* ==========================================
    PROFILE SIDEBAR
 ========================================== */
 
-.profile-sidebar {
+.profile-sidebar
+{
     position: fixed;
-
     top: 0;
-    right: -360px;
-
-    width: 340px;
+    right: 0;
+    width: 360px;
     max-width: 100%;
-
     height: 100vh;
+    background:
+    linear-gradient(
+        180deg,
+        #1a0f0a 0%,
+        #24140c 35%,
+        #2f1a10 100%
+    );
 
-    background: #ffffff;
+    backdrop-filter: blur(20px);
+    border-left:
+    1px solid rgba(255,255,255,.08);
 
-    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+    box-shadow:
+    -15px 0 50px rgba(0,0,0,.45);
 
     z-index: 1050;
-
-    transition: right 0.3s ease;
-
     overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    transform:
+    translateX(100%)
+    scale(.96);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+    transform .45s cubic-bezier(.22,1,.36,1),
+    opacity .35s ease,
+    visibility .35s ease;
+
+    color: #fff;
 }
 
-.profile-sidebar.active {
-    right: 0;
+/* ACTIVE STATE */
+
+.profile-sidebar.active
+{
+    transform:
+    translateX(0)
+    scale(1);
+
+    opacity: 1;
+    visibility: visible;
 }
 
 /* ==========================================
    SIDEBAR HEADER
 ========================================== */
 
-.profile-sidebar-header {
+.profile-sidebar-header
+{
+    position: sticky;
+    top: 0;
+
+    background:
+    rgba(255,255,255,.03);
+
+    backdrop-filter:
+    blur(15px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+    padding: 22px 25px;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
-    padding: 20px;
-
-    border-bottom: 1px solid #eeeeee;
+    align-items: center;
 }
 
-.profile-sidebar-header h5 {
+.profile-sidebar-header h5
+{
     margin: 0;
+
     font-weight: 700;
+    color: #fff;
 }
 
-.close-sidebar-btn {
+/* ==========================================
+            SIDEBAR CLOSE BUTTON
+========================================== */
+.close-sidebar-btn
+{
+    width: 40px;
+    height: 40px;
     border: none;
-    background: transparent;
+    border-radius: 12px;
+    background:
+    rgba(255,255,255,.08);
+    color: #fff;
+    transition: .3s ease;
+}
 
-    font-size: 1.25rem;
-
-    cursor: pointer;
+.close-sidebar-btn:hover
+{
+    background:
+    rgba(255,255,255,.15);
+    color: #dc3545;
+    transform:
+    rotate(90deg)
+    scale(1.08);
 }
 
 /* ==========================================
@@ -160,7 +237,6 @@
 
 .profile-info-section {
     text-align: center;
-
     padding: 25px 20px;
 }
 
@@ -171,25 +247,22 @@
 .profile-avatar-wrapper img {
     width: 110px;
     height: 110px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 3px solid #e9ecef;
 }
 
 #sidebarUserName {
     font-size: 1.15rem;
     font-weight: 700;
-
     margin-bottom: 5px;
+    color: white;
 }
 
 #sidebarUserEmail {
-    color: #6c757d;
-    font-size: 0.9rem;
-    margin: 0;
+    color: white;
+    font-size: 0.7rem;
+    margin-top: -1%;
 }
 
 /* ==========================================
@@ -206,30 +279,129 @@
     display: flex;
     align-items: center;
     gap: 12px;
-
     padding: 15px 22px;
-
-    color: #212529;
+    color: white;
     text-decoration: none;
-
     border: none;
     background: transparent;
-
     transition: 0.3s ease;
-
     cursor: pointer;
 }
 
-.profile-menu-item:hover {
-    background: #f8f9fa;
+.profile-menu-item:hover
+{
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:
+    blur(16px);
+
+    -webkit-backdrop-filter:
+    blur(16px);
+
+    border:
+    1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.08);
+
+    transform:
+    translateX(8px);
+
+    color: #ffffff;
 }
 
-.profile-menu-item i {
+.profile-menu-item::before
+{
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transition:
+    left .6s ease;
+}
+
+.profile-menu-item:hover::before
+{
+    left: 140%;
+}
+
+.profile-menu-item i
+{
+    transition:
+    transform .3s ease,
+    color .3s ease;
     width: 20px;
 }
 
+.profile-menu-item:hover i
+{
+    transform:
+    scale(1.15);
+
+    color: white;
+}
+
+
 .logout-btn {
     color: #dc3545;
+}
+
+.logout-btn:hover
+{
+    background:
+    rgb(212, 0, 0);
+
+    border:
+    1px solid rgba(220,53,69,.3);
+
+    backdrop-filter:
+    blur(16px);
+
+    color: white;
+
+    transform:
+    translateX(8px);
+}
+
+.profile-avatar-wrapper
+{
+    animation:
+    profilePop .6s cubic-bezier(.22,1,.36,1);
+}
+
+@keyframes profilePop
+{
+    0%
+    {
+        opacity: 0;
+        transform:
+        translateY(20px)
+        scale(.8);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform:
+        translateY(0)
+        scale(1);
+    }
 }
 
 /* ==========================================
@@ -303,7 +475,6 @@
 
 .notification-item {
     padding: 15px;
-
     border: 1px solid #e9ecef;
     border-radius: 10px;
 
@@ -323,19 +494,379 @@
 }
 
 /* ==========================================
-   MOBILE
+   RESPONSIVE - TABLET & MOBILE
 ========================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
+    /* ==========================
+       NAVBAR USER SECTION
+    ========================== */
 
-    .profile-sidebar,
-    .notification-sidebar {
+    .nav-user-section
+    {
         width: 100%;
-    }
 
-    .nav-user-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 16px;
+
+        margin-left: 0;
         margin-top: 15px;
-        justify-content: center;
+
+        padding: 10px 0;
     }
 
+    /* ==========================
+       NOTIFICATION BUTTON
+    ========================== */
+
+    .notification-btn
+    {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+
+    .notification-badge
+    {
+        top: -6px;
+        right: -8px;
+    }
+
+    /* ==========================
+       PROFILE IMAGE
+    ========================== */
+
+    .profile-nav-img
+    {
+        width: 46px;
+        height: 46px;
+
+        min-width: 46px;
+        min-height: 46px;
+
+        max-width: 46px;
+        max-height: 46px;
+
+        margin-left: 0;
+    }
+
+    /* ==========================
+       PROFILE SIDEBAR
+    ========================== */
+
+    .profile-sidebar
+    {
+        width: 100%;
+        max-width: 100%;
+
+        border-radius: 25px 25px 0 0;
+
+        transform:
+        translateY(100%);
+
+        right: 0;
+        bottom: 0;
+        top: auto;
+
+        height: 88vh;
+    }
+
+    .profile-sidebar.active
+    {
+        transform:
+        translateY(0);
+    }
+
+    .profile-sidebar-header
+    {
+        padding-top: 20px;
+    }
+
+    /* ==========================
+       PROFILE INFO
+    ========================== */
+
+    .profile-info-section
+    {
+        padding: 30px 20px;
+        padding-top: 20px;
+    }
+
+    .profile-avatar-wrapper img
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+    #sidebarUserName
+    {
+        font-size: 1rem;
+    }
+
+    #sidebarUserEmail
+    {
+        font-size: 0.8rem;
+    }
+
+    /* ==========================
+       PROFILE MENU
+    ========================== */
+
+    .profile-menu-item
+    {
+        padding: 16px 20px;
+        font-size: 0.95rem;
+    }
+
+    .profile-menu-item i
+    {
+        width: 22px;
+        font-size: 1rem;
+    }
+
+    /* ==========================
+       CLOSE BUTTON
+    ========================== */
+
+    .close-sidebar-btn
+    {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* ==========================
+       NOTIFICATION SIDEBAR
+    ========================== */
+
+    .notification-sidebar
+    {
+        width: 100%;
+        max-width: 100%;
+
+        right: 0;
+
+        transform:
+        translateX(100%);
+
+        transition:
+        transform .45s cubic-bezier(.22,1,.36,1);
+    }
+
+    .notification-sidebar.active
+    {
+        transform:
+        translateX(0);
+    }
+
+    /* ==========================
+       NOTIFICATION LIST
+    ========================== */
+
+    .notification-list
+    {
+        padding: 18px;
+    }
+
+    .notification-item
+    {
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .notification-empty
+    {
+        padding: 60px 15px;
+    }
+
+    /* ==========================
+       OVERLAY
+    ========================== */
+
+    .profile-sidebar-overlay
+    {
+        backdrop-filter:
+        blur(6px);
+    }
+}
+
+/* ==========================================
+   CUSTOM LOGOUT MODAL
+========================================== */
+
+.custom-modal
+{
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+    rgba(0,0,0,.65);
+
+    backdrop-filter:
+    blur(8px);
+
+    z-index: 99999;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+    .35s ease;
+}
+
+.custom-modal.show
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ==========================================
+   MODAL BOX
+========================================== */
+
+.custom-modal-content
+{
+    width: 90%;
+    max-width: 420px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+
+    transform:
+        translateY(30px) scale(.9);
+
+    transition: .35s ease;
+    border-radius: 24px;
+
+    padding: 32px;
+
+    text-align: center;
+
+    color: #fff;
+    transform:
+    scale(.9)
+    translateY(20px);
+}
+
+.custom-modal.show
+.custom-modal-content
+{
+    transform:
+    scale(1)
+    translateY(0);
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.modal-icon
+{
+    width: 70px;
+    height: 70px;
+
+    margin: auto auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+    rgba(220,53,69,.15);
+
+    color: #ff4d5a;
+
+    font-size: 1.7rem;
+}
+
+.custom-modal-content h3
+{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.custom-modal-content p
+{
+    color:
+    rgba(255,255,255,.75);
+
+    margin-bottom: 25px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.modal-actions
+{
+    display: flex;
+    gap: 12px;
+}
+
+.modal-danger-btn,
+.modal-cancel-btn
+{
+    flex: 1;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 12px;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+.modal-danger-btn
+{
+    background:
+    #dc3545;
+
+    color: #fff;
+}
+
+.modal-danger-btn:hover
+{
+    background:
+    #c82333;
+
+    transform:
+    translateY(-2px);
+}
+
+.modal-cancel-btn
+{
+    background:
+    rgba(255,255,255,.08);
+
+    color: #fff;
+
+    backdrop-filter:
+    blur(10px);
+}
+
+.modal-cancel-btn:hover
+{
+    background:
+    rgba(255,255,255,.15);
 }

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Ama Asmita</title>
+
+<link rel="icon"
+      href="assets/icons/favicon.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!-- AOS -->
+<link rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<!-- Global CSS -->
+<link rel="stylesheet"
+      href="css/style.css">
+
+<!-- Dashboard CSS -->
+<link rel="stylesheet"
+      href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="floating-bg"></div>
+<!-- PAGE LOADER -->
+<div id="page-loader">
+
+    <div class="loader-content">
+
+        <div class="loader-wheel">
+            <img
+                src="assets/icons/loader.png"
+                class="loader-logo">
+        </div>
+
+        <h2 class="loader-title">
+            ଆମ ଅସ୍ମିତା
+        </h2>
+
+        <p class="loader-subtitle">
+            Preserving Heritage • Culture • History
+        </p>
+
+    </div>
+
+</div>
+
+<!-- HERO SECTION -->
+<section class="dashboard-hero">
+
+    <a href="index.html"
+            class="back-btn">
+
+            <i class="bi bi-arrow-left">
+
+            </i>
+                Back To Home
+    </a>
+
+    <div class="container">
+
+        <div class="hero-content text-center">
+
+            <div class="hero-badge">
+
+                <i class="bi bi-person-circle"></i>
+
+                User Dashboard
+
+            </div>
+
+            <h1 class="hero-title">
+
+                Welcome Back
+
+            </h1>
+
+            <p class="hero-subtitle">
+
+                Manage your profile, contributions and saved contents.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DASHBOARD SECTION -->
+
+<section class="dashboard-section">
+
+    <div class="container">
+
+        <!-- PROFILE CARD -->
+
+        <div class="profile-card">
+
+            <div class="profile-avatar">
+
+                <i class="bi bi-person-fill"></i>
+
+            </div>
+
+            <div class="profile-info">
+
+                <h3 id="userName">
+                    Loading...
+                </h3>
+
+                <p id="userEmail">
+                    Loading...
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- DASHBOARD TABS -->
+
+        <div class="dashboard-tabs">
+
+            <button
+                class="dashboard-tab active"
+                id="activityBtn">
+
+                <i class="bi bi-bar-chart-fill"></i>
+
+                My Activity
+
+            </button>
+
+            <button
+                class="dashboard-tab"
+                id="contributionBtn">
+
+                <i class="bi bi-file-earmark-text-fill"></i>
+
+                My Contributions
+
+            </button>
+
+            <button
+                class="dashboard-tab"
+                id="savedBtn">
+
+                <i class="bi bi-bookmark-heart-fill"></i>
+
+                My Saved Contents
+
+            </button>
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- MY ACTIVITY -->
+        <!-- ===================================== -->
+
+        <div id="activitySection">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+
+                    <div class="activity-card">
+
+                        <div class="activity-circle">
+
+                            <span id="touristCount" class="activity-loader"></span>
+
+                        </div>
+
+                        <h5>
+
+                            Tourist Spots Shared
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="activity-card">
+
+                        <div class="activity-circle">
+
+                            <span id="foodCount" class="activity-loader"></span>
+
+                        </div>
+
+                        <h5>
+
+                            Foods Shared
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="activity-card">
+
+                        <div class="activity-circle">
+
+                            <span id="legendCount" class="activity-loader"></span>
+
+                        </div>
+
+                        <h5>
+
+                            Legends Shared
+
+                        </h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- MY CONTRIBUTIONS -->
+        <!-- ===================================== -->
+
+        <div id="contributionSection"
+             style="display:none;">
+
+            <div class="table-responsive">
+
+                <table class="table contribution-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Title</th>
+
+                            <th>Category</th>
+
+                            <th>Submitted On</th>
+
+                            <th>Status</th>
+
+                            <th>Actions</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="contributionTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- MY SAVED CONTENTS -->
+        <!-- ===================================== -->
+
+        <div id="savedSection"
+             style="display:none;">
+
+            <div class="row g-4"
+                 id="savedContentContainer">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+CONFIRMATION MODAL
+========================================== -->
+
+<div id="confirmModal" class="custom-modal">
+
+    <div class="custom-modal-content">
+
+        <div class="modal-icon-wrapper">
+
+            <div class="modal-icon">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+
+        </div>
+
+        <h3 id="modalTitle">
+            Are You Sure?
+        </h3>
+
+        <p id="modalMessage">
+            Confirmation message here
+        </p>
+
+        <div class="modal-actions">
+
+            <button
+                id="modalConfirmBtn"
+                class="modal-confirm-btn">
+
+                Confirm
+
+            </button>
+
+            <button
+                id="modalCancelBtn"
+                class="modal-cancel-btn">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ==========================================
+SUCCESS MODAL
+========================================== -->
+
+<div id="successModal" class="custom-modal">
+
+    <div class="success-modal-content">
+
+        <div class="success-icon-wrapper">
+
+            <div class="success-icon">
+                <i class="bi bi-check-circle-fill"></i>
+            </div>
+
+        </div>
+
+        <h3 id="successTitle">
+            Success
+        </h3>
+
+        <p id="successMessage">
+            Operation completed successfully.
+        </p>
+
+        <button
+            id="successCloseBtn"
+            class="success-close-btn">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Dashboard JS -->
+<script src="js/dashboard.js"></script>
+
+<script src="js/auth.js"></script>
+
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

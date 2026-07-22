@@ -122,6 +122,8 @@ app.UseCors("AllowFrontend");
 
 app.UseAuthentication();
 
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
 app.MapControllers();

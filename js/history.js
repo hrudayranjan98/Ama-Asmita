@@ -88,6 +88,82 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+
+    async function loadSavedItems()
+{
+    const token =
+        localStorage.getItem("token");
+
+    if(!token)
+    {
+        return;
+    }
+
+    try
+    {
+        const response =
+            await fetch(
+                "http://localhost:5128/api/SavedContent/my",
+                {
+                    headers:
+                    {
+                        Authorization:
+                            `Bearer ${token}`
+                    }
+                }
+            );
+
+        if(!response.ok)
+        {
+            return;
+        }
+
+        const savedItems =
+            await response.json();
+
+        savedItems.forEach(item =>
+        {
+            const contentId =
+                item.contentId ||
+                item.ContentId;
+
+            const contentType =
+                item.contentType ||
+                item.ContentType;
+
+            const button =
+                document.querySelector(
+                    `.save-btn[data-id="${contentId}"][data-type="${contentType}"]`
+                );
+
+            if(button)
+            {
+                button.classList.add(
+                    "saved"
+                );
+
+                const icon =
+                    button.querySelector("i");
+
+                icon.classList.remove(
+                    "bi-star"
+                );
+
+                icon.classList.add(
+                    "bi-star-fill"
+                );
+            }
+        });
+    }
+    catch(error)
+    {
+        console.error(
+            "Failed to load saved legends",
+            error
+        );
+    }
+}
+
     /* ==========================
        RENDER CARDS
     ========================== */
@@ -149,16 +225,26 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="history-actions">
 
                             <button
+                                class="save-btn"
+
+                                data-id="${person.id}"
+                                data-type="Legend"
+                                data-name="${person.name}"
+                                data-image="${person.image}"
+                                data-location="${person.birthPlace}">
+
+                                <i class="bi bi-star"></i>
+
+                            </button>
+
+                            <button
                                 class="know-more-btn"
-                                onclick="window.open('${person.wikiLink}','_blank')"
-                            >
+                                data-id="${person.id}">
 
                                 <span class="bulb-container">
                                     <i class="fas fa-lightbulb bulb"></i>
                                 </span>
-
-                                Know More
-
+                                    View More
                             </button>
 
                         </div>
@@ -221,6 +307,189 @@ document.addEventListener("DOMContentLoaded", () => {
 
         animateCards();
         initializeCards();
+        loadSavedItems();
+
+
+    document
+    .querySelectorAll(".know-more-btn")
+    .forEach(button =>
+    {
+    button.addEventListener(
+        "click",
+        () =>
+    {
+        const id =
+            button.dataset.id;
+
+        window.location.href =
+            `history-details.html?id=${id}`;
+    });
+});
+
+/* ==========================
+   SAVE / UNSAVE LEGEND
+========================== */
+
+document.querySelectorAll(".save-btn")
+.forEach(button =>
+{
+    button.addEventListener(
+        "click",
+        async () =>
+    {
+        const token =
+            localStorage.getItem(
+                "token"
+            );
+
+        if(!token)
+        {
+            const loginModal =
+                new bootstrap.Modal(
+                    document.getElementById(
+                        "loginRequiredModal"
+                    )
+                );
+
+            loginModal.show();
+
+            return;
+        }
+
+        const icon =
+            button.querySelector("i");
+
+        try
+        {
+            /* ==========================
+               UNSAVE
+            ========================== */
+
+            if(
+                button.classList.contains(
+                    "saved"
+                )
+            )
+            {
+                const response =
+                    await fetch(
+                        `http://localhost:5128/api/savedcontent?contentId=${encodeURIComponent(button.dataset.id)}&contentType=${encodeURIComponent(button.dataset.type)}`,
+                        {
+                            method: "DELETE",
+
+                            headers:
+                            {
+                                Authorization:
+                                    `Bearer ${token}`
+                            }
+                        }
+                    );
+
+                if(!response.ok)
+                {
+                    throw new Error(
+                        "Failed To Remove"
+                    );
+                }
+
+                button.classList.remove(
+                    "saved"
+                );
+
+                icon.classList.remove(
+                    "bi-star-fill"
+                );
+
+                icon.classList.add(
+                    "bi-star"
+                );
+
+                console.log(
+                    "Legend Removed Successfully"
+                );
+
+                return;
+            }
+
+            /* ==========================
+               SAVE
+            ========================== */
+
+            const response =
+                await fetch(
+                    "http://localhost:5128/api/savedcontent",
+                    {
+                        method: "POST",
+
+                        headers:
+                        {
+                            "Content-Type":
+                                "application/json",
+
+                            Authorization:
+                                `Bearer ${token}`
+                        },
+
+                        body: JSON.stringify(
+                        {
+                            contentId:
+                                button.dataset.id,
+
+                            contentType:
+                                button.dataset.type,
+
+                            contentName:
+                                button.dataset.name,
+
+                            imageUrl:
+                                button.dataset.image,
+
+                            location:
+                                button.dataset.location
+                        })
+                    }
+                );
+
+            const result =
+                await response.json();
+
+            if(!response.ok)
+            {
+                throw new Error(
+                    result.message ||
+                    "Failed To Save"
+                );
+            }
+
+            button.classList.add(
+                "saved"
+            );
+
+            icon.classList.remove(
+                "bi-star"
+            );
+
+            icon.classList.add(
+                "bi-star-fill"
+            );
+
+            console.log(
+                "Legend Saved Successfully"
+            );
+        }
+        catch(error)
+        {
+            console.error(
+                "Save/Unsave Error:",
+                error
+            );
+        }
+    });
+});
+
+/* ==========================
+     SAVE & UNSAVE BUTTON
+   ========================== */
 
         function getCategoryIcon(category) 
         {

@@ -1,0 +1,492 @@
+/* ==========================================
+BACK BUTTON
+========================================== */
+
+.back-btn
+{
+    display: inline-flex;
+
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    margin-bottom: 40px;
+
+    transition: .3s;
+}
+
+.back-btn:hover
+{
+    color: rgb(51, 184, 255);
+
+    transform:
+        translateX(-5px);
+}
+
+
+/* ==========================================
+EDIT PROFILE
+========================================== */
+
+.edit-profile-section
+{
+    padding: 120px 0 80px;
+}
+
+/* ==========================================
+PAGE HEADER
+========================================== */
+
+.page-header
+{
+    margin-bottom: 50px;
+}
+
+.hero-badge
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.1);
+    color: #f4b400;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-badge i
+{
+    font-size: 1.4rem;
+}
+
+/* ==========================================
+PROFILE IMAGE
+========================================== */
+
+.profile-image-section
+{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 40px;
+}
+
+.profile-image-wrapper
+{
+    position: relative;
+}
+
+.profile-image-wrapper img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow:
+        0 10px 35px rgba(244,180,0,.25);
+}
+
+.upload-btn
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background:
+    linear-gradient(
+        135deg,
+        #f4b400,
+        #ffcf33
+    );
+
+    color: #111;
+    display: flex;
+    box-shadow:
+        0 8px 25px rgba(244,180,0,.35);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+* Floating effect */
+
+.upload-btn
+{
+    animation:
+    floatingPencil 3s ease-in-out infinite;
+}
+
+/* Pencil Icon */
+
+.upload-btn i
+{
+    font-size: 1.1rem;
+
+    transition:
+        transform .4s ease,
+        color .3s ease;
+}
+
+/* Hover */
+
+.upload-btn:hover
+{
+    transform:
+        translateY(-4px)
+        scale(1.08);
+
+    box-shadow:
+        0 15px 35px rgba(244,180,0,.55),
+        0 0 20px rgba(244,180,0,.4);
+}
+
+.upload-btn:hover i
+{
+    transform:
+        rotate(-20deg)
+        scale(1.15);
+}
+
+/* Click Effect */
+
+.upload-btn:active
+{
+    transform:
+        scale(.92);
+}
+
+/* Ripple */
+
+.upload-btn::before
+{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    transition:
+        width .5s ease,
+        height .5s ease,
+        opacity .5s ease;
+
+    opacity: 0;
+}
+
+.upload-btn:hover::before
+{
+    width: 120px;
+    height: 120px;
+
+    opacity: 1;
+}
+
+/* Floating Animation */
+
+@keyframes floatingPencil
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+
+    50%
+    {
+        transform: translateY(-4px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.upload-btn:hover i
+{
+    animation:
+    pencilWiggle .5s ease;
+}
+
+@keyframes pencilWiggle
+{
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-15deg); }
+    50%  { transform: rotate(10deg); }
+    75%  { transform: rotate(-8deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* ==========================================
+CARD
+========================================== */
+
+.profile-card
+{
+    max-width: 950px;
+
+    margin: auto;
+
+    background: rgba(255,255,255,.05);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 25px;
+
+    padding: 40px;
+}
+
+/* ==========================================
+SECTIONS
+========================================== */
+
+.form-section
+{
+    margin-bottom: 40px;
+}
+
+.form-section h3
+{
+    color: #f4b400;
+
+    margin-bottom: 20px;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+}
+
+.form-section label
+{
+    color: #ffffff;
+
+    margin-bottom: 8px;
+
+    display: block;
+}
+
+.form-control
+{
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    color: #ffffff;
+
+    padding: 14px;
+}
+
+.form-control:focus
+{
+    background: rgba(255,255,255,.08);
+
+    border-color: #f4b400;
+
+    box-shadow: none;
+
+    color: #ffffff;
+}
+
+/* ==========================================
+SAVE BUTTON
+========================================== */
+
+.save-section
+{
+    text-align: center;
+}
+
+.save-btn
+{
+    border: none;
+
+    padding: 14px 40px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4b400,
+            #ff8c00
+        );
+
+    color: #000000;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.save-btn:hover
+{
+    transform: translateY(-3px);
+}
+
+.save-btn:disabled
+{
+    opacity: .5;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+CUSTOM MODAL
+========================================== */
+
+.custom-modal
+{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,.65);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 99999;
+}
+
+.custom-modal.show
+{
+    display: flex;
+}
+
+.success-modal-content
+{
+    width: 420px;
+    max-width: 95%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0b3d2e,
+        #198754
+    );
+
+    border-radius: 28px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    color: white;
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 20px 60px rgba(25,135,84,.45);
+
+    animation:
+    modalZoom .4s ease;
+}
+
+.success-icon-wrapper
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.success-icon
+{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+    rgba(255,255,255,.12);
+
+    border:
+    2px solid rgba(255,255,255,.2);
+
+    animation:
+    pulseSuccess 2s infinite;
+}
+
+.success-icon i
+{
+    font-size: 42px;
+    color: #fff;
+}
+
+.success-close-btn
+{
+    border: none;
+
+    padding: 12px 32px;
+
+    border-radius: 15px;
+
+    font-weight: 700;
+
+    background: white;
+
+    color: #198754;
+
+    transition: .3s;
+}
+
+.success-close-btn:hover
+{
+    transform:
+    translateY(-3px);
+}
+
+#successMessage
+{
+    font-size: .8rem;
+}
+
+@keyframes pulseSuccess
+{
+    0%
+    {
+        transform: scale(1);
+    }
+
+    50%
+    {
+        transform: scale(1.08);
+    }
+
+    100%
+    {
+        transform: scale(1);
+    }
+}

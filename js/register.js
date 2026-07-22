@@ -477,7 +477,7 @@ document.addEventListener(
 
         const response =
             await fetch(
-                "https://hrudayranjan98.github.io/Ama-Asmita/api/auth/register",
+                "http://localhost:5128/api/auth/register",
                 {
                     method:"POST",
 

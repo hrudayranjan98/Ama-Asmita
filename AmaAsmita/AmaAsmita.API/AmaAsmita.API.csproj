@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AmaAsmita.Application\AmaAsmita.Application.csproj" />
     <ProjectReference Include="..\AmaAsmita.Infrastructure\AmaAsmita.Infrastructure.csproj" />
+    <ProjectReference Include="..\AmaAsmita.Application\AmaAsmita.Application.csproj" />
   </ItemGroup>
 
 </Project>

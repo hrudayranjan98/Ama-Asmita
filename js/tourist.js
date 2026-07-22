@@ -28,6 +28,26 @@ let touristData = [];
 let currentVisible = 16;
 let noResultMessage = null;
 
+
+document.addEventListener("click", function(e)
+{
+    console.log("CLICK DETECTED");
+
+    const button =
+        e.target.closest(".btn-view-more");
+
+    if(!button)
+    {
+        return;
+    }
+
+    console.log(button.dataset.id);
+
+    window.location.href =
+        `tourist-details.html?id=${button.dataset.id}`;
+});
+
+
 /* ==========================
    LOAD JSON
 ========================== */
@@ -120,6 +140,79 @@ function populateCategories(
     );
 }
 
+async function loadSavedItems()
+{
+    const token =
+        localStorage.getItem("token");
+
+    if(!token)
+    {
+        return;
+    }
+
+    try
+    {
+        const response =
+            await fetch(
+                "http://localhost:5128/api/SavedContent/my",
+                {
+                    headers:
+                    {
+                        Authorization:
+                            `Bearer ${token}`
+                    }
+                }
+            );
+
+        if(!response.ok)
+        {
+            return;
+        }
+
+        const savedItems =
+            await response.json();
+
+        savedItems.forEach(item =>
+        {
+            const contentId =
+                item.contentId || item.ContentId;
+
+            const contentType =
+                item.contentType || item.ContentType;
+
+            const button =
+                document.querySelector(
+                    `.save-btn[data-id="${contentId}"][data-type="${contentType}"]`
+                );
+
+            if(button)
+            {
+                button.classList.add(
+                    "saved"
+                );
+
+                const icon =
+                    button.querySelector("i");
+
+                icon.classList.remove(
+                    "bi-star"
+                );
+
+                icon.classList.add(
+                    "bi-star-fill"
+                );
+            }
+        });
+    }
+    catch(error)
+    {
+        console.error(
+            "Failed to load saved items",
+            error
+        );
+    }
+}
+
 /* ==========================
    RENDER CARDS
 ========================== */
@@ -188,9 +281,13 @@ function renderCards(data) {
 
                         <button
                             class="save-btn"
-                            data-id="${spot.id}"
-                            title="Save Place">
 
+                            data-id="${spot.id}"
+                            data-type="TouristSpot"
+                            data-name="${spot.name}"
+                            data-image="${spot.image}"
+                            data-location="${spot.location}"
+                            title="Save Place">
                             <i class="bi bi-star"></i>
 
                         </button>
@@ -267,37 +364,37 @@ function renderCards(data) {
 
     initializeCards();
     animateCards();
+    loadSavedItems();
+    
 
-    /* ==========================
+/* ==========================
    VIEW MORE
 ========================== */
 
-document.querySelectorAll(".btn-view-more")
-.forEach(button =>
-{
-    button.addEventListener("click", () =>
-    {
-        const id =
-            button.dataset.id;
+// document.querySelectorAll(".btn-view-more")
+// .forEach(button =>
+// {
+//     button.addEventListener("click", () =>
+//     {
+//         const id =
+//             button.dataset.id;
 
-        window.location.href =
-            `tourist-details.html?id=${id}`;
-    });
-});
+//         window.location.href =
+//             `tourist-details.html?id=${id}`;
+//     });
+// });
 
 /* ==========================
-   SAVE PLACE
+   SAVE / UNSAVE PLACE
 ========================== */
 
 document.querySelectorAll(".save-btn")
 .forEach(button =>
 {
-    button.addEventListener("click", () =>
+    button.addEventListener(
+        "click",
+        async () =>
     {
-        /* ==========================
-           AUTH CHECK
-        ========================== */
-
         const token =
             localStorage.getItem("token");
 
@@ -315,38 +412,136 @@ document.querySelectorAll(".save-btn")
             return;
         }
 
-        /* ==========================
-           SAVE SUCCESS
-        ========================== */
-
-        button.classList.add("saved");
-
         const icon =
             button.querySelector("i");
 
-        icon.classList.remove(
-            "bi-star"
-        );
+        try
+        {
+            /* ==========================
+               UNSAVE
+            ========================== */
 
-        icon.classList.add(
-            "bi-star-fill"
-        );
+            if(
+                button.classList.contains(
+                    "saved"
+                )
+            )
+            {
+                const response =
+                    await fetch(
+                        `http://localhost:5128/api/savedcontent?contentId=${encodeURIComponent(button.dataset.id)}&contentType=${encodeURIComponent(button.dataset.type)}`,
+                        {
+                            method: "DELETE",
+
+                            headers:
+                            {
+                                "Authorization":
+                                    `Bearer ${token}`
+                            }
+                        }
+                    );
+
+                if(!response.ok)
+                {
+                    throw new Error(
+                        "Failed To Remove"
+                    );
+                }
+
+                button.classList.remove(
+                    "saved"
+                );
+
+                icon.classList.remove(
+                    "bi-star-fill"
+                );
+
+                icon.classList.add(
+                    "bi-star"
+                );
+
+                console.log(
+                    "Removed Successfully"
+                );
+
+                return;
+            }
+
+            /* ==========================
+               SAVE
+            ========================== */
+
+            const response =
+                await fetch(
+                    "http://localhost:5128/api/savedcontent",
+                    {
+                        method: "POST",
+
+                        headers:
+                        {
+                            "Content-Type":
+                                "application/json",
+
+                            "Authorization":
+                                `Bearer ${token}`
+                        },
+
+                        body: JSON.stringify(
+                        {
+                            contentId:
+                                button.dataset.id,
+
+                            contentType:
+                                button.dataset.type,
+
+                            contentName:
+                                button.dataset.name,
+
+                            imageUrl:
+                                button.dataset.image,
+
+                            location:
+                                button.dataset.location
+                        })
+                    }
+                );
+
+            const result =
+                await response.json();
+
+            if(!response.ok)
+            {
+                throw new Error(
+                    result.message ||
+                    "Failed To Save"
+                );
+            }
+
+            button.classList.add(
+                "saved"
+            );
+
+            icon.classList.remove(
+                "bi-star"
+            );
+
+            icon.classList.add(
+                "bi-star-fill"
+            );
+
+            console.log(
+                "Saved Successfully"
+            );
+        }
+        catch(error)
+        {
+            console.error(
+                "Save/Unsave Error:",
+                error
+            );
+        }
     });
 });
-
-button.classList.add("saved");
-
-const icon =
-    button.querySelector("i");
-
-icon.classList.remove(
-    "bi-star"
-);
-
-icon.classList.add(
-    "bi-star-fill"
-);
-
 
 /* ==========================
     GET ICON & COLOR

@@ -12,4 +12,30 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<User> Users => Set<User>();
+
+    public DbSet<SavedContent> SavedContents => Set<SavedContent>();
+
+    public DbSet<Contribution> Contributions => Set<Contribution>();
+
+    public DbSet<UserProfile> UserProfiles => Set<UserProfile>();
+
+
+    protected override void OnModelCreating(
+        ModelBuilder modelBuilder
+    )
+    {
+        base.OnModelCreating(
+            modelBuilder
+        );
+
+        modelBuilder.Entity<UserProfile>()
+            .HasOne(x => x.User)
+            .WithOne()
+            .HasForeignKey<UserProfile>(
+                x => x.UserId
+            )
+            .OnDelete(
+                DeleteBehavior.Cascade
+            );
+    }
 }
