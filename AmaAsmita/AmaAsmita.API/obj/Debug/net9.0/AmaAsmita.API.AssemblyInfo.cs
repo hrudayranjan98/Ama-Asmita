@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmaAsmita.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec56f459dec4ea1c59778712ec1780aa20e31269")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a1771e25c4494c91595ea93da25d3b5a67a2e85")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmaAsmita.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmaAsmita.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
